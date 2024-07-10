@@ -2,7 +2,7 @@
 
 Contains free and open-sourced website templates, including but not limited to SaaS landing page, portfolio page and more. Useful, for freelancers, SaaS developers, and more.
 
-Feel free to star this repository. More templates wil be uploaded from time to time.
+**[Continuously developed]** Feel free to star this repository. More templates will be uploaded from time to time.
 
 ## Features
 * Responsive
