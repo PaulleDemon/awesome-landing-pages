@@ -36,16 +36,68 @@ git sparse-checkout add saas/finance
 read more on this [Stackoverflow answer](https://stackoverflow.com/a/73254328/15993687)
 
 
-1. 
 
-2. If you are planning to modify tailwind you must have node installed.
-
-
+1. If you are planning to modify tailwind you must have node installed.
 
 > [!NOTE] 
 > Install dependencies from `.package.json` not package.json, as package.json contains additional dependencies to help with types
 
+2.Add a file called `tailwind.config.js`
+```js
+module.exports = {
+	prefix: 'tw-',
+	important: false,
+	content: [
+		"./**/*.{html, jsx, js}",
+	],
+	theme: {
+		extend: {},
+	},
+	plugins: [],
+}
+```
+3. Now add `postcss.config.js
+```js
+module.exports = {
+  plugins: {
+    "postcss-import": {},
+    "postcss-simple-vars": {},
+    "postcss-nested": {}
+  },
+}
+```
+4. You should also have a base tailwind file called `tailwind.css`
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer components{
+}
+```
+5. To run the tailwind use `npm run start-css`
+6. To build the tailwind use `npm run build:tailwind`
+
+During development add the following to head tag
+```
+<link rel="stylesheet" href="tailwind-runtime.css"><!--replace with path to your tailwind runtime-->
+```
+During production use 
+```
+<link rel="stylesheet" href="tailwind-build.css"><!--replace with path to your tailwind build-->
+```
+
+
+## Website Templates
+
+Here's the list of website templates
+
+
+### SaaS landing pages
+
+![Saas landing pages](saas/screenshots/finance.png)
+
+1. [Simple Finance](saas/finance) - [[Live preview](https://finance-saas-template.netlify.app/)]
 
 
 ## Brand icons from

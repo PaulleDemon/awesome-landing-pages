@@ -6,7 +6,7 @@ module.exports = {
 		"./**/*.{html, jsx, js}",
 		"./saas/**/*.{html,jsx, js}",
 		"./saas/**/*.js",
-		// "./saas/**/*.html",
+		"./saas/**/*.html",
 	
 		// "*.{html,jsx}"
 	],

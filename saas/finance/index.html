@@ -8,15 +8,23 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="./assets/logo/logo1.png" type="image/x-icon">
     
-    <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css">
-    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Title of the project" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
+    <meta property="og:image" content="" />
+  
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
     <link rel="stylesheet" href="./css/index.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
-<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#ffffff] tw-flex tw-flex-col">
+<body class="tw-min-h-[100vh] tw-bg-[#ffffff] tw-flex tw-flex-col">
     <header class="tw-flex tw-w-full tw-z-20
                     tw-h-[60px]  
                     md:tw-justify-around
@@ -116,8 +124,8 @@
                         tw-flex max-xl:tw-flex-col">
 
                 <div class="tw-flex tw-flex-col tw-place-content-center tw-max-w-[800px] tw-min-w-[450px] 
-                            max-xl:tw-min-w-[300px]">
-                    <div class="tw-text-6xl max-lg:tw-text-5xl tw-font-semibold 
+                            max-xl:tw-min-w-[250px]">
+                    <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold 
                                 tw-leading-[80px] tw-flex tw-flex-wrap  max-md:tw-leading-snug tw-uppercase" 
                                 >
                         Empower your finance
@@ -177,15 +185,13 @@
                                         tw-max-h-[550px] 
                                         tw-min-h-[450px] 
                                         tw-min-w-[350px] 
-                                        max-lg:tw-h-[350px]
-                                        max-lg:tw-w-[350px]
-                                        max-lg:tw-min-h-[150px]
-                                        max-lg:tw-min-w-[150px]
+                                        max-lg:tw-h-[320px]
+                                        max-lg:tw-w-[320px]
                                         tw-rounded-2xl tw-shadow-xl">
                                 <img src="./assets/images/home/dashboard.png" 
                                         alt="dashboard" class="tw-h-full tw-w-full 
                                                                 tw-object-cover max-lg:tw-object-contain" 
-                                        srcset="">
+                                        >
                                
                         </div>
                     </div>
@@ -307,9 +313,9 @@
     <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
                      tw-place-items-center">
 
-        <h1 class="tw-text-3xl max-md:tw-text-xl primary-text-color tw-font-medium">
-            What some of our partners say
-        </h1>
+        <h3 class="tw-text-3xl max-md:tw-text-xl primary-text-color tw-font-medium">
+            What some of our clients say
+        </h3>
         
         <div class="swiper review-container tw-place-content-center 
                             tw-w-fit max-md:tw-h-[400px] 
@@ -347,10 +353,10 @@
             
             </style>
 
-            <div class="swiper-wrapper tw-space-x-4  md:tw-text-base !tw-h-[250px]">
+            <div class="swiper-wrapper tw-space-x-4 tw-text-lg max-md:tw-text-base !tw-h-[250px]">
 
                 <div class="swiper-slide tw-relative review-card 
-                            tw-flex tw-flex-col fade tw-text-lg tw-text-justify">
+                            tw-flex tw-flex-col tw-text-justify">
                     
                     <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
                             tw-border-[2px] tw-border-[#1c191a]
@@ -366,7 +372,7 @@
 
                 </div>
 
-                <div class="swiper-slide review-card slides fade  tw-text-lg tw-text-justify">
+                <div class="swiper-slide review-card slides tw-text-justify">
 
                     <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
                             tw-border-[2px] tw-border-[#1c191a]
@@ -380,8 +386,7 @@
                     <p class="tw-mt-3">- Bára Müllerová</p>
                 </div>
 
-                
-                <div class="swiper-slide review-card slides fade tw-text-lg tw-text-justify">
+                <div class="swiper-slide review-card slides tw-text-justify">
 
                      <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
                             tw-border-[2px] tw-border-[#1c191a]

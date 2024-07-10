@@ -238,32 +238,6 @@ header > .collapsable-header{
     padding: 10px;
 }
 
-/* Fading animation */
-
-.fade {
-    animation: fadeEffect 1s ease-in-out;
-}
-
-@keyframes fadeEffect {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-
-.stars {
-    display: inline-block;
-    font-size: 40px;
-    cursor: pointer;
-}
-.stars .star {
-    color: #ccc;
-    transition: color 0.2s;
-}
-.stars .star:hover,
-.stars .star.active {
-    color: gold;
-}
-
 /* --------- collapsible div ---------- */
 .collapsible {
     background-color: #f3f0f0;
