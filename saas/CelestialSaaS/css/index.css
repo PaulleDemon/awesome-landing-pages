@@ -3,9 +3,11 @@
 :root{
 
     --btn-color: #fdfdfd;/* button color*/
-    --btn-bg: #101010;/* button bg color*/
+    --btn-bg: #4f55c1;/* button bg color*/
 
-    --primary-text-color: #1d1b1b;
+    --primary-text-color: #4f55c1;
+    --link-hover: #4f55c1;
+    --input-hover-bd-color: #4f55c1;
 }
 
 
@@ -15,8 +17,8 @@ html {
 }
 
 header{
-    background-color: #fff;
-    color: #000;
+    /* background-color: #fff;
+    color: #000; */
 }
 
 
@@ -34,6 +36,11 @@ header > .collapsible-header{
     transition: width 0.3s ease;
 }
 
+.header-gradient{
+    background: rgb(206,174,212);
+    background: linear-gradient(83deg, #ceaed474 15%, #abd4e693 33%, #73edc097 79%, #8c91e86b 100%);
+    filter: blur(100px);
+}
 
 .header-links {
     display: flex;
@@ -46,16 +53,7 @@ header > .collapsible-header{
 
 
 .header-links:hover {
-    color: #1e85ec;
-}
-
-
-.black-text{
-    color: #000;
-}
-
-.white-text{
-    color: #fff;
+    color: var(--link-hover);
 }
 
 .primary-text-color{
@@ -73,7 +71,7 @@ header > .collapsible-header{
 .btn{
     padding: 10px 15px;
     width: max-content;
-    border-radius: 10px;
+    border-radius: 24px;
     color: var(--btn-color);
     background-color: var(--btn-bg);
     justify-content: center;
@@ -93,17 +91,15 @@ header > .collapsible-header{
 .input{
     padding: 10px;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 25px;
     /* outline: none; */
     min-width: 100px;
     border: 2px solid #818080;
-    transition: border 0.3s;
+    /* transition: border 0.3s; */
 }
 
 .input:active, .input:focus, .input:focus-within{
-    /* border-bottom: 2px solid #0e0a92 !important; */
-    border: 2px solid #0c0c0c;
-
+    border: 2px solid var(--input-hover-bd-color);
 }
 
 .input-error{
@@ -113,6 +109,7 @@ header > .collapsible-header{
 .input-error:focus-within{
     border-bottom: 3px solid #fd0101;
 }
+
 
 .message-container{
     /* container used to display message */
@@ -125,7 +122,6 @@ header > .collapsible-header{
     min-height: 50px;
     padding: 5px 10px;
 }
-
 
 /* Navigation dots styling */
 .dots-container {

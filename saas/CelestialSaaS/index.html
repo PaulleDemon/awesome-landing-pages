@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Finance</title>
+    <title>Celestial SaaS</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="./assets/logo/logo1.png" type="image/x-icon">
     
@@ -16,22 +16,31 @@
     <meta property="og:image" content="" />
   
 
-    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
-    <link rel="stylesheet" href="./css/tailwind-build.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css">
+    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
+    <link rel="stylesheet" href="css/index.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 <body class="tw-min-h-[100vh] tw-bg-[#ffffff] tw-flex tw-flex-col">
+    
+    <div class="tw-flex tw-absolute tw-top-0 tw-w-full tw-h-[150px]">
+
+        <div class="header-gradient tw-w-full tw-h-full">
+
+        </div>
+
+    </div>
+
     <header class="tw-flex tw-w-full tw-z-20
                     tw-h-[60px]  
                     md:tw-justify-around
-                    tw-absolute tw-top-0 tw-px-[10%]
+                    tw-absolute tw-top-0 tw-px-[5%]
                     max-md:tw-px-4
                     max-md:tw-mr-auto
-                    tw-bg-white
+                    tw-bg-opacity-0
                     tw-text-black
                     ">
         <a class="tw-w-[50px] tw-h-[50px] tw-p-[4px]" href="">
@@ -59,46 +68,34 @@
                     Pricing
                 </a>
                 <a class="header-links" href="">
-                    Blogs
+                    features
                 </a>
-                <a class="header-links" href=""
-                        rel="noreferrer"
-                        >
-                    Contact us
+                <a class="header-links" href="">
+                    company
                 </a>
             </div>
-            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-lg
-                        
+            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-base
                          max-md:tw-place-content-center
                          max-md:tw-w-full
                          max-md:tw-flex-col
+                         tw-mx-4
                          ">
-                
-                <a href=""
-                    aria-label="login"
-                    class="
-                            tw-transition-colors
-                            tw-duration-[0.3s]
-                            "
-                        >
-                    Login
-                </a>
 
                 <a href=""
                     aria-label="signup"
                     class=" 
-                            tw-border-2
-                            tw-border-[#1c1c1c]
-                            tw-p-1
-                            tw-px-2
-                            tw-rounded-sm
-                            hover:tw-bg-black
-                            hover:tw-text-white
-                            tw-transition-colors
+                            tw-py-2
+                            tw-px-3
+                            tw-rounded-full
+                            tw-bg-[#4f55c1]
+                            tw-text-white
+                            hover:tw-translate-x-2
+                            tw-transition-transform
                             tw-duration-[0.3s]
                         "   
                         >
-                    Signup
+                    <span>Get started</span>
+                    <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -110,73 +107,69 @@
         </button>
     </header>
 
-
-    <section class="tw-w-full tw-min-h-[100vh]  tw-max-w-[100vw]
+    <section class="tw-w-full tw-min-h-[100vh] tw-max-w-[100vw]
                         max-md:tw-mt-[50px]
                         max-lg:tw-p-4
                         tw-flex tw-flex-col tw-overflow-hidden tw-relative"
-                       
                         >
             
             <div class="tw-w-full tw-h-full tw-p-[5%]
                         tw-place-content-center tw-min-h-[100vh]
                         tw-gap-6 max-xl:tw-place-items-center
-                        tw-flex max-xl:tw-flex-col">
+                        tw-flex tw-flex-col">
 
-                <div class="tw-flex tw-flex-col tw-place-content-center tw-max-w-[800px] tw-min-w-[450px] 
-                            max-xl:tw-min-w-[250px]">
+                <div class="tw-flex tw-flex-col tw-place-content-center tw-items-center">
                     <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold 
-                                tw-leading-[80px] tw-flex tw-flex-wrap  max-md:tw-leading-snug tw-uppercase" 
+                                tw-leading-[80px] tw-text-center
+                                max-md:tw-leading-snug tw-uppercase" 
                                 >
-                        Empower your finance
+                        <span>
+                            Re-imagining the Future
+                        </span>
                         <br>
-                        with seamless, 
-                        <br>
-                        cloud-based control.     
+                        <span class="tw-text-[#4f55c1]">
+                            of Software
+                        </span>
                     </div>  
-                    <div class="tw-mt-10 tw-p-2 tw-text-justify max-lg:tw-max-w-full reveal">
+                    <div class="tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error adipisci corrupti accusamus reiciendis similique assumenda nostrum fuga dicta vitae ipsum.                        
                     </div>
                     
-                    <h2 class="tw-mt-6 tw-text-lg reveal">Get started</h2>
-                    <div class="tw-mt-4 reveal tw-flex tw-h-[50px] tw-w-[350px] tw-max-w-[350px]
-                                tw-overflow-hidden tw-gap-2 tw-place-items-center ">
-                        <input type="email" class="tw-w-full tw-h-full 
-                                                    tw-border-[2px] tw-border-solid
-                                                    tw-border-[#bfbfbf]
-                                                    tw-duration-[0.3s]
-                                                    tw-transition-colors
-                                                    input
-                                                    tw-bg-transparent tw-outline-none 
-                                                    tw-px-3 tw-rounded-md tw-p-2"
-                                placeholder="joe@example.com"
-                            >
-                        <a class="btn tw-h-full 
+                    <div class="tw-mt-4 tw-flex 
+                                tw-overflow-hidden tw-gap-4 
+                                tw-p-2
+                                tw-place-items-center ">
+                       
+                        <a class="btn  
                                     tw-duration-[0.3s]
-                                    tw-transition-colors
+                                    hover:tw-scale-x-[1.03]
+                                    tw-transition-transform
                                     "
-                                href=""
+                                    href=""
                                     >
-                            Signup
-                        </a>   
+                            Get started
+                        </a>  
+                        <a class="btn  
+                                    !tw-text-[#4f55c1]
+                                    !tw-bg-[#c8cbf984]
+                                    tw-duration-[0.3s]
+                                    hover:tw-scale-x-[1.03]
+                                    tw-transition-transform
+                                    "
+                                    href=""
+                                    >
+                            <span>Learn more</span>
+                        </a>  
                     </div>
 
                     <div class="tw-flex tw-mt-6 tw-gap-4 tw-text-2xl reveal">
-                        <a href="" aria-label="LinkedIn">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="https://twitter.com/" aria-label="Twitter">
-                            <i class="bi bi-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com/" class="tw-w-[40px] tw-h-[40px]" aria-label="Tripadvisor">
-                           <i class="bi bi-instagram"></i>
-                        </a>
+                        
                     </div>
 
                 </div>
                 
-                <div class="tw-max-w-[850px] max-md:tw-max-w-[350px] tw-max-h-[120vh] tw-w-full tw-flex 
-                                tw-place-content-center tw-place-items-center tw-overflow-hidden">
+                <div class="tw-w-full tw-flex tw-place-content-center 
+                                tw-place-items-center tw-overflow-hidden">
                     <div class="tw-relative tw-w-fit
                                 tw-flex tw-place-items-center tw-place-content-center">
 
@@ -185,7 +178,9 @@
                                         tw-max-h-[550px] 
                                         tw-min-h-[450px] 
                                         tw-min-w-[350px] 
-                                        max-lg:tw-h-[320px]
+                                        max-lg:tw-max-h-[320px]
+                                        max-lg:tw-min-h-[150px]
+                                        max-lg:tw-h-fit
                                         max-lg:tw-w-[320px]
                                         tw-rounded-2xl tw-shadow-xl">
                                 <img src="./assets/images/home/dashboard.png" 
@@ -207,20 +202,30 @@
                     tw-p-6
                     "
                     >
-        <h2 class="tw-text-3xl max-lg:tw-text-2xl tw-text-[#5d5d5d]">Trusted by industry leaders</h2>
-
-        <div class="tw-flex tw-w-full tw-gap-10 tw-place-content-center tw-mt-8">
-            <div class="tw-w-[150px] tw-h-[50px]">
+        <div class="tw-flex tw-w-full tw-gap-10 tw-place-content-center ">
+            <!-- add the brands using your app  -->
+            <div class="tw-w-[150px] tw-h-[30px]">
                 <img src="./assets/images/brand-logos/google.svg" alt="Google"
-                    class="tw-w-full tw-h-full tw-object-contain tw-grayscale" srcset="">
+                    class="tw-w-full tw-h-full 
+                            tw-object-contain tw-grayscale
+                            hover:tw-grayscale-0
+                            tw-transition-colors
+                            " srcset="">
             </div>
-            <div class="tw-w-[150px] tw-h-[50px]">
+            <div class="tw-w-[150px] tw-h-[30px]">
                 <img src="./assets/images/brand-logos/microsoft.svg" alt="Microsoft"
-                    class="tw-w-full tw-h-full tw-object-contain tw-grayscale" srcset="">
+                    class="tw-w-full tw-h-full tw-object-contain 
+                            tw-grayscale 
+                            hover:tw-grayscale-0
+                            tw-transition-colors"
+                    srcset="">
             </div>
-            <div class="tw-w-[150px] tw-h-[50px]">
+            <div class="tw-w-[150px] tw-h-[30px]">
                 <img src="./assets/images/brand-logos/adobe.svg" alt="Adobe"
-                    class="tw-w-full tw-h-full tw-object-contain tw-grayscale" srcset="">
+                    class="tw-w-full tw-h-full tw-object-contain tw-grayscale
+                            hover:tw-grayscale-0
+                            tw-transition-colors
+                    " srcset="">
             </div>
         </div>
 
@@ -233,7 +238,11 @@
                     "
                     >
         <div class="tw-flex tw-flex-col tw-gap-5 tw-text-center tw-max-w-[750px]">
-            <h2 class="tw-text-4xl max-lg:tw-text-3xl tw-mt-5 tw-font-semibold ">A unique technology for your account needs</h2>
+            <h2 class="tw-text-4xl max-lg:tw-text-3xl tw-mt-5 tw-font-semibold ">
+                Simple. 
+                <span class="primary-text-color">Fast.</span>
+                Loved
+            </h2>
 
             <div class=" tw-text-gray-700 ">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus consequatur odit exercitationem repellendus, recusandae ratione at tenetur, omnis dicta tempore dolor saepe quos doloremque tempora quibusdam. Aspernatur deserunt voluptatem aliquid.
@@ -249,65 +258,68 @@
                     "
                     id=""
                     >
-        <div class="tw-flex tw-flex-col tw-gap-5 tw-place-items-center">
-            <h2 class="tw-text-4xl tw-mt-5 tw-font-semibold">Features for error free accounting</h2>
-
-            <div class="tw-flex max-lg:tw-flex-col tw-gap-6">
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-h-[400px] tw-p-4 tw-gap-2 tw-shadow-xl tw-rounded-xl">
-                    <div class="tw-w-full tw-h-[200px] tw-rounded-xl tw-overflow-clip">
-                        <img src="./assets/images/home/sample.jpg" 
-                                alt="feature1">
-                    </div>
-                    <h3 class="tw-text-2xl">Feature 1</h3>
-                    <div>
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-gap-5 tw-place-items-center">
+            <div class="tw-flex tw-flex-col tw-gap-3 tw-text-center tw-mt-5">
+                <h3 class="tw-text-xl primary-text-color">Features loved by our clients</h>
+                <h2 class="tw-text-4xl tw-font-semibold">Core features</h2>
+            </div>
+            <div class="tw-flex tw-flex-wrap tw-max-w-[60%] tw-place-content-center tw-mt-6 max-lg:tw-flex-col tw-gap-2">
+                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <i class="tw-text-5xl primary-text-color bi bi-boombox-fill "></i>
+                    <h3 class="tw-text-3xl tw-font-semibold">Feature 1</h3>
+                    <div class="tw-text-[#595959]">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
                     </div>
                 </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-h-[400px] tw-p-4 tw-gap-2 tw-shadow-xl tw-rounded-xl">
-                    <div class="tw-w-full tw-h-[200px] tw-rounded-xl tw-overflow-clip">
-                        <img src="./assets/images/home/sample.jpg" 
-                                alt="feature2">
-                    </div>
-                    <h3 class="tw-text-2xl">Feature 2</h3>
-                    <div>
+                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <i class="tw-text-5xl primary-text-color bi bi-award-fill"></i>
+                    <h3 class="tw-text-3xl tw-font-semibold">Feature 2</h3>
+                    <div class="tw-text-[#595959]">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
                     </div>
                 </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-h-[400px] tw-p-4 tw-gap-2 tw-shadow-xl tw-rounded-xl">
-                    <div class="tw-w-full tw-h-[200px] tw-rounded-xl tw-overflow-clip">
-                        <img src="./assets/images/home/sample.jpg" 
-                                alt="feature3">
-                    </div>
-                    <h3 class="tw-text-2xl">Feature 3</h3>
-                    <div>
+                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <i class="tw-text-5xl primary-text-color bi bi-book-fill "></i>
+                    <h3 class="tw-text-3xl tw-font-semibold">Feature 3</h3>
+                    <div class="tw-text-[#595959]">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
                     </div>
+                </div>
+                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <i class="tw-text-5xl primary-text-color bi bi-book-fill "></i>
+                    <h3 class="tw-text-3xl tw-font-semibold">Feature 4</h3>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
+                    </div>
+                </div>
+                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <i class="tw-text-5xl primary-text-color bi bi-book-fill "></i>
+                    <h3 class="tw-text-3xl tw-font-semibold">Feature 5</h3>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
+                    </div>
+                </div>
+                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                            alt="feature1"> -->
+                <i class="tw-text-5xl primary-text-color bi bi-book-fill "></i>
+                <h3 class="tw-text-3xl tw-font-semibold">Feature 6</h3>
+                <div class="tw-text-[#595959]">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
                 </div>
             </div>
+            </div>
         </div>
-    </section>
-
-    <section class="tw-w-full tw-flex 
-                    tw-flex-col
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-4
-                    tw-gap-[10%]
-                    tw-place-items-center
-                    max-md:tw-flex-col
-                    tw-overflow-hidden
-                    tw-min-h-[30vh]
-                    "
-                    >
-
-        <h2 class="tw-text-3xl max-md:tw-text-2xl ">
-            Want to learn more?
-        </h2>
-
-        <a href="https://" class="btn tw-mt-[2%] max-md:tw-mt-8 hover:tw-scale-105 tw-duration-[0.3s]">
-            Schedule a call
-        </a>
-        
     </section>
 
     <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
@@ -331,20 +343,20 @@
                     text-align: center;
                     line-height: 20px;
                     font-size: 12px;
-                    color: #000;
+                    color: #4f55c1;
                     opacity: 1;
                     background: rgba(0, 0, 0, 0.2);
                 }
                 .swiper-pagination-bullet:hover {
                    
-                    color: #000;
+                    color: #4f55c1;
                     opacity: 1;
                     background: #1f1c1cbd;
                 }
               
                 .swiper-pagination-bullet-active {
-                    //color: #fff;
-                    background: #000 !important;
+                    /*color: #fff; */
+                    background: #4f55c1 !important;
                 }
 
                 .swiper{
@@ -412,8 +424,6 @@
        
     </section>
 
-
-
     <section class="tw-w-full tw-flex 
                     tw-flex-col
                     tw-place-content-center 
@@ -433,8 +443,8 @@
 
             <div class="tw-flex tw-h-[60px]  tw-p-2 
                         tw-overflow-hidden tw-gap-2 tw-place-items-center ">
-                <input type="email" class="tw-w-full tw-h-full 
-                                            input tw-p-2"
+                <input type="email" class="input tw-w-full tw-h-full 
+                                             tw-p-2"
                         placeholder="email"
                     >
                 <a class="btn  
@@ -502,6 +512,9 @@
     </footer>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
