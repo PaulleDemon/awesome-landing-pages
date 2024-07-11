@@ -3,12 +3,9 @@ module.exports = {
 	prefix: 'tw-',
 	important: false,
 	content: [
-		"./**/*.{html, jsx, js}",
-		"./restaurant/**/*.{html,jsx, js}",
-		"./restaurant/**/*.js",
-		"./restaurant/**/*.html",
-	
-		// "*.{html,jsx}"
+		"**/*.{html, jsx, js}",
+		"**/*.js",
+		"**/*.html",
 	],
 	theme: {
 		extend: {

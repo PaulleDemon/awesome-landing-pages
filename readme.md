@@ -134,5 +134,14 @@ Here's the list of website templates
 
 ### Attorney landing page
 
-## Brand icons from
+
+## Credits
+Elements in the templates are taken from free to use sources
+
+### Images
+Pexels.com - https://pexels.com
+Unsplash - https://unsplash.com
+Pixabay - https://pixabay.com
+
+### Brand icons from
 https://brandfetch.com/

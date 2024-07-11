@@ -50,14 +50,6 @@ header > .collapsible-header{
 }
 
 
-.black-text{
-    color: #000;
-}
-
-.white-text{
-    color: #fff;
-}
-
 .primary-text-color{
     color: var(--primary-text-color);
 }
