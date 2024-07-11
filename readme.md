@@ -145,6 +145,9 @@ Here's the list of website templates
 
 ### Real estate landing page
 
+![realestate landing pages](src/realestate/screenshots/brickstone.png)
+
+1. [Brick property](src/realestate/brickproperty) - [[Live preview](https://brickproperty.netlify.app/)]
 
 ### Attorney landing page
 

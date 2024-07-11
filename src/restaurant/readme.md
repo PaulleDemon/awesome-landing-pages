@@ -8,7 +8,7 @@ The names don't mean much, you can use any templates for your purpose
 
 [Live preview](https://bistro-rest.netlify.app/)
 
-![finance landing page](./screenshots/bistro.png) - 
+![restaurant landing page](./screenshots/bistro.png) - 
 
 
 #tailwind templates #website templates

@@ -4,11 +4,11 @@ Free restaurant templates
 
 The names don't mean much, you can use any templates for your purpose
 
-### Bistro
+### Brick landing page
 
-[Live preview](https://bistro-rest.netlify.app/)
+[Live preview](https://brickproperty.netlify.app/)
 
-![finance landing page](./screenshots/bistro.png) - 
+![realestate landing page](./screenshots/brickstone.png) - 
 
 
 #tailwind templates #website templates
