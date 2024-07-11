@@ -87,7 +87,9 @@ function onHeaderClickOutside(e) {
 
 
 function toggleHeader() {
-    // console.log("Colappse", isHeaderCollapsed)
+    
+    console.log("header white: ", headerWhiteBg)
+
     if (isHeaderCollapsed) {
         // collapseHeaderItems.classList.remove("max-md:tw-opacity-0")
         collapseHeaderItems.classList.add("opacity-100",)
@@ -114,6 +116,8 @@ function responsive() {
         collapseHeaderItems.style.width = ""
     }else{
         isHeaderCollapsed = true
+        collapseBtn.classList.add("bi-list", headerWhiteBg ? "primary-text-color" : null)
+
     }
 }
 

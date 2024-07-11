@@ -121,12 +121,17 @@ Here's the list of website templates
 
 ![Saas landing pages](saas/screenshots/finance.png)
 
-1. [Simple Finance](saas/finance) - [[Live preview](https://finance-saas-template.netlify.app/)]
+1. [Simple Finance](src/saas/finance) - [[Live preview](https://finance-saas-template.netlify.app/)]
 
-2. [CelestialSaaS](saas/CelestialSaaS/) - [[Live preview](https://celestialsaas.netlify.app/)]
+2. [CelestialSaaS](src/saas/CelestialSaaS/) - [[Live preview](https://celestialsaas.netlify.app/)]
 
 
 ### Restaurant landing page
+
+![restaurant landing page](restaurant/screenshots/bistro.png)
+
+1. [Bistro](src/restaurant/bistro) - [[Live preview](https://bistro-rest.netlify.app/)]
+
 
 
 ### Real estate landing page
