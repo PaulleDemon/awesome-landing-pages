@@ -130,16 +130,18 @@ Here's the list of website templates
 
 ![Saas landing pages](src/saas/screenshots/finance.png)
 
-1. [Simple Finance](src/saas/finance) - [[Live preview](https://finance-saas-template.netlify.app/)]
+**1. [Simple Finance](src/saas/finance)** - [[`Live preview`](https://finance-saas-template.netlify.app/)]
 
-2. [CelestialSaaS](src/saas/CelestialSaaS/) - [[Live preview](https://celestialsaas.netlify.app/)]
+**2. [CelestialSaaS](src/saas/CelestialSaaS/)** - [[`Live preview`](https://celestialsaas.netlify.app/)]
 
+
+### App landing pages
 
 ### Restaurant landing page
 
 ![restaurant landing page](src/restaurant/screenshots/bistro.png)
 
-1. [Bistro](src/restaurant/bistro) - [[Live preview](https://bistro-rest.netlify.app/)]
+1. **[Bistro](src/restaurant/bistro)** - [[`Live preview`](https://bistro-rest.netlify.app/)]
 
 
 
@@ -147,9 +149,10 @@ Here's the list of website templates
 
 ![realestate landing pages](src/realestate/screenshots/brickstone.png)
 
-1. [Brick property](src/realestate/brickproperty) - [[Live preview](https://brickproperty.netlify.app/)]
+1. **[Brick property](src/realestate/brickproperty)** - [[`Live preview`](https://brickproperty.netlify.app/)]
 
 ### Attorney landing page
+
 
 
 ## Credits
