@@ -3,12 +3,9 @@ module.exports = {
 	prefix: 'tw-',
 	important: false,
 	content: [
-		// "./**/*.{html, jsx, js}",
-		"./saas/CelestialSaaS/**/*.{html,jsx, js}",
-		"./saas/CelestialSaaS/**/*.js",
-		"./saas/CelestialSaaS/**/*.html",
-	
-		// "*.{html,jsx}"
+		"**/*.{html, jsx, js}",
+		"**/*.js",
+		"**/*.html",
 	],
 	theme: {
 		extend: {

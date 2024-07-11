@@ -1,9 +1,21 @@
 ## SaaS website templates
 
-While they have been named different, they can be used for any purposes, meaning the finance template
-can also be used for other landing pages and isn't constraint to just Finance
+Free SaaS templates
+
+The names don't mean much, you can use any templates for your purpose
 
 ### Finance template
-This is a simple finance landing page.
+This is a simple landing page
 
-![finance landing page](./screenshots/finance.png) - [Live preview](https://finance-saas-template.netlify.app/)
+[Live preview](https://finance-saas-template.netlify.app/)
+
+![finance landing page](./screenshots/finance.png) - 
+
+### Celestial SaaS Theme landing page
+
+[Live preview](https://celestialsaas.netlify.app/)
+
+![finance landing page](./screenshots/celestialsaas.png) 
+
+
+#tailwind templates #website templates
