@@ -119,7 +119,7 @@ Here's the list of website templates
 
 ### SaaS landing pages
 
-![Saas landing pages](saas/screenshots/finance.png)
+![Saas landing pages](src/saas/screenshots/finance.png)
 
 1. [Simple Finance](src/saas/finance) - [[Live preview](https://finance-saas-template.netlify.app/)]
 
@@ -128,7 +128,7 @@ Here's the list of website templates
 
 ### Restaurant landing page
 
-![restaurant landing page](restaurant/screenshots/bistro.png)
+![restaurant landing page](src/restaurant/screenshots/bistro.png)
 
 1. [Bistro](src/restaurant/bistro) - [[Live preview](https://bistro-rest.netlify.app/)]
 
