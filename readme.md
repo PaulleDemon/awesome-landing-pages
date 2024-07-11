@@ -15,6 +15,15 @@ Contains free and open-sourced website templates, including but not limited to S
 * Freelancers looking to show a prototype
 * SaaS Developers who don't want to spend too much time focusing on landing page, but instead want to ship more.
 * People who are learning HTML, css and JS 
+* People looking for inspiration and ideas
+
+## Why use website templates?
+Honestly at the end of the day most client/customer don't care if you 
+created your website from scratch or used a template, they just want their
+website running/ solve problem as quickly as possible.
+
+Using website templates will save you hours of work, so you can start looking
+for clients or dedicate your time elsewhere.
 
 
 ## Installation and setup

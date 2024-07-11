@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brick property</title>
+    <meta name="description" content="">
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+     <!-- Open Graph / Facebook -->
+     <meta property="og:title" content="Title of the project" />
+     <meta property="og:description" content="" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
+     <meta property="og:image" content="" />
+ 
+
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+
+    <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css">
+    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+
+<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#ffffff] 
+                tw-flex tw-flex-col">
+    
+    <header class="tw-flex tw-w-full tw-z-20
+                    tw-h-[60px]  
+                    lg:tw-justify-around
+                    tw-fixed tw-top-0 tw-px-[10%]
+                    max-lg:tw-mr-auto
+                    ">
+        <div class="tw-absolute tw-top-0 tw-left-0 tw-shadow-md
+                    tw-bg-white tw-h-0 tw-w-full tw-z-[-1]"
+                id="expanding-header-bg"   
+                    >
+        <!-- expands the white background as scroll -->
+        </div>
+
+        <div class="tw-flex tw-w-max tw-gap-3 tw-place-items-center">
+            <!-- <img src="./assets/public accountant.jpg"
+                alt="Stroemer logo" class="tw-w-full tw-h-full tw-object"> -->
+            <div class="tw-w-[50px] tw-h-[50px] tw-p-[4px]">
+                <img src="./assets/logo.png"
+                    alt="logo" class="tw-w-full tw-h-full tw-object">
+                
+            </div>
+      
+        </div>
+        <div class="collapsable-header animated-collapse"
+                    id="collapsed-items"
+                    >
+            <div class=" tw-w-max
+                            tw-flex tw-gap-5 tw-h-full lg:tw-mx-auto
+                            lg:tw-place-items-center 
+                            max-lg:tw-place-items-end
+                            tw-text-base max-lg:tw-flex-col
+                            max-lg:tw-mt-[30px]
+                            max-lg:tw-gap-5
+                            tw-text-white
+                        ">
+                    
+                <a class="header-links" href="">
+                    About us
+                </a>
+                <a class="header-links" href="">
+                    Team
+                </a>
+                <a class="header-links" href="">
+                    Projects
+                </a>
+                <a class="header-links" href="#booking">
+                    Contact us
+                </a>
+            
+            </div>
+            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-xl
+                         max-lg:!tw-text-white
+                         max-lg:tw-place-content-center
+                         max-lg:tw-w-full
+                         ">
+                <a href="https://www.instagram.com/" 
+                        target="_blank" 
+                        rel="no-referrer"
+                        area-label="instagram"
+                        class=" header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                        >
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/pauls_freeman"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="twitter"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="facebook"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+        <button class="tw-absolute tw-z-50 
+                        tw-right-3
+                        tw-top-3
+                         tw-text-3xl  bi bi-list lg:tw-hidden" 
+                onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
+            <!-- <i class="bi bi-list"></i> -->
+        </button>
+    </header>
+
+    <section class="tw-w-full tw-h-[100vh] max-lg:tw-h-[100dvh] tw-max-w-[100vw]
+                     tw-flex tw-flex-col tw-overflow-hidden tw-relative"
+                     id="hero-section"
+                     >
+        
+        <img src="./assets/images/homepage/hero-image.jpg" 
+                alt="" 
+                class=" tw-object-cover tw-scale-[1.3]
+                        tw-w-full tw-h-full"
+                id="hero-image"
+                >
+        <div class="tw-absolute tw-top-0 max-lg:tw-z-[2] tw-w-full tw-h-full 
+                    overlay-gradient max-lg:!tw-bg-[#1c1c1ca2]">
+
+        </div>
+
+        <!-- <div class="tw-absolute tw-bottom-0 
+                    tw-right-[10%] max-lg:tw-z-0
+                    tw-h-[750px]
+                    tw-max-w-[450px]
+                    max-md:tw-hidden
+                    ">
+            <img src="./assets/images/homepage/lawyer.png" 
+                alt="law" 
+                class="tw-object-cover tw-h-full tw-w-full
+                        ">
+        </div> -->
+
+        <div class="tw-absolute 
+                    tw-left-[15%]
+                    max-md:tw-left-[50%] 
+                    max-md:tw-translate-x-[-50%]
+                    tw-top-[50%] 
+                    tw-translate-y-[-50%]  
+                    tw-flex
+                    tw-flex-col
+                    tw-gap-4
+                    tw-p-2
+                    tw-z-[5]
+                    tw-max-w-[500px]
+                    max-md:tw-place-content-center
+                    max-md:tw-place-items-center
+                    tw-min-w-[320px]
+                  tw-text-white">
+
+            <h1 class="tw-text-xl khula-font 
+                  tw-font-semibold
+                  max-md:tw-text-base
+                  max-md:tw-text-center
+                  
+                  ">
+                Real estate . Property investment . Rentals   
+            </h1>
+        
+            <h2 class="tw-text-6xl khula-font 
+                        tw-font-bold
+                        max-md:tw-text-4xl
+                        tw-uppercase
+                        ">
+                Brick property investment
+                <!-- <br class="max-md:tw-hidden">     -->
+            </h2>
+            <span class="tw-text-lg max-md:tw-text-base 
+                        tw-mt-2 tw-w-full tw-text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At dolores sapiente, ipsa delectus ut consequuntur molestias earum libero aut quasi?
+            </span>
+            <div class="tw-flex max-md:tw-gap-4 tw-gap-[2%] 
+                            tw-mt-3 tw-w-full 
+                            max-md:tw-flex-col
+                            ">
+               
+                <a href=""
+                    target="_blank" rel="noreferrer"
+                    class="tw-p-3 tw-px-[20px] 
+                            tw-bg-white
+                            tw-text-black
+                            tw-flex
+                            tw-gap-2
+                            tw-min-w-[180px]
+                            max-md:tw-min-w-[100px]
+                            tw-place-content-center
+                            tw-place-items-center
+                            tw-duration-[0.3s]
+                            tw-transition-colors
+                            hover:tw-bg-[#100f0f]
+                            hover:tw-text-[#fff]
+                            tw-max-h-[50px]
+                            "
+                    >
+                    <span>Watch video</span> 
+                    <i class="bi bi-camera-video-fill"></i>
+                </a>
+
+                <a href="#booking"
+                    class="tw-p-3 
+                            tw-text-[#fff]
+                            tw-flex
+                            tw-gap-2
+                            tw-place-content-center
+                            tw-place-items-center
+                            tw-duration-[0.3s]
+                            tw-transition-transform
+                            tw-bg-[#000]
+                            tw-w-full
+                            hover:tw-translate-x-1
+                            "
+                    >
+                    <span>Contact us</span> 
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <section class="tw-w-full tw-flex 
+                    max-lg:tw-flex-col
+                    tw-place-content-center 
+                    tw-min-h-[60vh]
+                    tw-px-[20%]
+                    max-lg:tw-px-[5%]
+                    tw-p-4
+                    tw-gap-[10%]
+                    max-lg:tw-gap-[4%]
+                    tw-place-items-center
+                    tw-bg-[#fff]
+                    ">
+
+        <div class="tw-w-[350px] tw-h-[350px] tw-rounded-md 
+                    max-md:tw-w-[300px] max-md:tw-h-[300px]
+                    tw-flex tw-overflow-hidden
+                    max-md:tw-mt-[5%]
+                    ">
+            <img src="./assets/images/homepage/top-view.jpg" 
+                    alt="" class="tw-w-full tw-object-cover">
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-[5%] tw-h-full 
+                    max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center">
+            <h2 class="tw-text-5xl max-md:tw-text-3xl tw-uppercase
+                        primary-text-color tw-font-medium">Brick property investment</h2>
+            <div class="tw-max-w-[450px] tw-mt-6 tw-text-justify">
+                Welcome to Brick Property Investment, your premier destination for all things real estate, property investment, and rentals. Our dedicated team offers expert guidance and personalized solutions to help you navigate the intricate world of property investment. Whether you're looking to diversify your portfolio, find your dream home, or secure lucrative rental opportunities, trust Brick to deliver tailored strategies that meet your unique needs. Experience the difference with Brick Property Investment and unlock the full potential of your real estate ventures.
+            </div>
+        </div>
+        <div></div>
+    </section>
+
+    <section class="tw-w-full tw-flex 
+                    tw-flex-col
+                    tw-min-h-[60vh]
+                    max-md:tw-min-h-[unset]
+                    max-md:tw-h-max
+                    tw-px-[20%]
+                    max-md:tw-px-[5%]
+                    tw-p-8
+                    tw-gap-[10%]
+                    max-md:tw-gap-[4%]
+                    tw-place-items-center
+                    tw-bg-[#000]
+                    ">
+
+        <h2 class="tw-text-4xl max-md:tw-text-2xl tw-text-white tw-font-semibold">Discover properties</h2>
+        <!-- <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-text-center"></h2> -->
+
+        <div class="tw-w-full tw-mt-[5%] tw-flex 
+                    tw-gap-[10%]
+                    tw-justify-around
+                    max-md:tw-mt-8
+                    max-lg:tw-flex-col
+                    max-lg:tw-gap-5
+                    max-lg:tw-mt-4
+                    tw-place-items-center
+                    tw-place-content-center">
+
+            <div class="tw-w-full tw-flex tw-flex-wrap tw-gap-3 tw-border-solid 
+                        tw-border-2 tw-border-[#cccbcba0] tw-p-2
+                        tw-justify-around
+                        tw-rounded-sm">
+                <input type="text" class="input-light" 
+                        placeholder="City, area or street name" id="">
+
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-w-[200px]">
+                    <div class="dropdown input-light" id="dropdown1">
+                        <button class="dropdown-toggle tw-flex tw-gap-5">
+                            <span>Home type</span>
+                            <i class="bi bi-chevron-down tw-ml-auto"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>House</li>
+                            <li>Condo</li>
+                            <li>Townhome</li>
+                            <li>Apartment</li>
+                            <li>Commercial</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-w-[200px]">
+                    <div class="dropdown input-light" id="dropdown2">
+                        <button class="dropdown-toggle tw-flex tw-gap-5">
+                            <span>Bedrooms</span>
+                            <i class="bi bi-chevron-down tw-ml-auto"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>Any</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4+</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-w-[200px]">
+                    <div class="dropdown input-light" id="dropdown3">
+                        <button class="dropdown-toggle tw-flex tw-gap-5">
+                            <span>Bathrooms</span>
+                            <i class="bi bi-chevron-down tw-ml-auto"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>Any</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4+</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-1 tw-w-[200px]">
+                    <div class="dropdown input-light" id="dropdown4">
+                        <button class="dropdown-toggle tw-flex tw-gap-5">
+                            <span>Min price</span>
+                            <i class="bi bi-chevron-down tw-ml-auto"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>Any</li>
+                            <li>$50,000</li>
+                            <li>$100,000</li>
+                            <li>$200,000</li>
+                            <li>$200,000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="tw-w-full tw-mt-[5%] tw-flex 
+                    tw-gap-[10%]
+                    tw-justify-around
+                    max-md:tw-mt-8
+                    max-lg:tw-flex-col
+                    max-lg:tw-gap-5
+                    max-lg:tw-mt-4
+                    tw-place-items-center
+                    tw-place-content-center">
+
+            <a class="tw-flex tw-flex-col tw-gap-4
+                        tw-place-items-center
+                        tw-w-[350px]
+                        tw-h-[350px]
+                        tw-shadow-lg
+                        tw-overflow-hidden
+                        tw-bg-[#fff]
+                        tw-text-black
+                        tw-cursor-pointer
+                        "
+                        target="_blank"
+                        rel="noreferrer"
+                        href=""
+                        >
+
+                <div class="tw-w-full tw-h-[280px] tw-bg-white tw-relative">
+                    <img src="./assets/images/homepage/property.jpg" 
+                        alt="" class="tw-h-full tw-w-full tw-object-cover">
+                    
+
+                    <div class="tw-flex tw-flex-col tw-text-center tw-gap-1 tw-p-4">
+                        <h3 class="tw-text-lg tw-font-semibold">Rental</h3>
+                        <h4 class="tw-text-sm tw-text-[#595858]">$2000 PM</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a class="tw-flex tw-flex-col tw-gap-4
+                        tw-place-items-center
+                        tw-w-[350px]
+                        tw-h-[350px]
+                        tw-shadow-lg
+                        tw-overflow-hidden
+                        tw-bg-[#fff]
+                        tw-text-black
+                        tw-cursor-pointer
+                        "
+                        target="_blank"
+                        rel="noreferrer"
+                        href=""
+                        >
+
+                <div class="tw-w-full tw-h-[280px] tw-bg-white tw-relative">
+                    <img src="./assets/images/homepage/apartment.jpg" 
+                        alt="" class="tw-h-full tw-w-full tw-object-cover">
+                    
+
+                    <div class="tw-flex tw-flex-col tw-text-center tw-gap-1 tw-p-4">
+                        <h3 class="tw-text-lg tw-font-semibold">Apartment Sale</h3>
+                        <h4 class="tw-text-sm tw-text-[#595858]">$250,000</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a class="tw-flex tw-flex-col tw-gap-4
+                        tw-place-items-center
+                        tw-w-[350px]
+                        tw-h-[350px]
+                        tw-shadow-lg
+                        tw-overflow-hidden
+                        tw-bg-[#fff]
+                        tw-text-black
+                        tw-cursor-pointer
+                        "
+                        target="_blank"
+                        rel="noreferrer"
+                        href=""
+                        >
+
+                <div class="tw-w-full tw-h-[280px] tw-bg-white tw-relative">
+                    <img src="./assets/images/homepage/house.jpg" 
+                        alt="" class="tw-h-full tw-w-full tw-object-cover">
+                    
+
+                    <div class="tw-flex tw-flex-col tw-text-center tw-gap-1 tw-p-4">
+                        <h3 class="tw-text-lg tw-font-semibold">Home Sale</h3>
+                        <h4 class="tw-text-sm tw-text-[#595858]">$750,000</h4>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+
+        <a href=""
+                    target="_blank" rel="noreferrer"
+                    class="tw-p-3 tw-px-[20px] 
+                            tw-flex
+                            tw-gap-2
+                            tw-mt-[5%]
+                            tw-duration-[0.3s]
+                            tw-transition-transform
+                            tw-bg-[#fff]
+                           tw-text-[#181a18fd]
+                           hover:tw-translate-x-1
+                           max-md:tw-p-2
+                        "
+                    >
+                    <span>Explore more</span> 
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+        
+    </section>
+
+    <section class="tw-w-full tw-flex 
+                    tw-place-content-center 
+                    lg:tw-px-[10%]
+                    tw-p-4
+                    tw-gap-[10%]
+                    tw-place-items-center
+                    tw-bg-[#EFEFEF]
+                    max-md:tw-flex-col
+                    max-md:tw-px-2
+                    tw-overflow-hidden
+                    "
+                    id="booking"
+                    >
+
+        <div class="tw-w-[350px] tw-h-[350px] tw-flex 
+                    max-md:tw-hidden
+                    tw-overflow-hidden">
+            <img src="./assets/images/homepage/top-view.jpg" 
+                    alt="" class="tw-w-full tw-object-cover">
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-[5%] tw-h-full tw-mt-[5%]">
+            <div class="tw-flex tw-flex-col tw-gap-2 mxa-md:tw-text-center">
+                <h2 class="tw-text-3xl max-md:tw-text-xl  tw-font-medium">Get free quote</h2>
+                <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-font-medium">Contact us</h2>
+            </div>
+            <div class="tw-max-w-[450px] max-md:tw-max-w-[350px] 
+                        tw-place-content-center
+                        tw-p-2
+                        tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+               
+                <div class="tw-flex tw-w-[450px] max-md:tw-w-[340px] tw-flex-col tw-gap-4">
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Name</div>
+                        <input type="text" 
+                                class="input" 
+                                maxlength="10"
+                                required
+                                placeholder="name" >
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Phone</div>
+                        <input type="text" 
+                                class="input" 
+                                required
+                                placeholder="phone"
+                                >
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Email</div>
+                        <input type="email" 
+                                class="input" 
+                                required
+                                placeholder="email"
+                                id="email"
+                                >
+                    </div>
+
+                <div class="tw-flex tw-flex-col tw-w-full tw-gap-2">
+                    <div class="tw-text-gray-500">Enquiry</div>
+                    <textarea class="input tw-resize-y 
+                                     tw-w-full
+                                     tw-max-h-[250px]
+                                     tw-min-h-[40px]
+                                     "
+                                     placeholder="enquiry"
+                                     ></textarea>
+                    
+                </div>
+                
+                    
+                </div>
+
+                <a href="#" 
+                    class="btn
+                            tw-transition-transform
+                            hover:tw-translate-x-2
+                            tw-duration-[0.3s]
+                            tw-mt-5
+                            tw-ml-auto
+                        ">
+                    <span>Submit</span>  
+                    <i class="bi bi-arrow-right"></i> 
+                </a>
+
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-center">
+                <h3 class="tw-text-xl">Call</h3>
+                
+                <div class="tw-text-3xl primary-text-color">
+                    +61 111 111 111
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]
+                    
+                     tw-place-items-center">
+
+        <h3 class="tw-text-3xl max-md:tw-text-2xl primary-text-color tw-font-medium">
+            What some of our clients say
+        </h3>
+        
+        <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
+
+            <div class="review-container tw-flex tw-flex-col">
+                <div class="tw-flex tw-h-[150px] max-md:tw-h-[150px] tw-max-w-[550px]">
+                    <div class="slides fade tw-text-lg tw-text-justify">
+                        <q class="tw-italic tw-text-gray-600">
+                            One of the best property management around. Absolutely recommended!!
+                        </q>
+                        <div class="tw-mt-2 tw-text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-mt-3">- Rob Wilson</p>
+                    </div>
+                
+                    <div class="slides fade tw-text-lg tw-text-justify">
+                        <q class="tw-italic tw-text-gray-600">
+                            Amazing, got the contract ready very quickly and was able to move in on time. 
+                        </q>
+                        <div class="tw-mt-2 tw-text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-mt-3">- Tania</p>
+                    </div>
+
+                    <div class="slides fade tw-text-lg tw-text-justify">
+                        
+                        <q class="tw-italic tw-text-gray-600 ">
+                            Very happy with how they handled and managed property
+                        </q>
+                        <div class="tw-mt-2 tw-text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-mt-3">- Nick Surace</p>
+
+                    </div>
+                </div>
+              
+                <!-- Navigation dots -->
+                <div class="dots-container tw-mt-auto">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="tw-mt-[5%] tw-flex tw-flex-col tw-w-full tw-place-items-center tw-place-content-center tw-gap-5">
+            <h2 class="tw-text-3xl primary-text-color">On the map</h2>
+            <iframe src="https://www.google.com/maps/embed" 
+                    class="tw-w-[600px] 
+                            tw-h-[350px]
+                            max-md:tw-w-full
+                            "
+                    style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <section class="tw-w-full tw-flex 
+                    tw-flex-col
+                    tw-place-content-center 
+                    tw-px-[10%]
+                    tw-p-[5%]
+                    tw-gap-[10%]
+                    tw-place-items-center
+                    tw-bg-[#EFEFEF]
+                    ">
+
+        <div class="tw-w-full tw-place-content-center 
+                    tw-flex tw-flex-col tw-gap-3
+                    tw-place-items-center
+                    ">
+
+            <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color">Special Newsletter signup</h2>
+            <h2 class="tw-text-xl max-md:tw-text-lg">Be the first to know about upcoming properties</h2>
+
+            <div class="input tw-flex tw-h-[50px] tw-bg-white tw-p-2 
+                        tw-overflow-hidden tw-place-items-center ">
+                <input type="email" class="tw-w-full tw-h-full tw-bg-transparent tw-outline-none tw-px-3"
+                        placeholder="email"
+                    >
+                <button class="btn tw-h-[35px] 
+                            tw-duration-[0.3s]
+                            tw-transition-colors
+                            ">
+                    Signup
+                </button>   
+            </div>
+
+        </div>
+        
+
+    </section>
+
+
+    <footer class="tw-flex max-lg:tw-flex-col tw-w-full tw-p-[5%]
+                    tw-px-[10%] tw-place-content-around tw-gap-3 
+                    tw-bg-[#000]
+                    tw-text-white
+                    ">
+        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                    tw-gap-6 tw-place-items-center max-md:tw-w-full">
+            
+            <img src="./assets/logo.png" 
+                alt="logo" srcset="" class="tw-max-w-[100px] tw-max-h-[100px]">
+
+            <h2 class="tw-text-xl">BRICK PROPERTY INVESTMENT</h2>
+            <div>
+                unit 17/4 station Street,
+                <br>
+                Fairfield,
+                <br>
+                Sydney,
+                <br>
+                Australia
+            </div>
+            <div class="tw-mt-3 tw-font-semibold tw-text-lg">
+                Follow us
+            </div>
+            <div class="tw-flex tw-gap-4 tw-text-2xl">
+                <a href="" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            
+            </div>
+        </div>
+
+        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                    tw-gap-4">
+
+            <h2 class="tw-text-3xl max-md:tw-text-xl">
+                Services
+            </h2>
+            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">Properties</a>
+                <a href="" class="footer-link">Home worth estimate </a>
+                <a href="" class="footer-link">Buyer's consult</a>
+                <a href="" class="footer-link">Listing</a>
+            </div>
+        </div>
+    
+        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                    tw-gap-4">
+
+            <h2 class="tw-text-3xl max-md:tw-text-xl">
+                Resources
+            </h2>
+            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">About us</a>
+                <a href="" class="footer-link">FAQ</a>
+                <a href="" class="footer-link">Contact Us</a>
+                <a href="" class="footer-link">Locations</a>
+                <a href="" class="footer-link">Privacy policy</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="./scripts/utils.js"></script>
+<script src="index.js"></script>
+
+</html>

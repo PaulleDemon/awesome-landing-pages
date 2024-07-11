@@ -3,17 +3,14 @@ module.exports = {
 	prefix: 'tw-',
 	important: false,
 	content: [
-		"./**/*.{html, jsx, js}",
-		"./src/realestate/**/*.{html,jsx, js}",
-		"./src/realestate/**/*.js",
-		"./src/realestate/**/*.html",
-	
-		// "*.{html,jsx}"
+		"**/*.{html, jsx, js}",
+		"**/*.js",
+		"**/*.html",
 	],
 	theme: {
 		extend: {
 			colors: {
-				primary: "#BE3345"
+				primary: "#000"
 			}
 		},
 	},
