@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    background-color: #000;
+    cursor: none;
+}
+
+
+a, button {
+    cursor: none;
+}
+
+header {
+    background-color: #000000;
+}
+
+header > .collapsable-header {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: #000000;
+    place-content: center;
+    overflow: hidden;
+    /* transition: width 0.3s ease; */
+}
+
+.outline-effect {
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px black;
+}
+
+.animated-collapse {
+    transition: width 0.3s ease;
+}
+
+.header-links {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-width: fit-content;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-links:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fd343e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header-links:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header-black-bg {
+    color: #ffffff;
+}
+
+.header-black-bg:hover {
+    background-color: #fd343e !important;
+    color: #fff !important;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background-color: transparent;
+    pointer-events: none; /* Prevent it from interfering with mouse events */
+    z-index: 9999;
+    display: none; 
+}
+
+.cursor-div {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: small;
+    font-weight: 500;
+    padding: 4px 8px;
+    /* border: 1px solid #000; */
+    color: #fff;
+    background-color: #fd343e;
+    box-shadow: 0px 0px 10px 1px #f40a15d5;
+}
+
+.cursive-text {
+    font-family: 'Dancing Script', cursive;
+}
+
+.primary-text-color {
+    color: #fd343e;
+}
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.opacity-100 {
+    opacity: 100 !important;
+}
+
+.btn {
+    padding: 10px 15px;
+    width: max-content;
+    color: #f6f2f2;
+    background-color: #fd343e;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+select {
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select > option {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+}
+
+.btn:hover {
+}
+
+.input {
+    padding: 10px;
+    outline: none;
+    min-width: 100px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #cecece;
+    transition: border 0.3s;
+    cursor: none;
+}
+
+.input:active,
+.input:focus,
+.input:focus-within {
+    border: 2px solid #fd343e;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    outline: none;
+    /* background-color: #000; */
+    /* border: 1px solid #ccc; */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    border: 1px solid #f2f2f2;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    left: 0px;
+    top: 105%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+    /* cursor: pointer; */
+}
+
+.dropdown-menu li:hover {
+    background-color: #ff000084;
+}
+
+.slides {
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+    height: 100%;
+}
+
+#flip-image {
+    /* transform-origin: bottom center; */
+    transform: perspective(1200px) translateX(0px) translateY(12px) scale(0.8)
+        rotate(0deg) rotateX(70deg);
+    transition: transform 0.5;
+}
+
+.sliding-image-container {
+    position: relative;
+    width: max-content;
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    /* animation: slideLeft 80s linear infinite; 
+    transition: all 0.5s ease; */
+}
+
+
+.sliding-image {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.sliding-image-gradient{
+    pointer-events: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #000000 0%, #ffffff00 15%, #00000009 80%, #000000 100%);
+}
+
+/* Create keyframe animation */
+@keyframes slideLeft {
+    from {
+        transform: translateX(0%); /* Start off-screen to the left */
+    }
+    to {
+        transform: translateX(-50%); /* End off-screen to the right */
+    }
+}
+
+.footer-link {
+    color: #ebe9e9;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #cfced1;
+}
+
+
+@media not all and (min-width: 768px) {
+    header .collapsable-header {
+        position: absolute;
+        right: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        height: 100vh;
+        width: 0vw;
+        padding: 5px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        place-items: end;
+        background-color: #000;
+        color: #ffffff;
+        box-shadow: -3px 0px 10px #2f2f2f;
+    }
+
+    #flip-image {
+        /* transform-origin: bottom center; */
+        transform: perspective(1200px) translateX(0px) translateY(12px) scale(0.8)
+            rotate(0deg) rotateX(40deg);
+        transition: transform 0.5;
+    }
+
+    .sliding-image {
+        width: 250px;
+    }
+}

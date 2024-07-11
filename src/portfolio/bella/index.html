@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bella</title>
+    <meta name="description" content="">
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Title of the project" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
+    <meta property="og:image" content="" />
+
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+
+<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#000] 
+                tw-flex tw-flex-col tw-text-white">
+    
+    <div class="cursor">
+        <img src="./assets/cursor-pointer.svg" alt="cursor">
+        <div class="cursor-div">You</div>
+    </div>
+
+    <header class="tw-flex tw-w-full tw-z-20
+                    tw-h-[60px]  
+                    md:tw-justify-around
+                    tw-top-0 tw-px-[10%]
+                    max-md:tw-mr-auto
+                    ">
+        <div class="tw-w-[80px] tw-h-[60px] tw-flex">
+            <!-- <img src="./assets/nikole.png" 
+                  alt="logo" class="tw-object-cover"> -->
+        </div>
+        <div class="collapsable-header 
+                    animated-collapse
+                    max-md:tw-shadow-lg
+                    max-md:tw-drop-shadow-xl
+                    "
+                    id="collapsed-items"
+                    >
+            <div class=" tw-w-max
+                            tw-flex tw-gap-5 tw-h-full md:tw-mx-auto
+                            md:tw-place-items-center 
+                            max-md:tw-place-items-end
+                            tw-text-base max-md:tw-flex-col
+                            max-md:tw-mt-[30px]
+                            max-md:tw-gap-5
+                            
+                        ">
+                <a class="header-links" href="">
+                    About me
+                </a>
+                <a class="header-links" href="" 
+                    target="_blank" rel="no-referrer">
+                    Shop
+                </a>
+                <a class="header-links" href="">
+                    My blogs
+                </a>
+                <a class="header-links" href="">
+                    Contact me
+                </a>
+            </div>
+            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-xl
+                         max-md:!tw-text-white
+                         max-md:tw-place-content-center
+                         max-md:tw-w-full
+                         ">
+                <a href="https://www.instagram.com/" 
+                        target="_blank" 
+                        rel="no-referrer"
+                        area-label="instagram"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                        >
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="tiktok"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="youtube"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <button class="tw-absolute tw-text-white tw-z-50 
+                        tw-right-3
+                        tw-top-3
+                         tw-text-2xl  bi bi-list md:tw-hidden" 
+                onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
+            <!-- <i class="bi bi-list"></i> -->
+        </button>
+        
+    </header>
+
+    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-4
+                    tw-relative
+                    tw-place-items-center">
+
+        <h1 class="tw-text-8xl tw-mt-8 cursive-text
+                    tw-font-medium max-md:tw-text-4xl">
+            Bella
+        </h1>
+        
+        <div class="tw-mt-8 tw-text-gray-200 tw-max-w-[400px] tw-text-justify">
+            Bella is a content creator. 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum consectetur veniam, numquam, quibusdam, expedita itaque id tenetur ea iusto praesentium quidem debitis? Quo quis perspiciatis porro explicabo iusto, quasi consequatur?
+        </div>
+
+        <h2 class="tw-mt-[5%] tw-text-2xl">Follow me on</h2>
+
+        <div class="tw-mt-4 tw-flex tw-gap-4 tw-text-2xl">
+            <a href="https://www.instagram.com/" 
+                        target="_blank" 
+                        rel="no-referrer"
+                        area-label="instagram"
+                        class=" header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                        >
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="tiktok"
+                        class=" header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="youtube"
+                        class=" header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-youtube"></i>
+                </a>
+        </div>
+
+    </section>
+
+    <section class="tw-w-full  tw-max-w-[100vw]
+                    tw-mt-[2%]
+                    tw-flex tw-flex-col tw-overflow-hidden  
+                    tw-p-2 
+                    md:tw-px-[10%]" id="flip-section">
+        
+        <div class="slideshow-container tw-max-h-[650px] max-md:tw-h-[450px]  tw-h-full 
+                     tw-w-full tw-flex tw-flex-col tw-max-w-[850px]
+                     max-md:tw-mt-10
+                     " id="flip-image">
+            
+            
+            <img src="./assets/images/homepage/portrait.jpg" 
+                    alt="" class="tw-object-contain tw-w-full tw-h-full">
+
+        </div>
+              
+    </section>
+
+    <section class="tw-mt-[5%]
+                    tw-relative
+                    tw-flex tw-flex-col 
+                    tw-max-w-[100vw]
+                    tw-overflow-hidden">
+        
+        <div class="tw-h-[350px] max-md:tw-h-[250px] tw-w-full
+                    tw-flex tw-gap-4  sliding-image-container " id="sliding-images">
+
+        </div>
+        
+        <div class="tw-absolute tw-left-0 tw-top-0 tw-w-full tw-h-full tw-z-10 sliding-image-gradient">
+
+        </div>
+        
+    </section>
+
+
+    <section class="tw-w-full tw-flex tw-flex-col
+                    tw-place-content-center 
+                    max-md:tw-px-[5%]
+                    tw-p-[5%]
+                    tw-place-items-center
+                    ">
+        <h3 class="tw-text-5xl max-md:tw-text-3xl cursive-text tw-mt-10  tw-font-semibold">Get My Merch</h3>
+        
+        <div class="tw-w-full tw-flex 
+                    max-md:tw-flex-col 
+                    md:tw-place-content-center
+                    max-md:tw-place-items-center
+                    max-md:tw-gap-5 
+                    tw-gap-[5%] tw-mt-8">
+
+            <div class="tw-w-[350px] tw-h-[400px]
+                        tw-shadow-xl tw-relative
+                        tw-flex tw-flex-col tw-overflow-hidden">
+            
+                <div class="tw-w-full tw-h-full tw-overflow-clip">
+                    <img src="./assets/images/homepage/merch1.jpg" 
+                            alt="women dress" class="tw-w-full tw-h-full tw-object-cover">
+                </div>
+                <div class="tw-absolute tw-bottom-0 tw-w-full tw-flex tw-flex-col
+                            tw-place-items-center tw-mt-2 tw-p-2 tw-bg-[#121212c0]">
+                    <h2 class="tw-text-xl tw-font-medium">
+                        Fancy Yellow 
+                    </h2>
+
+                    <a href="" 
+                        class="btn tw-mt-2">
+                        Get now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="tw-w-[350px] tw-h-[400px]
+                        tw-shadow-xl tw-relative
+                        tw-flex tw-flex-col tw-overflow-hidden">
+            
+                <div class="tw-w-full tw-h-full tw-overflow-clip">
+                    <img src="./assets/images/homepage/merch2.jpg" 
+                            alt="women dress" class="tw-w-full tw-h-full tw-object-cover">
+                </div>
+                <div class="tw-absolute tw-bottom-0 tw-w-full tw-flex tw-flex-col
+                            tw-place-items-center tw-mt-2 tw-p-2 tw-bg-[#121212c0]">
+                    <h2 class="tw-text-xl tw-font-medium">
+                        Pretty white 
+                    </h2>
+
+                    <a href="" 
+                        class="btn tw-mt-2">
+                        Get now
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-w-[350px] tw-h-[400px]
+                        tw-shadow-xl tw-relative
+                        tw-flex tw-flex-col tw-overflow-hidden">
+            
+                <div class="tw-w-full tw-h-full tw-overflow-clip">
+                    <img src="./assets/images/homepage/merch3.jpg" 
+                            alt="women dress" class="tw-w-full tw-h-full tw-object-cover">
+                </div>
+                <div class="tw-absolute tw-bottom-0 tw-w-full tw-flex tw-flex-col
+                            tw-place-items-center tw-mt-2 tw-p-2 tw-bg-[#121212c0]">
+                    <h2 class="tw-text-xl tw-font-medium">
+                        Shy pink 
+                    </h2>
+
+                    <a href="" 
+                        class="btn tw-mt-2">
+                        Get now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="tw-w-full tw-flex 
+                    tw-place-content-center 
+                    tw-px-[10%]
+                    tw-p-4
+                    tw-gap-[10%]
+                    tw-place-items-center
+                 
+                    max-md:tw-flex-col
+                    tw-overflow-hidden
+                    "
+                    id="book"
+                    >
+
+        <div class="tw-w-[350px] tw-h-[350px] tw-rounded-md tw-flex 
+                    max-md:tw-hidden
+                    tw-overflow-hidden">
+            <img src="./assets/images/homepage/merch1.jpg" 
+                    alt="women" class="tw-w-full tw-object-cover">
+        </div>
+        <div class="tw-flex tw-flex-col tw-gap-8 tw-h-full tw-mt-[5%]">
+            <div class="tw-flex tw-flex-col tw-gap-2">
+                <h2 class="tw-text-6xl max-md:tw-text-2xl cursive-text tw-font-medium">Contact</h2>
+                <div class="tw-text-lg max-md:tw-text-sm tw-whitespace-pre-line">
+                    Looking to sponsor or collaborate? Just fill your enquiry below and 
+                    I'll reach out to you :)
+                </di>
+            </div>
+            <div class="md:tw-w-[400px] tw-flex tw-flex-col tw-gap-3">
+               
+                <div class="tw-flex tw-flex-col tw-gap-4">
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Name</div>
+                        <input type="text" 
+                                class="input" 
+                                maxlength="10"
+                                required
+                                placeholder="name" >
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Phone</div>
+                        <input type="text" 
+                                class="input" 
+                                required
+                                placeholder="phone"
+                                >
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Email</div>
+                        <input type="email" 
+                                class="input" 
+                                required
+                                placeholder="email"
+                                id="email"
+                                >
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Reason</div>
+                        <div class="dropdown input" id="dropdown1">
+                            <button class="dropdown-toggle tw-flex tw-gap-5">
+                                <span>Select Option</span>
+                                <i class="bi bi-chevron-down tw-ml-auto"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>collaborate</li>
+                                <li>Sponsorships</li>
+                                <li>Others</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <div class="tw-text-gray-500">Enquiry</div>
+                        <textarea title="enquiry" placeholder="enquiry" class="input tw-resize-y 
+                                         tw-w-full
+                                         tw-max-h-[250px]
+                                         tw-min-h-[40px]
+                                         "></textarea>
+                    </div>
+                </div>
+                
+                <a href="#" 
+                    class="btn
+                            tw-transition-transform
+                            hover:tw-translate-x-2
+                            tw-duration-[0.3s]
+                            tw-mt-5
+                            tw-ml-auto
+                            tw-flex tw-gap-2
+                        ">
+                    <span>Send enquiry</span>  
+                    <i class="bi bi-arrow-right"></i> 
+                </a>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="tw-w-full  tw-max-w-[100vw]
+    tw-mt-[2%] tw-place-content-center tw-place-items-center
+    tw-flex tw-flex-col tw-overflow-hidden tw-px-2 md:tw-px-[10%]">
+
+        <h2 class="tw-text-4xl cursive-text tw-font-semibold max-md:tw-text-2xl">Watch my latest vlog</h2>
+        
+        <div class="tw-mt-[5%]">
+            <iframe width="560" height="315"
+                class="
+                        tw-w-[650] tw-h-[450]
+                        max-md:tw-w-full
+                        max-md:tw-h-[250px]
+                        "   
+                src="https://www.youtube.com/embed/gKwI3bqO5Cg?si=3L6iY8vndO0-xrs9" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <section class="tw-w-full tw-flex tw-flex-col
+                    tw-place-content-center 
+                    tw-px-[10%]
+                    tw-p-[5%]
+                    tw-gap-[10%]
+                    tw-place-items-center
+                    ">
+
+        <div class="tw-w-full tw-place-content-center 
+                    tw-flex tw-flex-col tw-gap-3
+                    tw-place-items-center
+                    ">
+
+            <h2 class="tw-text-3xl max-md:tw-text-xl cursive-text primary-text-color">Special Newsletter signup</h2>
+            <h2 class="tw-text-xl max-md:tw-text-lg tw-text-gray-300">Get updates, tips and offers!</h2>
+
+            <div class=" tw-flex tw-h-[50px] tw-gap-3 input !tw-p-0
+                        tw-overflow-hidden tw-place-items-center ">
+                <input type="email" class="tw-w-full tw-h-full 
+                                        tw-cursor-none
+                                        tw-bg-transparent tw-outline-none tw-px-3"
+                        placeholder="email"
+                    >
+                <button class="btn tw-h-[35px] 
+                            tw-duration-[0.3s]
+                            tw-transition-colors
+                            tw-h-full
+                            ">
+                    Signup
+                </button>   
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
+                    tw-px-[10%] tw-place-content-around tw-gap-3 
+                    tw-text-white
+                    ">
+        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                    tw-gap-4 tw-mr-auto">
+
+            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-xl
+                         max-md:!tw-text-white
+                         max-md:tw-place-content-center
+                         max-md:tw-w-full
+                         ">
+                <a href="https://www.instagram.com/" 
+                        target="_blank" 
+                        rel="no-referrer"
+                        area-label="instagram"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                        >
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="tiktok"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="youtube"
+                        class="header-links
+                                tw-transition-colors
+                                tw-duration-[0.3s]
+                                "
+                            >
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="./scripts/utils.js"></script>
+<script src="index.js"></script>
+
+</html>
