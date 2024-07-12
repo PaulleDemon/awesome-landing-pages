@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestial SaaS</title>
+    <title>Chat Origin</title>
     <meta name="description" content="">
-    <link rel="shortcut icon" href="./assets/logo/logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Title of the project" />
@@ -16,35 +16,27 @@
     <meta property="og:image" content="" />
   
 
-    <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css">
-    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
     <link rel="stylesheet" href="css/index.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
-<body class="tw-min-h-[100vh] tw-bg-[#ffffff] tw-flex tw-flex-col">
+<body class="tw-min-h-[100vh] tw-bg-[#fff] tw-flex tw-flex-col">
     
-    <div class="tw-flex tw-absolute tw-top-0 tw-w-full tw-h-[150px]">
-
-        <div class="header-gradient tw-w-full tw-h-full">
-
-        </div>
-
-    </div>
 
     <header class="tw-flex tw-w-full tw-z-20
                     tw-h-[60px]  
-                    lgtw-max-w-lg:tw-justify-around
+                    lg:tw-justify-around
                     tw-absolute tw-top-0 tw-px-[5%]
-                    tw-max-w-lg:tw-px-4
-                    tw-max-w-lg:tw-mr-auto
+                    max-lg:tw-px-4
+                    max-lg:tw-mr-auto
                     tw-bg-opacity-0
-                    tw-text-black
                     ">
         <a class="tw-w-[50px] tw-h-[50px] tw-p-[4px]" href="">
-            <img src="./assets/logo/logo1.png" 
+            <img src="./assets/logo.png" 
                   alt="logo" class="tw-w-full tw-h-full tw-object">
         </a>
         <div class="collapsible-header animated-collapse  max-lg:tw-shadow-md"
@@ -70,7 +62,10 @@
                     Features
                 </a>
                 <a class="header-links" href="">
-                    Company
+                    Blog
+                </a>
+                <a class="header-links" href="">
+                    Contact us
                 </a>
             </div>
             <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-base
@@ -85,7 +80,7 @@
                     class=" 
                             tw-py-2
                             tw-px-3
-                            tw-rounded-full
+                            tw-rounded-md
                             tw-bg-primary
                             tw-text-white
                             hover:tw-translate-x-2
@@ -93,8 +88,8 @@
                             tw-duration-[0.3s]
                         "   
                         >
-                    <span>Get started</span>
-                    <i class="bi bi-arrow-right"></i>
+                    <span>Download</span>
+                    <i class="bi bi-apple"></i>
                 </a>
             </div>
         </div>
@@ -108,90 +103,83 @@
 
     <section class="tw-w-full tw-min-h-[100vh] tw-max-w-[100vw]
                         max-md:tw-mt-[50px]
-                        max-lg:tw-p-4
+                        max-lg:tw-p-4 
                         tw-flex tw-flex-col tw-overflow-hidden tw-relative"
                         >
             
-            <div class="tw-w-full tw-h-full tw-p-[5%]
-                        tw-place-content-center tw-min-h-[100vh]
-                        tw-gap-6 max-xl:tw-place-items-center
-                        tw-flex tw-flex-col">
+        <div class="tw-w-full tw-h-full tw-p-[5%]
+                    tw-place-content-center tw-min-h-[100vh]
+                    tw-gap-6 max-xl:tw-place-items-center
+                    tw-flex max-lg:tw-flex-col">
 
-                <div class="tw-flex tw-flex-col tw-place-content-center tw-items-center">
-                    <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold 
-                                tw-leading-[80px] tw-text-center
-                                max-md:tw-leading-snug tw-uppercase" 
-                                >
-                        <span>
-                            Re-imagining the Future
-                        </span>
-                        <br>
-                        <span class="tw-text-primary">
-                            of Software
-                        </span>
-                    </div>  
-                    <div class="tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error adipisci corrupti accusamus reiciendis similique assumenda nostrum fuga dicta vitae ipsum.                        
-                    </div>
-                    
-                    <div class="tw-mt-4 tw-flex 
-                                tw-overflow-hidden tw-gap-4 
-                                tw-p-2
-                                tw-place-items-center ">
-                       
-                        <a class="btn  
-                                    tw-duration-[0.3s]
-                                    hover:tw-scale-x-[1.03]
-                                    tw-transition-transform
-                                    "
-                                    href=""
-                                    >
-                            Get started
-                        </a>  
-                        <a class="btn  
-                                    !tw-text-primary
-                                    !tw-bg-[#c8cbf984]
-                                    tw-duration-[0.3s]
-                                    hover:tw-scale-x-[1.03]
-                                    tw-transition-transform
-                                    "
-                                    href=""
-                                    >
-                            <span>Learn more</span>
-                        </a>  
-                    </div>
-
-                    <div class="tw-flex tw-mt-6 tw-gap-4 tw-text-2xl reveal">
-                        
-                    </div>
-
+            <div class="tw-flex tw-flex-col tw-place-content-center">
+                <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold 
+                            tw-leading-[80px]
+                            max-md:tw-leading-snug tw-uppercase" 
+                            >
+                    <span>
+                        Connect instantly
+                    </span>
+                    <br>
+                    <span class="tw-text-primary">
+                        with customers
+                    </span>
+                </div>  
+                <div class="tw-mt-10 tw-max-w-[450px] tw-text-justify tw-p-2 max-lg:tw-max-w-full">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error adipisci corrupti accusamus reiciendis similique assumenda nostrum fuga dicta vitae ipsum.                        
                 </div>
                 
-                <div class="tw-w-full tw-flex tw-place-content-center 
-                                tw-place-items-center tw-overflow-hidden">
-                    <div class="tw-relative tw-w-fit
-                                tw-flex tw-place-items-center tw-place-content-center">
-
-                        <div class="tw-overflow-hidden tw-flex 
-                                        tw-max-w-[650px] 
-                                        tw-max-h-[550px] 
-                                        tw-min-h-[450px] 
-                                        tw-min-w-[350px] 
-                                        max-lg:tw-max-h-[320px]
-                                        max-lg:tw-min-h-[150px]
-                                        max-lg:tw-h-fit
-                                        max-lg:tw-w-[320px]
-                                        tw-rounded-2xl tw-shadow-xl">
-                                <img src="./assets/images/home/dashboard.png" 
-                                        alt="dashboard" class="tw-h-full tw-w-full 
-                                                                tw-object-cover max-lg:tw-object-contain" 
-                                        >
-                               
-                        </div>
-                    </div>
-                </div> 
+                <div class="tw-mt-4 tw-flex 
+                            tw-overflow-hidden tw-gap-4 
+                            tw-p-2
+                            tw-place-items-center ">
+                    
+                    <a class="btn  
+                                tw-duration-[0.3s]
+                                hover:tw-scale-x-[1.03]
+                                tw-transition-transform
+                                "
+                                href=""
+                                >
+                        Get started
+                    </a>  
+                    <a class="btn  
+                                !tw-text-primary
+                                !tw-bg-[#c8cbf984]
+                                tw-duration-[0.3s]
+                                hover:tw-scale-x-[1.03]
+                                tw-transition-transform
+                                "
+                                href=""
+                                >
+                        <span>Learn more</span>
+                    </a>  
+                </div>
 
             </div>
+            
+            <div class="tw-w-full tw-flex tw-place-content-center tw-max-w-[50%] 
+                            tw-place-items-center tw-overflow-hidden max-lg:tw-max-w-[unset]">
+                
+                <div class="tw-overflow-hidden tw-flex 
+                                tw-max-w-[650px] 
+                                tw-max-h-[580px] 
+                                tw-min-h-[450px] 
+                                tw-min-w-[350px] 
+                                max-lg:tw-max-h-[320px]
+                                max-lg:tw-min-h-[180px]
+                                max-lg:tw-h-fit
+                                max-lg:tw-w-[320px]
+                                max-lg:tw-min-w-[320px]
+                                ">
+                    <img src="./assets/images/home/iphone.png" 
+                            alt="app" class="tw-h-full tw-w-full 
+                                            tw-object-contain">
+                        
+                </div>
+            </div> 
+
+        </div>
         
     </section>
     <section class="tw-w-full  tw-max-w-[100vw]
@@ -200,54 +188,35 @@
                     tw-place-content-center
                     tw-p-6
                     "
+                    id="numbers"
                     >
-        <div class="tw-flex tw-w-full tw-gap-10 tw-place-content-center ">
-            <!-- add the brands using your app  -->
-            <div class="tw-w-[150px] tw-h-[30px]">
-                <img src="./assets/images/brand-logos/google.svg" alt="Google"
-                    class="tw-w-full tw-h-full 
-                            tw-object-contain tw-grayscale
-                            hover:tw-grayscale-0
-                            tw-transition-colors
-                            " srcset="">
-            </div>
-            <div class="tw-w-[150px] tw-h-[30px]">
-                <img src="./assets/images/brand-logos/microsoft.svg" alt="Microsoft"
-                    class="tw-w-full tw-h-full tw-object-contain 
-                            tw-grayscale 
-                            hover:tw-grayscale-0
-                            tw-transition-colors"
-                    srcset="">
-            </div>
-            <div class="tw-w-[150px] tw-h-[30px]">
-                <img src="./assets/images/brand-logos/adobe.svg" alt="Adobe"
-                    class="tw-w-full tw-h-full tw-object-contain tw-grayscale
-                            hover:tw-grayscale-0
-                            tw-transition-colors
-                    " srcset="">
-            </div>
-        </div>
+        <div class="tw-flex tw-flex-col tw-gap-8 tw-place-items-center">
+            <h3 class="tw-text-3xl">In numbers</h3>
+            <div class="tw-flex max-md:tw-flex-col tw-w-full tw-gap-10 tw-place-content-center"
+                  id="numbers-container"  >
+                <div >
+                    <span class="tw-text-6xl max-lg:tw-text-4xl" >
+                        <span id="installs">250</span><span>k +</span>
+                    </span>
+                    <span class="tw-text-xl tw-font-medium tw-text-gray-800">
+                        /Installs
+                    </span>
+                    
+                </div>
+                <div class="tw-text-6xl">
+                    <span class="tw-text-6xl max-lg:tw-text-4xl">
+                        <span id="hours">400</span>
+                        <span>+</span>
+                    </span>
+                    <span class="tw-text-xl tw-font-medium tw-text-gray-800">
+                        /hrs saved
+                    </span>
+                </div>
 
-    </section>
-    <section class="tw-w-full  tw-max-w-[100vw]
-                    tw-flex tw-flex-col tw-overflow-hidden tw-relative 
-                    tw-place-items-center
-                    tw-place-content-center
-                    tw-p-6
-                    "
-                    >
-        <div class="tw-flex tw-flex-col tw-gap-5 tw-text-center tw-max-w-[750px]">
-            <h2 class="tw-text-4xl max-lg:tw-text-3xl tw-mt-10 tw-font-semibold ">
-                Simple. 
-                <span class="tw-text-primary">Fast.</span>
-                Loved
-            </h2>
-
-            <div class=" tw-text-gray-700 ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus consequatur odit exercitationem repellendus, recusandae ratione at tenetur, omnis dicta tempore dolor saepe quos doloremque tempora quibusdam. Aspernatur deserunt voluptatem aliquid.
             </div>
         </div>
     </section>
+  
 
     <section class="tw-w-full  tw-max-w-[100vw]
                     tw-flex tw-flex-col tw-overflow-hidden tw-relative 
@@ -260,7 +229,7 @@
         <div class="tw-mt-8 tw-flex tw-flex-col tw-gap-5 tw-place-items-center">
             <div class="tw-flex tw-flex-col tw-gap-3 tw-text-center tw-mt-5">
                 <h3 class="tw-text-xl tw-text-primary">Features loved by our clients</h>
-                <h2 class="tw-text-4xl tw-font-semibold">Core features</h2>
+                <h2 class="tw-text-4xl tw-font-semibold">Features</h2>
             </div>
             <div class="tw-flex tw-flex-wrap tw-max-w-[60%] tw-place-content-center tw-mt-6 max-lg:tw-flex-col tw-gap-2">
                 <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
@@ -344,7 +313,7 @@
 
                 </div>
                 <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, vero.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sequi sunt velit aut omnis nulla ut, autem corrupti nemo optio ipsam amet ducimus illum? Repellendus itaque autem alias eos quis.
                 </p>
             </div>
             <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
@@ -508,6 +477,62 @@
         </div>
 
     </section>
+    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
+                     tw-place-items-center" id="pricing">
+
+        <h3 class="tw-text-3xl max-md:tw-text-2xl tw-text-primary tw-font-medium">
+            Read more
+        </h3>
+        <!-- pricing -->
+        <div class="tw-flex tw-flex-wrap tw-gap-8 tw-place-content-center max-lg:tw-flex-col tw-mt-10">
+
+            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[300px] tw-p-2 tw-flex tw-flex-col 
+                        tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl tw-overflow-clip">
+
+                <div class="tw-rounded-md tw-overflow-hidden tw-h-[200px] tw-w-full">
+                    <img src="./assets/images/home/sample.jpg" 
+                        alt="article image" 
+                        class="tw-w-full tw-h-full tw-object-cover"
+                        srcset="">
+                </div>
+                <h3 class="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                    Article 1
+                </h3>
+                <p class="tw-text-center tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
+               
+            </a>
+            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[300px] tw-p-2 tw-flex tw-flex-col 
+                        tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl tw-overflow-clip">
+
+                <div class="tw-rounded-md tw-overflow-hidden tw-h-[200px] tw-w-full">
+                    <img src="./assets/images/home/sample.jpg" 
+                        alt="article image" 
+                        class="tw-w-full tw-h-full tw-object-cover"
+                        srcset="">
+                </div>
+                <h3 class="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                    Article 2
+                </h3>
+                <p class="tw-text-center tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
+               
+            </a>
+            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[300px] tw-p-2 tw-flex tw-flex-col 
+                        tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl tw-overflow-clip">
+
+                <div class="tw-rounded-md tw-overflow-hidden tw-h-[200px] tw-w-full">
+                    <img src="./assets/images/home/sample.jpg" 
+                        alt="article image" 
+                        class="tw-w-full tw-h-full tw-object-cover"
+                        srcset="">
+                </div>
+                <h3 class="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                    Article 3
+                </h3>
+                <p class="tw-text-center tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
+               
+            </a>
+        </div>
+    </section>
 
     <section class="tw-w-full tw-flex 
                     tw-flex-col
@@ -553,7 +578,7 @@
         <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
                     tw-gap-6 tw-place-items-center max-md:tw-w-full">
             
-            <img src="./assets/logo/logo1.png" 
+            <img src="./assets/logo.png" 
                 alt="logo" srcset="" class="tw-max-w-[120px]">
             <div>
                 2 Lord Edward St,   
@@ -597,6 +622,10 @@
     </footer>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js" integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 <script src="./index.js"></script>
 

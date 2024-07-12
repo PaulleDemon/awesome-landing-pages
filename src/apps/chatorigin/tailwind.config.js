@@ -3,17 +3,14 @@ module.exports = {
 	prefix: 'tw-',
 	important: false,
 	content: [
-		// "./**/*.{html, jsx, js}",
-		"./src/apps/**/*.{html,jsx, js}",
-		"./src/apps/**/*.js",
-		"./src/apps/**/*.html",
-	
-		// "*.{html,jsx}"
+		"**/*.{html, jsx, js}",
+		"**/*.js",
+		"**/*.html",
 	],
 	theme: {
 		extend: {
 			colors: {
-				primary: "#155eef",
+				primary: "#155eef"
 			}
 		},
 	},

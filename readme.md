@@ -5,17 +5,19 @@ Contains free and open-sourced website templates, including but not limited to S
 **[Continuously developed]** Feel free to star this repository. More templates will be uploaded from time to time.
 
 ## Features
-* Responsive
+* Responsive.
+* Technical SEO optimized (uses correct tags, like h1, h2, section etc)
 * Tailwind built in, for rapid development (uses tw- to separate tailwind classes)
 * Quick customization, change only texts.
 * Frontend framework independent: Comes with basic html, css just enough for your perfect landing page, you are free to modify and use any frontend framework (React, Vue) if required.
 
 ## Whom is this suitable for?
 * Developers who have tight deadlines.
-* Freelancers looking to show a prototype
+* Freelancers looking to show a prototype or use a template to build faster.
 * SaaS Developers who don't want to spend too much time focusing on landing page, but instead want to ship more.
-* People who are learning HTML, css and JS 
-* People looking for inspiration and ideas
+* App developer who wants to have a web landing page. (helps with your SEO game)
+* People who are learning HTML, css and JS.
+* People looking for inspiration and ideas.
 
 ## Why use website templates?
 Honestly at the end of the day most client/customer don't care if you 
@@ -99,7 +101,7 @@ module.exports = {
 @layer components{
 }
 ```
-
+> [!NOTE]
 **For django developers:**
 If you are using Django + tailwind see how to set up in this article: [Adding tailwind to django](https://dev.to/paul_freeman/adding-tailwind-css-to-django-14a)
 
@@ -139,6 +141,11 @@ Here's the list of website templates
 
 
 ### App landing pages
+![app landing page](src/apps/screenshots/chat-origin.png)
+
+1. **[Chatorigin](src/apps/chatorigin)** - [[`Live preview`](https://chatorigin.netlify.app/)]
+
+
 
 ### Restaurant landing page
 

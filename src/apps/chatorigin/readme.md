@@ -2,6 +2,6 @@
 >[!NOTE]
 This theme uses GSAP library, make sure to refer to their licensing.
 
-Theme color: 
-1. #000
-2. #fff
+Theme: 
+1. #155eef
+2. 

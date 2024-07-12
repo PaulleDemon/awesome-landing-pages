@@ -1,5 +1,6 @@
 
-Please note, this repo uses gsap library, make sure to read their license.
+>[!NOTE]
+This theme uses GSAP library, make sure to refer to their licensing.
 
 Theme color: 
 1. #BE3345
