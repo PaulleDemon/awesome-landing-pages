@@ -100,6 +100,9 @@ module.exports = {
 }
 ```
 
+**For django developers:**
+If you are using Django + tailwind see how to set up in this article: [Adding tailwind to django](https://dev.to/paul_freeman/adding-tailwind-css-to-django-14a)
+
 ### Running and building
 1. To run the tailwind use `npm run start:tailwind`
 2. To build the tailwind use `npm run build:tailwind`
