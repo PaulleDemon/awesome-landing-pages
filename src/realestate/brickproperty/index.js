@@ -64,21 +64,6 @@ ScrollTrigger.create({
     }
 })
 
-const menuItemContainer = document.querySelectorAll(".menu-item-container")
-
-menuItemContainer.forEach(e => {
-
-    const img = e.querySelector("img")
-    e.addEventListener("mouseenter", () => {
-        img.style.scale = 1.1
-    })
-
-    e.addEventListener("mouseleave", () => {
-        img.style.scale = 1
-    })
-
-})
-
 
 const reviewContainer = document.querySelector(".review-container")
 const reviewSlideShow = new SlideShow(reviewContainer, true, 10000)
@@ -127,8 +112,4 @@ function responsive() {
 }
 
 window.addEventListener("resize", responsive)
-
-
-
-// function
 

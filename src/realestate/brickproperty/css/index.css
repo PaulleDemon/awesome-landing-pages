@@ -174,30 +174,6 @@ q::after {
     animation-duration: 1.5s;
 }
 
-.menu-item-container{
-
-}
-
-.menu-btn{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    transform: translate(-50%, -50%);
-    z-index: 5;
-    color: #000;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.menu-btn:hover{
-    background-color: #8C674C;
-    color: #fff;
-}
 
 
 .footer-link{

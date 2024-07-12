@@ -28,24 +28,6 @@ gsap.to(flipImage, {
 })
 
 
-const menuItemContainer = document.querySelectorAll(".menu-item-container")
-
-// document.body.addEventListener("mouseleave")
-
-menuItemContainer.forEach(e => {
-
-    const img = e.querySelector("img")
-    e.addEventListener("mouseenter", () => {
-        img.style.scale = 1.1
-    })
-
-    e.addEventListener("mouseleave", () => {
-        img.style.scale = 1
-    })
-
-})
-
-
 function onHeaderClickOutside(e){
 
     if (!collapseHeaderItems.contains(e.target)){

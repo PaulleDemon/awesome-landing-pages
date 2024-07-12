@@ -155,11 +155,17 @@ Here's the list of website templates
 
 ### Portfolio
 
-![portfolio landing page](src/portfolio/screenshots/bella.png) - 
+![portfolio landing page](src/portfolio/screenshots/bella.png) 
 
 1. **[Bella Youtuber](src/portfolio/bella)** - [[`Live preview`](https://bella-youtuber.netlify.app/)]
 
 
+### Other website templates
+
+![carwash landing page](src/others/screenshots/carwash.png) 
+
+
+1. **[Supreme Carwash](src/others/carwash)** - [[`Live preview`](https://supremecarwash.netlify.app/)]
 
 
 ## Credits
