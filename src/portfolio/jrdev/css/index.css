@@ -54,12 +54,27 @@ header > .collapsible-header{
     color: var(--primary-text-color);
 }
 
-.opacity-0{
-    opacity: 0 !important;
+.link{
+    transition: color 0.5s;
 }
 
-.opacity-100{
-    opacity: 100 !important;
+.link:hover{
+    color: var(--primary-text-color);
+}
+
+.tab-btn{
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 6px;
+}
+
+.tab-btn:hover{
+    background-color: #c8cbf984;
+    color: var(--primary-text-color);
+}
+
+.tab-active{
+    background-color: var(--btn-bg);
 }
 
 .btn{
@@ -86,7 +101,7 @@ header > .collapsible-header{
     padding: 10px;
     background-color: transparent;
     border-radius: 6px;
-    /* outline: none; */
+    outline: none;
     min-width: 100px;
     border: 2px solid #818080;
     transition: border 0.3s;
@@ -96,75 +111,6 @@ header > .collapsible-header{
     border: 2px solid var(--input-hover-bd-color);
 }
 
-.input-error{
-    border-bottom: 3px solid #ff1e1e;
-}
-
-.input-error:focus-within{
-    border-bottom: 3px solid #fd0101;
-}
-
-
-/* Navigation dots styling */
-.dots-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-link{
-    color: #0d0d0d;
-    transition: color 0.3s;
-}
-
-.footer-link:hover{
-    color: #483cf4;
-}
-
-
-.review-container {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-}
-
-.review-card{
-    box-shadow: 0px 2px 4px #757474a0;
-    border-radius: 15px;
-    /* width: 200px; */
-    /* height: 550px; */
-    padding: 10px;
-}
-
-/* --------- collapsible div ---------- */
-.collapsible {
-    background-color: #f3f0f0;
-    color: #2b2929;
-    /* cursor: pointer; */
-    padding: 5px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
-    transition: 0.4s;
-}
-
-/* Style for the collapsible content */
-.content {
-    padding: 0 18px;
-    /* display: none; */
-    height: 0px;
-    overflow: hidden;
-    background-color: transparent;
-    transition: height 0.5s;
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.collapsible .active,
-.collapsible:hover {
-    /* background-color: #dedddd; */
-}
 
 @media not all and (min-width: 1024px) {
     header .collapsible-header {
