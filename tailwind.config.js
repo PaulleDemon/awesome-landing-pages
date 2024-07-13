@@ -4,16 +4,21 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/portfolio/**/*.{html,jsx, js}",
-		"./src/portfolio/**/*.js",
-		"./src/portfolio/**/*.html",
+		"./src/portfolio/jrdev/**/*.{html,jsx, js}",
+		"./src/portfolio/jrdev/**/*.js",
+		"./src/portfolio/jrdev/**/*.html",
 	
 		// "*.{html,jsx}"
 	],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				primary: "#155eef",
+				// primary: "#155eef",
+				primary: 'var(--color-primary)',
+				secondary: 'var(--color-secondary)',
+				
+				buttonFg: 'var(--color-btn-text)'
 			}
 		},
 	},

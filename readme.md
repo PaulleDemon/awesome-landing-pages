@@ -169,6 +169,8 @@ Here's the list of website templates
 
 1. **[Bella Youtuber](src/portfolio/bella)** - [[`Live preview`](https://bella-youtuber.netlify.app/)]
 
+2. **[Jrdev - developers portfolio](src/portfolio/jrdev)** - [[`Live preview`](https://jrdev-port.netlify.app/)]
+
 
 ### Other website templates
 

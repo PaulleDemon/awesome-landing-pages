@@ -2,7 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
+
+@layer base {
+    
+    html[data-theme='primary'] {
+      --color-primary: #155eef;
+      --color-secondary: #c8cbf984;
+
+      --color-btn-text: #fff;
+    }
+  
+    html[data-theme='warning'] {
+        --color-primary: #ffc934;
+        --color-secondary: #c8cbf984;
+        
+      --color-btn-text: #000;
+    }
+
+    html[data-theme='success'] {
+        --color-primary: #0aab1f;
+        --color-secondary: #c8cbf984;
+        
+        --color-btn-text: #fff;
+
+    }
 }
 
-  
+
+@layer components{
+
+    .btn-primary {
+        @apply tw-bg-primary tw-text-buttonFg tw-py-[10px] tw-px-[15px] tw-cursor-pointer 
+                tw-flex tw-justify-center tw-items-center tw-w-max tw-rounded-md;
+    }
+
+    .btn-primary:disabled{
+        cursor: default;
+    }
+
+    .input{
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 6px;
+        outline: none;
+        min-width: 100px;
+        border: 2px solid #818080;
+        transition: border 0.3s;
+    }
+
+    .input:active, .input:focus, .input:focus-within{
+        border: 2px solid var(--input-hover-bd-color);
+        @apply tw-border-primary tw-border-2 tw-border-solid
+    }
+
+    .link{
+        transition: color 0.5s;
+    }
+    
+    .link:hover{
+        @apply tw-text-primary;
+    }
+
+
+    .tab-btn{
+        padding: 10px 15px;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 6px;
+        min-width: fit-content;
+    }
+
+    .tab-btn:hover{
+        @apply tw-text-primary tw-bg-[#bebeff59];
+    }
+
+    .tab-active, .tab-active:hover{
+        @apply tw-bg-primary tw-text-buttonFg;
+    }
+    
+    select option {
+        color: #000; /* Default color for light mode */
+    }
+    
+    .timeline {
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 1rem;
+        height: 1rem;
+        background-color: #3b82f6; /* Tailwind blue-500 */
+        border-radius: 50%;
+    }
+
+    .timeline::before{
+        @apply tw-bg-primary tw-absolute tw-top-0;
+        content: '';
+        height: 100%;
+        width: 2px;
+    }
+    
+    .timeline-container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+    }
+      
+      /* The circles on the timeline */
+    .timeline-container::after {
+
+        @apply tw-border-primary tw-border-4 tw-border-solid tw-bg-white tw-rounded-full;
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 15px;
+        left: -12px;
+        z-index: 1;
+    }
+    
+
+}

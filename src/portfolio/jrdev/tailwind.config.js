@@ -7,10 +7,15 @@ module.exports = {
 		"**/*.js",
 		"**/*.html",
 	],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				primary: "#155eef"
+				// primary: "#155eef",
+				primary: 'var(--color-primary)',
+				secondary: 'var(--color-secondary)',
+				
+				buttonFg: 'var(--color-btn-text)'
 			}
 		},
 	},

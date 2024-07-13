@@ -52,37 +52,59 @@ function responsive() {
 window.addEventListener("resize", responsive)
 
 
-/**
- * Animations
- */
+const tabs = document.querySelectorAll(".tab-content") 
+const tabButtons = document.querySelectorAll(".tab-btn")
 
-gsap.registerPlugin(ScrollTrigger)
+function openTab(evt, tabName){
 
+    tabs.forEach((tab) => {
+        tab.style.display = 'none'
+    })
 
-const numberTimeline = gsap.timeline({paused: true, scrollTrigger: {
-    trigger: "#numbers",
-    start: "100% 100%", // when the top of the trigger hits the top of the viewport
-    end: "100% 90%", // when bottom trigger hits bottom of the viewport
-    // markers: true,
+    tabButtons.forEach((btn) => btn.classList.remove("tab-active"))
+
+    document.querySelector(`[data-tab-name=${tabName}]`).style.display = 'block'
+
+    evt.target.classList.add("tab-active") // set current button to be active
+
 }
-})
 
-numberTimeline.fromTo("#numbers-container", {
-    scale: 0.8,
-}, {
+function switchTheme(){
+    const themeSelector = document.querySelector("#theme-selector")
 
-    scale: 1,
-    duration: 3
-}).to("#installs", {
-    innerText: 300,
-    duration: 3,
-    snap: {
-        innerText: 1
-    },
-}, "<").to("#hours", {
-    innerText: 500,
-    duration: 3,
-    snap: {
-        innerText: 1
+    document.querySelector("html").setAttribute("data-theme", themeSelector.value)
+}
+
+if (localStorage.getItem('color-mode') === 'dark' || (!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('tw-dark')
+    updateToggleModeBtn()
+} else {
+    document.documentElement.classList.remove('tw-dark')
+    updateToggleModeBtn()
+}
+
+function toggleMode(){
+    //toggle between dark and light mode
+
+    document.documentElement.classList.toggle("tw-dark")
+    updateToggleModeBtn()
+    
+}
+
+function updateToggleModeBtn(){
+
+    const toggleIcon = document.querySelector("#toggle-mode-icon")
+    
+    if (document.documentElement.classList.contains("tw-dark")){
+        // dark mode
+        toggleIcon.classList.remove("bi-sun-fill")
+        toggleIcon.classList.add("bi-moon-fill")
+        localStorage.setItem("color-mode", "dark")
+        
+    }else{
+        toggleIcon.classList.add("bi-sun-fill")
+        toggleIcon.classList.remove("bi-moon-fill")
+        localStorage.setItem("color-mode", "light")
     }
-}, "<")
+
+}

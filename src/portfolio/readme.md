@@ -12,3 +12,12 @@ The names don't mean much, you can use any templates for your purpose
 
 
 #tailwind templates #website templates
+
+
+### Developers portfolio
+This is a multi-themed portfolio, easily switch between multiple themes
+
+[Live preview](jrdev-port.netlify.app)
+
+![portfolio landing page](./screenshots/dev.png) - 
+
