@@ -15,7 +15,7 @@ header {
     background-color: #000000;
 }
 
-header > .collapsable-header {
+header > .collapsible-header {
     display: flex;
     gap: 1rem;
     width: 100%;
@@ -262,7 +262,7 @@ select > option {
 
 
 @media not all and (min-width: 768px) {
-    header .collapsable-header {
+    header .collapsible-header {
         position: absolute;
         right: 0px;
         flex-direction: column;

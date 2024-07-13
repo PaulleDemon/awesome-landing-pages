@@ -28,7 +28,7 @@ header{
 }
 
 
-header > .collapsable-header{
+header > .collapsible-header{
     display: flex;
     gap: 1rem;
     width: 100%;
@@ -269,7 +269,7 @@ q::after {
 }
 
 @media not all and (min-width: 1024px) {
-    header .collapsable-header {
+    header .collapsible-header {
         position: absolute;
         right: 0px;
         flex-direction: column;

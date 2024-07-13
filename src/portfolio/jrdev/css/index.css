@@ -22,33 +22,6 @@ header{
 }
 
 
-header > .collapsible-header{
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    background-color: inherit;
-    place-content: center;
-    overflow: hidden;
-    transition: width 0.3s ease;
-}
-
-.animated-collapse{
-    transition: width 0.3s ease;
-}
-
-.header-links {
-    display: flex;
-    align-items: center;
-    min-width: fit-content;
-    border-radius: 10px;
-    padding: 5px 10px;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-
-.header-links:hover {
-    color: var(--link-hover);
-}
 
 .primary-text-color{
     color: var(--primary-text-color);

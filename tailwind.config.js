@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/portfolio/jrdev/**/*.{html,jsx, js}",
-		"./src/portfolio/jrdev/**/*.js",
-		"./src/portfolio/jrdev/**/*.html",
+		"./src/law/**/*.{html,jsx, js}",
+		"./src/law/**/*.js",
+		"./src/law/**/*.html",
 	
 		// "*.{html,jsx}"
 	],
@@ -15,10 +15,8 @@ module.exports = {
 		extend: {
 			colors: {
 				// primary: "#155eef",
-				primary: 'var(--color-primary)',
-				secondary: 'var(--color-secondary)',
+				primary: '#00006F',
 				
-				buttonFg: 'var(--color-btn-text)'
 			}
 		},
 	},
