@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: Georgia, serif;
 }
 
 header{
@@ -47,17 +48,17 @@ header > .collapsible-header{
     color: #fff;
 }
 
-
-.black-text{
-    color: #000;
-}
-
-.white-text{
-    color: #fff;
+.gradient{
+    background: rgb(0,0,111);
+    background: linear-gradient(180deg, #00006f00 31%, #00006f95 69%, #00006f 99%);
 }
 
 .primary-text-color{
     color: var(--primary-text-color);
+}
+
+.grid-cols-min-auto {
+    grid-template-columns: min-content auto auto;
 }
 
 .opacity-0{
@@ -71,7 +72,7 @@ header > .collapsible-header{
 .btn{
     padding: 10px 15px;
     width: max-content;
-    border-radius: 25px;
+    border-radius: 0px;
     color: var(--btn-color);
     background-color: var(--btn-bg);
     justify-content: center;
@@ -86,7 +87,7 @@ header > .collapsible-header{
 
 .input{
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     outline: none;
     min-width: 100px;
     border: 2px solid #cecece;

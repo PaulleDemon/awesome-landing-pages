@@ -2,7 +2,11 @@
 
 Contains free and open-sourced website templates, including but not limited to SaaS landing page, portfolio, Restaurant page and more. Useful, for freelancers, SaaS developers, and more.
 
-**[Continuously developed]** Feel free to star this repository. More templates will be uploaded from time to time.
+**[Continuously developed]** Feel free to star this repository. More templates will be uploaded weekly
+
+**Have a generic template in mind?**
+- Create a new [issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template
+  request have enough likes, we'll make one.
 
 ## Features
 * Responsive.
@@ -101,6 +105,9 @@ module.exports = {
 @layer components{
 }
 ```
+
+Also refer the official [tailwind documentation](https://tailwindcss.com/docs/installation)
+
 > [!NOTE]
 **For django developers:**
 If you are using Django + tailwind see how to set up in this article: [Adding tailwind to django](https://dev.to/paul_freeman/adding-tailwind-css-to-django-14a)
@@ -188,5 +195,10 @@ Pexels.com - https://pexels.com
 Unsplash - https://unsplash.com
 Pixabay - https://pixabay.com
 
-### Brand icons from
+## Icons
+
+- Bootstrap icons 
+- Material icons by Google
+
+### Brand logos from
 https://brandfetch.com/

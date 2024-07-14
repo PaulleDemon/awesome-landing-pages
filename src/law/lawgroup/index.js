@@ -5,10 +5,6 @@ const collapseBtn = document.getElementById("collapse-btn")
 
 
 
-const heroSlides = document.querySelector(".slideshow-container")
-const heroSlideShow = new SlideShow(heroSlides, true, 10000)
-
-
 const bookingDate = document.querySelector("#date")
 const today = new Date().toISOString().split('T')[0]
 bookingDate.setAttribute('min', today)
