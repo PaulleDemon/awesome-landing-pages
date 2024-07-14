@@ -1,5 +1,5 @@
 
-let isHeaderCollapsed = window.innerWidth < 1000
+let isHeaderCollapsed = window.innerWidth < 1024
 const collapseHeaderItems = document.getElementById("collapsed-items")
 const collapseBtn = document.getElementById("collapse-btn")
 

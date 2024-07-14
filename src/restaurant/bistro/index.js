@@ -1,9 +1,9 @@
-const RESPONSIVE_WIDTH = 760
+const RESPONSIVE_WIDTH = 1024
 
 gsap.registerPlugin(ScrollTrigger)
 
 let headerWhiteBg = false
-let isHeaderCollapsed = window.innerWidth < 1000
+let isHeaderCollapsed = window.innerWidth < 1024
 const collapseHeaderItems = document.getElementById("collapsed-items")
 const collapseBtn = document.getElementById("collapse-btn")
 

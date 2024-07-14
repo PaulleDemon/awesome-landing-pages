@@ -40,7 +40,9 @@
                     tw-bg-primary
                     tw-place-items-center
                     tw-relative
+                    max-lg:tw-px-[5%]
                     ">
+            
         <div class="tw-w-full tw-h-full tw-relative tw-flex tw-place-items-center">
             <div class="tw-absolute tw-bottom-1 tw-h-[1px] tw-w-[100%] tw-bg-white"></div>
         
@@ -50,16 +52,16 @@
                         alt="law logo" class="tw-object-contain">
                 </div>
             </div>
-            <div class="tw-flex tw-gap-2 tw-ml-[5%] tw-w-full tw-place-content-center tw-overflow-hidden"
-                        id="collapsed-items"
+            <div class="collapsible-header  animated-collapse"
+                        id="collapsed-header-items"
                         >
                 <div class=" tw-w-fit
                                 tw-flex tw-gap-3 tw-h-full
-                                md:tw-place-items-center 
-                                max-md:tw-place-items-end
-                                max-md:tw-flex-col
-                                max-md:tw-mt-[30px]
-                                max-md:tw-gap-5
+                                lg:tw-place-items-center 
+                                max-lg:tw-place-items-end
+                                max-lg:tw-flex-col
+                                max-lg:tw-mt-[30px]
+                                max-lg:tw-gap-5
                                 tw-text-lg
                             ">
                     <a class="header-links" href="">
@@ -109,8 +111,8 @@
             </div>
             <button class="tw-absolute tw-text-white tw-z-50 
                             tw-right-3
-                            tw-top-3
-                             tw-text-2xl  bi bi-list md:tw-hidden" 
+                            tw-top-5    
+                            tw-text-2xl  bi bi-list lg:tw-hidden" 
                     onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
                 <!-- <i class="bi bi-list"></i> -->
             </button>
@@ -118,14 +120,14 @@
         
     </header>
 
-    <section class="tw-w-full tw-h-[100vh] tw-max-w-[100vw]
+    <section class="tw-w-full tw-min-h-[100vh] tw-max-w-[100vw]
                      tw-flex tw-flex-col tw-overflow-hidden tw-bg-primary tw-text-white">
 
         <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-px-[10%]">
 
-            <div class="tw-w-full tw-h-[90%] tw-flex">
+            <div class="tw-w-full tw-h-[90%] tw-flex max-md:tw-flex-col tw-gap-4">
                 <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-gap-5 tw-place-content-center">
-                    <h2 class="tw-text-7xl max-lg:tw-text-5xl tw-leading-normal">
+                    <h2 class="tw-text-7xl max-lg:tw-text-4xl tw-leading-normal">
                         Legal experts at 
                         <br>
                         your service
@@ -133,7 +135,7 @@
                     <div class="tw-max-w-[550px]">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque illum vitae quo a explicabo in maxime dolores repudiandae rerum tempora.
                     </div>
-                    <div class="tw-flex tw-gap-4 !tw-text-base">
+                    <div class="tw-flex tw-gap-4 !tw-text-base max-md:tw-flex-col">
                         <a href="" class="btn !tw-bg-[#fff] !tw-text-black">
                             <span>Watch videos</span>
                             <i class="bi bi-camera-video-fill"></i>
@@ -149,7 +151,7 @@
                     </div>
                 </div>
 
-                <div class="tw-w-full tw-h-full tw-flex tw-place-content-center tw-place-items-center">
+                <div class=" tw-w-full tw-h-full tw-flex tw-place-content-center tw-place-items-center">
 
                     <div class="tw-w-[550px] tw-max-w-[450px] tw-max-h-[650px] 
                                 tw-overflow-hidden tw-relative">
@@ -167,9 +169,9 @@
             
         </div>
 
-         <div class="tw-w-full tw-gap-6
+        <div class="tw-w-full tw-gap-6
                          tw-bg-transparent tw-z-10 
-                         tw-flex tw-p-6 tw-place-content-center">
+                         tw-flex max-md:tw-flex-col tw-p-6 tw-place-content-center">
 
                                 
                 <div class="tw-flex tw-bg-[#A29252] tw-p-6 tw-gap-6 tw-place-content-center 
@@ -205,7 +207,7 @@
 
                 </div>
 
-            </div>
+        </div>
         
     </section>
 
@@ -240,7 +242,7 @@
                         <img src="./assets/images/homepage/law-group.jpg" 
                                 alt="law group" class="tw-w-full tw-object-cover">
                     </div>
-                    <div class="tw-absolute tw-bottom-[-100px] tw-left-[-100px] tw-w-[250px] tw-h-[250px] tw-overflow-hidden">
+                    <div class="max-lg:tw-hidden tw-absolute tw-bottom-[-100px] tw-left-[-100px] tw-w-[250px] tw-h-[250px] tw-overflow-hidden">
                         <video class="tw-w-full tw-h-full tw-object-cover"
                                 disablepictureinpicture 
                                 muted autoplay loop
@@ -448,15 +450,17 @@
                     tw-place-items-center
                     tw-bg-primary tw-text-white
                     ">
-        <h3 class="tw-text-5xl tw-font-medium tw-text-secondary">Case studies</h3>
+        <h3 class="tw-text-5xl max-lg:tw-text-3xl tw-font-medium tw-text-secondary">Case studies</h3>
         
         <div class="tw-w-full tw-grid grid-cols-min-auto 
-                    max-md:tw-flex-col tw-place-items-center
+                    max-lg:tw-flex 
+                    max-lg:tw-gap-3
+                    max-lg:tw-flex-wrap tw-place-items-center
                     tw-mt-[5%] tw-gap-y-16 tw-gap-x-10 tw-place-content-center">
 
-            <a href="" class="tw-w-[300px] tw-h-[300px] tw-flex tw-flex-col tw-gap-2">
+            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
 
-                <div class="tw-w-full tw-h-[250px] tw-overflow-hidden">
+                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
                     <img src="assets/images/homepage/case-study1.jpg" 
                         alt="case1" class="tw-w-full tw-h-full 
                                     tw-scale-[1.04]
@@ -469,9 +473,9 @@
                     <p class="tw-text-gray-300">Discrimination</p>
                 </div>
             </a>
-            <a href="" class="tw-w-[300px] tw-h-[300px] tw-flex tw-flex-col tw-gap-2">
+            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
 
-                <div class="tw-w-full tw-h-[250px] tw-overflow-hidden">
+                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
                     <img src="assets/images/homepage/case-study2.jpg" 
                         alt="case1" class="tw-w-full tw-h-full 
                                     tw-scale-[1.04]
@@ -485,9 +489,9 @@
                 </div>
             </a>
 
-            <a href="" class="tw-w-[300px] tw-h-[300px] tw-flex tw-flex-col tw-gap-2">
+            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
 
-                <div class="tw-w-full tw-h-[250px] tw-overflow-hidden">
+                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
                     <img src="assets/images/homepage/case-study3.jpg" 
                         alt="case1" class="tw-w-full tw-h-full 
                                     tw-scale-[1.04]
@@ -496,14 +500,14 @@
                                     ">
                 </div>
                 <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Tamber sued for accident that led to paralysis</h3>
-                    <p class="tw-text-gray-300">accidents</p>
+                    <h3 class="tw-text-xl tw-font-medium">James wins after suing university for discrimination</h3>
+                    <p class="tw-text-gray-300">discrimination</p>
                 </div>
             </a>
 
-            <a href="" class="tw-w-[300px] tw-h-[300px] tw-flex tw-flex-col tw-gap-2">
+            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
 
-                <div class="tw-w-full tw-h-[250px] tw-overflow-hidden">
+                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
                     <img src="assets/images/homepage/case-study3.jpg" 
                         alt="case1" class="tw-w-full tw-h-full 
                                     tw-scale-[1.04]
@@ -512,13 +516,111 @@
                                     ">
                 </div>
                 <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Tamber sued for accident that led to paralysis</h3>
+                    <h3 class="tw-text-xl tw-font-medium">Another win for public</h3>
                     <p class="tw-text-gray-300">accidents</p>
+                </div>
+            </a>
+            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
+
+                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
+                    <img src="assets/images/homepage/case-study1.jpg" 
+                        alt="case1" class="tw-w-full tw-h-full 
+                                    tw-scale-[1.04]
+                                    tw-object-cover hover:tw-scale-[1]
+                                    tw-duration-[0.5s]
+                                    ">
+                </div>
+                <div class="tw-flex tw-flex-col">
+                    <h3 class="tw-text-xl tw-font-medium">Another win for public</h3>
+                    <p class="tw-text-gray-300">accidents</p>
+                </div>
+            </a>
+            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
+
+                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
+                    <img src="assets/images/homepage/case-study2.jpg" 
+                        alt="case1" class="tw-w-full tw-h-full 
+                                    tw-scale-[1.04]
+                                    tw-object-cover hover:tw-scale-[1]
+                                    tw-duration-[0.5s]
+                                    ">
+                </div>
+                <div class="tw-flex tw-flex-col">
+                    <h3 class="tw-text-xl tw-font-medium">Family wins back their home</h3>
+                    <p class="tw-text-gray-300">real estate</p>
                 </div>
             </a>
 
         </div>
 
+
+    </section>
+
+    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]
+                     tw-place-items-center">
+
+        <h3 class="tw-text-3xl max-md:tw-text-2xl primary-text-color tw-font-medium">
+            What some of our clients say
+        </h3>
+        
+        <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
+
+            <div class="review-container tw-flex tw-flex-col">
+                <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
+                    <!-- testimonials -->
+                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
+                        <q class="tw-italic tw-text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente laudantium id ratione! Fugiat nulla ut, possimus facere sit natus.
+                        </q>
+                        <div class="tw-mt-2 tw-text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-mt-3">- Sandra Brooks</p>
+                    </div>
+                
+                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
+                        <q class="tw-italic tw-text-gray-600 ">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tempora reprehenderit illo accusamus minus sunt.
+                        </q>
+                        <div class="tw-mt-2 tw-text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-mt-3">- Joshua Simmons</p>
+                    </div>
+
+                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
+                        
+                        <q class="tw-italic tw-text-gray-600 ">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quaerat quia aut eveniet ipsa quae consectetur placeat debitis doloribus animi.
+                        </q>
+                        <div class="tw-mt-2 tw-text-yellow-400">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="tw-mt-3">- Roger Neely</p>
+
+                    </div>
+                </div>
+              
+                <!-- Navigation dots -->
+                <div class="dots-container tw-mt-auto">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -541,7 +643,8 @@
             <iframe src="https://www.google.com/maps/embed?" 
                     class="tw-w-[500px] 
                             tw-h-[500px]
-                            max-md:tw-w-full
+                            max-md:tw-h-[250px]
+                            max-md:tw-w-[300px]
                             "
                     style="border:0;" allowfullscreen="" loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -629,74 +732,6 @@
         
     </section>
 
-    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]
-                     tw-place-items-center">
-
-        <h3 class="tw-text-3xl max-md:tw-text-2xl primary-text-color tw-font-medium">
-            What some of our clients say
-        </h3>
-        
-        <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
-
-            <div class="review-container tw-flex tw-flex-col">
-                <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
-                    <!-- testimonials -->
-                    <div class="slides fade tw-text-lg tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente laudantium id ratione! Fugiat nulla ut, possimus facere sit natus.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Sandra Brooks</p>
-                    </div>
-                
-                    <div class="slides fade tw-text-lg tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tempora reprehenderit illo accusamus minus sunt.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Joshua Simmons</p>
-                    </div>
-
-                    <div class="slides fade tw-text-lg tw-text-justify">
-                        
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quaerat quia aut eveniet ipsa quae consectetur placeat debitis doloribus animi.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Roger Neely</p>
-
-                    </div>
-                </div>
-              
-                <!-- Navigation dots -->
-                <div class="dots-container tw-mt-auto">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
     <section class="tw-w-full tw-flex
                     tw-flex-col 
                     tw-place-content-center 
@@ -715,12 +750,12 @@
             <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color">Special Newsletter signup</h2>
             <h2 class="tw-text-xl max-md:tw-text-lg">Get offers and updates</h2>
 
-            <div class="input tw-flex tw-h-[50px] tw-bg-white tw-p-2 
-                        !tw-rounded-full tw-overflow-hidden tw-place-items-center ">
-                <input type="email" class="tw-w-full tw-h-full tw-outline-none tw-px-3"
+            <div class="tw-flex tw-h-[40px] 
+                        tw-overflow-hidden tw-place-items-center ">
+                <input type="email" class="input tw-w-full tw-h-full tw-outline-none tw-px-3"
                         placeholder="email"
                     >
-                <button class="btn tw-h-[35px] 
+                <button class="btn 
                             hover:tw-bg-blue-900
                             tw-duration-[0.3s]
                             tw-transition-colors
@@ -731,79 +766,9 @@
 
         </div>
 
-        <div class="tw-w-full tw-place-content-center 
-            tw-flex tw-flex-col tw-gap-3
-            tw-place-items-center tw-mt-[5%]
-            ">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color">Like us?</h2>
-            <h2 class="tw-text-xl max-md:tw-text-lg">Tell us more</h2>
-
-            <div class="tw-flex">
-                <div class="stars" data-rating="0">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
-                </div>
-            </div>
-
-        </div>
 
     </section>
 
-    <div class="tw-fixed
-                tw-top-[50%] tw-translate-y-[-50%]
-                tw-left-[50%] tw-translate-x-[-50%]
-                tw-w-[450px] tw-max-h-[450px] 
-                max-md:tw-w-[350px]
-                tw-z-40
-                tw-p-3
-                tw-hidden
-                tw-flex 
-                tw-flex-col
-                tw-rounded-md
-                tw-shadow-2xl
-                tw-bg-white"
-                id="modal"
-                >
-        <div class="tw-w-full tw-relative tw-h-[40px]">
-            <button class="tw-text-4xl 
-                            bi bi-x
-                            tw-absolute
-                            tw-right-2
-                            "
-                    id="modal-close"
-                            >
-        </div>
-        </button>
-        <h2 class="tw-text-2xl tw-text-center tw-mt-[5%]" 
-                id="modal-title"></h2>
-
-        <div class="tw-text-base tw-font-normal tw-mt-2" 
-                id="modal-description">
-        </div>
-
-        <textarea id="modal-input" 
-                placeholder="write..."
-                maxlength="2000"
-                class="input tw-w-full 
-                        tw-hidden
-                        tw-mt-2
-                        tw-resize-y 
-                        tw-text-base
-                        tw-font-normal
-                        tw-min-h-[50px]
-                        tw-max-h-[150px]"></textarea>
-
-        <div class="tw-w-full tw-flex tw-place-content-center tw-mt-3">
-            <a href="#" class="btn tw-text-sm tw-cursor-pointer" id="modal-action-btn">
-                Open
-            </a>
-        </div>
-        
-    </div>
 
 
     <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
@@ -821,7 +786,7 @@
                 <br>
                 TX,
                 <br>
-                United States
+                Europe
             </div>
             <div class="tw-mt-3 tw-font-semibold tw-text-lg">
                 Follow us
@@ -840,13 +805,13 @@
                     tw-gap-4">
 
             <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Services
+                Practice areas
             </h2>
             <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">Car wash</a>
-                <a href="" class="footer-link">Interior cleaning</a>
-                <a href="" class="footer-link">Window wiping</a>
-                <a href="" class="footer-link">Oil change</a>
+                <a href="" class="footer-link">Divorce</a>
+                <a href="" class="footer-link">Real estate</a>
+                <a href="" class="footer-link">Defamation</a>
+                <a href="" class="footer-link">Discrimination</a>
             </div>
         </div>
         <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
