@@ -169,6 +169,9 @@ Here's the list of website templates
 
 ### Attorney landing page
 
+![lawyer landing page](src/law/screenshots/lawgroup.png)
+
+1. **[Law Group](src/law/lawgroup)** - [<a href="https://lawgroup.netlify.app/" targe="_blank" rel="noreferrer">`Live preview`</a>]
 
 ### Portfolio
 

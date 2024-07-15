@@ -1,4 +1,5 @@
+Law group template
 
 Theme: 
-1. #00006f
-2. #dc2626
+1. #00006F
+2. #a59451fb

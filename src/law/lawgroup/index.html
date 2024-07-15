@@ -20,8 +20,8 @@
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
 
-    <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css">
-    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
     <link rel="stylesheet" href="./css/index.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -74,7 +74,7 @@
                         Practice areas
                     </a>
                     <a class="header-links" href="">
-                        Page
+                        Contact
                     </a>
                 
                 </div>
@@ -120,12 +120,12 @@
         
     </header>
 
-    <section class="tw-w-full tw-min-h-[100vh] tw-max-w-[100vw]
+    <section class="tw-w-full tw-min-h-[100vh] tw-max-w-[100vw] tw-place-content-center
                      tw-flex tw-flex-col tw-overflow-hidden tw-bg-primary tw-text-white">
 
-        <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-px-[10%]">
+        <div class="tw-w-full tw-h-full  tw-flex tw-flex-col tw-px-[10%] tw-mt-4">
 
-            <div class="tw-w-full tw-h-[90%] tw-flex max-md:tw-flex-col tw-gap-4">
+            <div class="tw-w-full tw-h-full tw-flex max-md:tw-flex-col tw-gap-4">
                 <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-gap-5 tw-place-content-center">
                     <h2 class="tw-text-7xl max-lg:tw-text-4xl tw-leading-normal">
                         Legal experts at 
@@ -140,7 +140,7 @@
                             <span>Watch videos</span>
                             <i class="bi bi-camera-video-fill"></i>
                         </a>
-                        <a href="" class="btn !tw-bg-[#a59451fb] 
+                        <a href="" class="btn !tw-bg-secondary 
                                         hover:tw-translate-x-2 
                                         tw-duration-[0.3s] 
                                         tw-transition-transform
@@ -174,7 +174,7 @@
                          tw-flex max-md:tw-flex-col tw-p-6 tw-place-content-center">
 
                                 
-                <div class="tw-flex tw-bg-[#A29252] tw-p-6 tw-gap-6 tw-place-content-center 
+                <div class="tw-flex tw-bg-secondary tw-p-6 tw-gap-6 tw-place-content-center 
                             tw-w-[350px] tw-h-[150px]">
                     <div class="tw-flex tw-flex-col tw-gap-2">
                         <p class="tw-text-xl tw-text-md">
@@ -185,7 +185,7 @@
 
                 </div>
 
-                <div class="tw-flex tw-bg-[#A29252] tw-p-6 tw-gap-6 tw-place-content-center 
+                <div class="tw-flex tw-bg-secondary tw-p-6 tw-gap-6 tw-place-content-center 
                             tw-w-[350px] tw-h-[150px]">
                     <div class="tw-flex tw-flex-col tw-gap-2">
                         <p class="tw-text-xl tw-text-md">
@@ -196,7 +196,7 @@
 
                 </div>
 
-                <div class="tw-flex tw-bg-[#A29252] tw-p-6 tw-gap-6 tw-place-content-center 
+                <div class="tw-flex tw-bg-secondary tw-p-6 tw-gap-6 tw-place-content-center 
                             tw-w-[350px] tw-h-[150px]">
                     <div class="tw-flex tw-flex-col tw-gap-2">
                         <p class="tw-text-xl tw-text-md">
@@ -431,7 +431,7 @@
                             tw-mt-[5%]
                             tw-duration-[0.3s]
                             tw-transition-transform
-                            tw-bg-[#1f40ac]
+                            tw-bg-primary
                            tw-text-white
                            hover:tw-translate-x-1
                            max-md:tw-p-2
@@ -771,27 +771,60 @@
 
 
 
-    <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
+    <footer class="tw-flex  tw-w-full tw-pt-[5%] tw-pb-4
                     tw-px-[10%] tw-place-content-around tw-gap-3 
                     tw-bg-primary
-                    tw-text-white
+                    tw-text-white tw-relative
                     ">
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-6 tw-place-items-center max-md:tw-w-full">
+
+        <div class="tw-flex tw-flex-col tw-w-full tw-relative tw-h-full tw-gap-2">
             
-            <img src="./assets/logo.png" 
-                alt="logo" class="tw-w-[150px]">
-            <div>
-                12111 Cypress,   
-                <br>
-                TX,
-                <br>
-                Europe
+            <div class="tw-flex tw-w-full max-md:tw-flex-col tw-place-content-around tw-gap-3 tw-my-2">
+                <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                            tw-gap-6 tw-place-items-center max-md:tw-w-full">
+                    
+                    <img src="./assets/logo.png" 
+                        alt="logo" class="tw-w-[150px]">
+                    <div>
+                        12111 Cypress,   
+                        <br>
+                        TX,
+                        <br>
+                        Europe
+                    </div>
+                </div>
+
+                <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                            tw-gap-4">
+
+                    <h2 class="tw-text-3xl max-md:tw-text-xl">
+                        Practice areas
+                    </h2>
+                    <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                        <a href="" class="footer-link">Divorce</a>
+                        <a href="" class="footer-link">Real estate</a>
+                        <a href="" class="footer-link">Defamation</a>
+                        <a href="" class="footer-link">Discrimination</a>
+                    </div>
+                </div>
+                <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                            tw-gap-4">
+
+                    <h2 class="tw-text-3xl max-md:tw-text-xl">
+                        Resources
+                    </h2>
+                    <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                        <a href="" class="footer-link">About us</a>
+                        <a href="" class="footer-link">FAQ</a>
+                        <a href="" class="footer-link">Contact Us</a>
+                        <a href="" class="footer-link">Locations</a>
+                        <a href="" class="footer-link">Privacy policy</a>
+                    </div>
+                </div>
             </div>
-            <div class="tw-mt-3 tw-font-semibold tw-text-lg">
-                Follow us
-            </div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
+            <div class="tw-h-[1px] tw-w-[100%] tw-bg-white"></div>
+           
+            <div class="tw-flex tw-gap-4 tw-text-2xl tw-mt-3">
                 <a href="" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
                 </a>
@@ -800,34 +833,7 @@
                 </a>
             </div>
         </div>
-
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-4">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Practice areas
-            </h2>
-            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">Divorce</a>
-                <a href="" class="footer-link">Real estate</a>
-                <a href="" class="footer-link">Defamation</a>
-                <a href="" class="footer-link">Discrimination</a>
-            </div>
-        </div>
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-4">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Resources
-            </h2>
-            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Locations</a>
-                <a href="" class="footer-link">Privacy policy</a>
-            </div>
-        </div>
+        
 
     </footer>
 

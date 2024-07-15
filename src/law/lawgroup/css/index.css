@@ -141,6 +141,7 @@ header .collapsible-header{
 .footer-link{
     color: #fff;
     transition: color 0.3s;
+    width: fit-content;
 }
 
 .footer-link:hover{
