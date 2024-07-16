@@ -4,7 +4,7 @@
     "description": "beautiful landing pages",
     "main": "index.js",
     "scripts": {
-      "start-css": "cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
+      "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i tailwind.css -o tailwind-runtime.css -w",
       "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i tailwind.css -o tailwind-build.css --minify",
       "test": "echo \"Error: no test specified\" && exit 1"
     },

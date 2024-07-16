@@ -2,6 +2,8 @@
 
 Contains free and open-sourced website templates, including but not limited to SaaS landing page, portfolio, Restaurant page and more. Useful, for freelancers, SaaS developers, and more.
 
+Download from browsable page: https://landingpage-templates.vercel.app/
+
 **[Continuously developed]** Feel free to star this repository. More templates will be uploaded weekly
 
 **Have a generic template in mind?**
@@ -35,20 +37,12 @@ for clients or dedicate your time elsewhere.
 ## Installation and setup
 Installation and set up is same for almost all the templates
 
+### Downloading the folder
+You can use the browsable page to download a specific repo: [https://landingpage-templates.vercel.app/](https://landingpage-templates.vercel.app/)
+
 ### Cloning the folder you want
-1. First go into a directory of your choice and use the following command 
-```
-git clone --filter=blob:none --sparse  https://github.com/PaulleDemon/landing-pages
- ```
-The above command will clone a empty repo. So now cd inside the repo 
-``` 
-cd %the repository directory%
-```
-Now
-```
-git sparse-checkout add saas/finance
-``` 
-read more on this [Stackoverflow answer](https://stackoverflow.com/a/73254328/15993687)
+
+To clone a specific repo read this [Stackoverflow answer](https://stackoverflow.com/a/73254328/15993687)
 
 ### Folder structure
 Almost all the folder structure is similar to below shown
@@ -171,7 +165,7 @@ Here's the list of website templates
 
 ![lawyer landing page](src/law/screenshots/lawgroup.png)
 
-1. **[Law Group](src/law/lawgroup)** - [<a href="https://lawgroup.netlify.app/" targe="_blank" rel="noreferrer">`Live preview`</a>]
+1. **[Law Group](src/law/lawgroup)** - [[`Live preview`](https://lawgroup.netlify.app/)]
 
 ### Portfolio
 
