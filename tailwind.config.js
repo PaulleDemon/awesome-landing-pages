@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/law/**/*.{html,jsx, js}",
-		"./src/law/**/*.js",
-		"./src/law/**/*.html",
+		"./src/apps/**/*.{html,jsx, js}",
+		"./src/apps/**/*.js",
+		"./src/apps/**/*.html",
 	
 		// "*.{html,jsx}"
 	],
@@ -14,9 +14,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				// primary: "#155eef",
-				primary: '#00006F',
-				secondary: "#a59451fb", 
+				primary: "#BFFE66",
+				secondary: "#BDB8FF", 
 				
 			}
 		},

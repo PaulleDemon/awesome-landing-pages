@@ -8,7 +8,7 @@ Download from browsable page: https://landingpage-templates.vercel.app/
 
 **Have a generic template in mind?**
 - Create a new [issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template
-  request have enough likes, we'll make one.
+  request have enough thumbs up, we'll make one.
 
 ## Features
 * Responsive.
