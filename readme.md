@@ -146,6 +146,8 @@ Here's the list of website templates
 
 1. **[Chatorigin](src/apps/chatorigin)** - [[`Live preview`](https://chatorigin.netlify.app/)]
 
+2. **[AiSales](src/apps/AISales/)** - [[`Live preview`](https://aisales-app.netlify.app/)]
+
 
 
 ### Restaurant landing page

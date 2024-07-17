@@ -11,4 +11,12 @@ The names don't mean much, you can use any templates for your purpose
 ![app landing page](./screenshots/chat-origin.png) - 
 
 
+### AISales
+
+[Live preview](https://aisales-app.netlify.app/)
+
+![app landing page](./screenshots/aisales.png) - 
+
+
+
 #tailwind templates #website templates

@@ -16,10 +16,11 @@
     <meta property="og:image" content="" />
   
 
-    <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css">
-    <!-- <link rel="stylesheet" href="./css/tailwind-build.css"> -->
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css">
     <link rel="stylesheet" href="css/index.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
@@ -117,26 +118,25 @@
                     tw-flex max-lg:tw-flex-col">
 
             <div class="tw-flex tw-flex-col tw-place-content-center">
-                <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold 
-                            tw-leading-[80px]
-                            max-md:tw-leading-snug tw-uppercase" 
+                <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold
+                            tw-leading-[80px] max-md:tw-leading-snug tw-uppercase
+                            tw-flex tw-flex-wrap" 
                             >
-                    <span>
+                        
+                    <span class="reveal-hero-text">
                         Negotiation better
                     </span>
                     <br>
-                    <span class="">
+                    <span class="reveal-hero-text">
                         with AI.
                     </span>
                 </div>  
-                <div class="tw-mt-2 tw-max-w-[450px] tw-text-justify tw-p-2 max-lg:tw-max-w-full">
+                <div class="tw-mt-2 tw-max-w-[450px] tw-text-justify tw-p-2 max-lg:tw-max-w-full reveal-hero-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error adipisci corrupti accusamus reiciendis similique assumenda nostrum fuga dicta vitae ipsum.                        
                 </div>
                 
-                <div class="tw-mt-4 tw-flex 
-                            tw-overflow-hidden tw-gap-4 
-                            tw-p-2
-                            tw-place-items-center ">
+                <div class="tw-mt-4 tw-flex tw-overflow-hidden tw-gap-4 
+                            tw-p-2 tw-place-items-center reveal-hero-text">
                     
                     <a class="tw-max-w-[150px] tw-h-[50px]" href="">
                         <img src="./assets/images/brand-logos/app-store-badge.png" 
@@ -167,10 +167,12 @@
                                 ">
                     <img src="./assets/images/home/iphone.png" 
                             alt="app" class="tw-h-full tw-w-full 
-                                            tw-object-contain tw-z-[1]">
+                                            tw-object-contain tw-z-[1] reveal-hero-img">
 
                     <div class="tw-absolute tw-w-[80%] tw-h-[80%] tw-rounded-full 
-                                tw-bg-secondary tw-bottom-0 tw-left-1/2 tw--translate-x-1/2">
+                                tw-bg-secondary tw-bottom-0 tw-left-1/2 tw--translate-x-1/2"
+                                id="hero-img-bg"
+                                >
 
                     </div>
                         
@@ -184,12 +186,10 @@
                     tw-flex tw-flex-col tw-overflow-hidden tw-relative 
                     tw-place-items-center
                     tw-place-content-center
-                    tw-p-6
-                    "
-                    >
-        <div class="tw-flex max-md:tw-flex-col tw-bg-[#e7e6e685] tw-w-full 
-                    tw-max-w-[80%] tw-min-h-[300px] tw-rounded-xl
-                    tw-gap-8 tw-place-items-center tw-justify-around tw-p-4">
+                    tw-p-6">
+        <div class="tw-flex max-md:tw-flex-col tw-bg-[#e7e6e685] tw-w-full
+                    tw-max-w-[80%] max-lg:tw-max-w-full tw-min-h-[300px] tw-rounded-xl
+                    tw-gap-8 tw-place-items-center tw-justify-around tw-p-4 reveal-up">
             <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-4">
                 <div class="tw-flex tw-text-orange-500 tw-text-xl">
                     <i class="bi bi-star-fill"></i>
@@ -240,11 +240,9 @@
     
     <section class="tw-w-full  tw-max-w-[100vw]
                     tw-flex tw-flex-col tw-overflow-hidden tw-relative 
-                   
                     tw-p-6
-                    "
-                    >
-        <div class="tw-flex max-lg:tw-flex-col tw-gap-[10%] tw-min-h-[80vh] tw-place-content-center tw-place-items-center">
+                    ">
+        <div class="reveal-up tw-flex max-lg:tw-flex-col tw-gap-[10%] max-lg:tw-gap-10 tw-min-h-[60vh] tw-place-content-center tw-place-items-center">
             
             <div class="tw-flex">
                 <div class="tw-w-[300px] tw-h-[450px]">
@@ -275,16 +273,21 @@
                 </div>
             </div>
         </div>
+        
+    </section>
 
-        <div class="tw-flex max-lg:tw-flex-col tw-gap-[10%] tw-min-h-[80vh] tw-place-content-center tw-place-items-center">
+    <section class="tw-w-full  tw-max-w-[100vw]
+                    tw-flex tw-flex-col tw-overflow-hidden tw-relative tw-p-6
+                    ">
+        <div class="reveal-up tw-flex max-lg:tw-flex-col tw-gap-[10%] max-lg:tw-gap-10 tw-min-h-[60vh] tw-place-content-center tw-place-items-center">
             
             <div class="tw-flex tw-flex-col tw-max-w-[450px] tw-mt-6  tw-gap-4">
-                <h3 class="tw-text-4xl tw-font-medium">Highly secure</h3>
+                <h3 class="tw-text-4xl tw-font-medium">Lightning speed</h3>
 
                 <div class="tw-flex tw-flex-col tw-gap-3 tw-mt-4">
                     <h4 class="tw-text-xl tw-font-medium">
                         <i class="bi bi-check-all !tw-text-2xl"></i>
-                        DDOS protection
+                        10x Speed
                     </h4>
                     <span class="tw-text-xl">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis commodi temporibus at? Aspernatur, a necessitatibus?
@@ -308,6 +311,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="tw-w-full  tw-max-w-[100vw]
@@ -316,269 +320,247 @@
                     tw-place-content-center
                     tw-p-6
                     "
-                    id=""
                     >
-        <div class="tw-mt-8 tw-flex tw-flex-col tw-gap-5 tw-place-items-center">
-            <div class="tw-flex tw-flex-col tw-gap-3 tw-text-center tw-mt-5">
-                <h2 class="tw-text-4xl tw-font-semibold">Take your negotiation to next level</h2>
+        <div class="reveal-up tw-flex max-lg:tw-flex-col tw-w-full 
+                    tw-min-h-[300px] tw-rounded-xl
+                    tw-gap-8 tw-place-items-center tw-place-content-center tw-p-4">
+            
+            <div class="tw-w-[350px] tw-h-[450px] tw-bg-[#FFD5CA] tw-rounded-xl tw-p-8 tw-flex 
+                        tw-flex-col tw-gap-[5%]">
+
+                <div class="tw-bg-white tw-w-[80px] tw-h-[80px] tw-flex tw-rounded-full
+                                tw-place-content-center tw-items-center">
+                    <i class="material-icons md-40">bolt</i>
+                </div>
+                
+                <h3 class="tw-mt-5 tw-text-3xl tw-font-medium">Lightning fast</h3>
+                <p class="tw-text-lg">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates 
+                    tenetur officiis temporibus natus ratione nam officia tempore nostrum 
+                    esse tempora.
+                </p>
+
             </div>
-            <div class="tw-flex tw-flex-wrap tw-max-w-[60%] tw-place-content-center tw-mt-6 max-lg:tw-flex-col tw-gap-2">
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
-                        <!-- <img src="./assets/images/home/sample.jpg" 
-                                alt="feature1"> -->
-                    <i class="tw-text-5xl tw-text-primary bi bi-boombox-fill "></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Feature 1</h3>
-                    <div class="tw-text-[#595959]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
-                    </div>
+
+            <div class="tw-w-[350px] tw-h-[450px] tw-bg-primary tw-rounded-xl tw-p-8 tw-flex 
+                        tw-flex-col tw-gap-[5%]">
+                <div class="tw-bg-white tw-w-[80px] tw-h-[80px] tw-flex tw-rounded-full
+                                tw-place-content-center tw-items-center">
+                    <i class="material-icons md-40">forum</i>
                 </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
-                        <!-- <img src="./assets/images/home/sample.jpg" 
-                                alt="feature1"> -->
-                    <i class="tw-text-5xl tw-text-primary bi bi-award-fill"></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Feature 2</h3>
-                    <div class="tw-text-[#595959]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
-                    </div>
-                </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
-                        <!-- <img src="./assets/images/home/sample.jpg" 
-                                alt="feature1"> -->
-                    <i class="tw-text-5xl tw-text-primary bi bi-book-fill "></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Feature 3</h3>
-                    <div class="tw-text-[#595959]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
-                    </div>
-                </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
-                        <!-- <img src="./assets/images/home/sample.jpg" 
-                                alt="feature1"> -->
-                    <i class="tw-text-5xl tw-text-primary bi bi-briefcase-fill "></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Feature 4</h3>
-                    <div class="tw-text-[#595959]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
-                    </div>
-                </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
-                        <!-- <img src="./assets/images/home/sample.jpg" 
-                                alt="feature1"> -->
-                    <i class="tw-text-5xl tw-text-primary bi bi-credit-card-2-front-fill"></i>
-                    <h3 class="tw-text-2xl tw-font-semibold">Feature 5</h3>
-                    <div class="tw-text-[#595959]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
-                    </div>
-                </div>
-                <div class=" tw-flex tw-flex-col tw-w-[350px] tw-text-center tw-h-[250px] tw-p-4 tw-gap-2">
-                    <!-- <img src="./assets/images/home/sample.jpg" 
-                            alt="feature1"> -->
-                <i class="tw-text-5xl tw-text-primary bi bi-fire "></i>
-                <h3 class="tw-text-2xl tw-font-semibold">Feature 6</h3>
-                <div class="tw-text-[#595959]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, voluptates numquam quam expedita mollitia possimus. Quos tempora placeat pariatur est!
-                </div>
+                
+                <h3 class="tw-mt-5 tw-text-3xl tw-font-medium">Negotiate better</h3>
+                <p class="tw-text-lg">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates 
+                    tenetur officiis temporibus natus ratione nam officia tempore nostrum 
+                    esse tempora.
+                </p>
             </div>
+            <div class="tw-w-[350px] tw-h-[450px] tw-bg-[#FFEB99] tw-rounded-xl tw-p-8 tw-flex 
+                        tw-flex-col tw-gap-[5%]">
+                <div class="tw-bg-white tw-w-[80px] tw-h-[80px] tw-flex tw-rounded-full
+                                tw-place-content-center tw-items-center">
+                    <i class="material-icons md-40">shield</i>
+                </div>
+                
+                <h3 class="tw-mt-5 tw-text-3xl tw-font-medium">Secure</h3>
+                <p class="tw-text-lg">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates 
+                    tenetur officiis temporibus natus ratione nam officia tempore nostrum 
+                    esse tempora.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
+                     tw-place-items-center tw-place-content-center tw-bg-black tw-text-white 
+                     tw-min-h-[60vh] max-lg:tw-min-h-[40vh]">
+
+        <h3 class="reveal-up tw-text-5xl max-md:tw-text-2xl tw-font-medium">
+            Clients love us
+        </h3>
+        <!-- Testimonials -->
+        <div class="reveal-up tw-max-w-[750px] max-md:tw-max-w-[100vw]">
+            <div class="swiper tw-flex tw-flex-col tw-space-y-8 tw-gap-10 tw-mt-8">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide tw-flex tw-place-content-center">
+                        <div class="tw-flex tw-max-w-[750px] tw-h-fit 
+                                    tw-place-content-center tw-shadow-lg tw-p-4 tw-rounded-lg 
+                                    tw-gap-10 tw-place-items-center">
+                            <div class="tw-flex tw-place-items-center">
+                                <div class="tw-w-[150px] tw-h-[150px] 
+                                            max-lg:tw-w-[80px] max-lg:tw-h-[80px]
+                                            tw-overflow-hidden tw-rounded-full">
+                                    <img src="./assets/images/people/women.jpg" 
+                                            class="tw-w-full tw-h-full tw-object-cover" alt="women">
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-flex-col tw-max-w-[450px] tw-gap-4">
+                                <p class="tw-italic tw-text-gray-200 tw-mt-4 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sequi sunt velit aut omnis nulla ut, autem corrupti nemo optio ipsam amet ducimus illum? Repellendus itaque autem alias eos quis.
+                                </p>
+                                <b>- Ferman</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tw-flex tw-place-content-center">
+                        <div class="tw-flex tw-max-w-[750px] tw-h-fit 
+                                    tw-place-content-center tw-shadow-lg tw-p-4 tw-rounded-lg 
+                                    tw-gap-10 tw-place-items-center">
+                            <div class="tw-flex tw-place-items-center">
+                                <div class="tw-w-[150px] tw-h-[150px] 
+                                            max-lg:tw-w-[80px] max-lg:tw-h-[80px]
+                                            tw-overflow-hidden tw-rounded-full">
+                                    <img src="./assets/images/people/women.jpg" 
+                                            class="tw-w-full tw-h-full tw-object-cover" alt="women">
+                                </div>
+                            </div>
+                            <div class="tw-flex tw-flex-col tw-max-w-[450px] tw-gap-4">
+                                <p class="tw-italic tw-text-gray-200 tw-mt-4 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sequi sunt velit aut omnis nulla ut, autem corrupti nemo optio ipsam amet ducimus illum? Repellendus itaque autem alias eos quis.
+                                </p>
+                                <b>- Ferman</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination-container tw-flex tw-place-content-center"></div>
+
+                <div class="tw-flex tw-gap-6 tw-place-content-center">
+                    <div class="testmonial-prev tw-w-[40px] tw-h-[40px] tw-rounded-full tw-flex 
+                                tw-place-content-center tw-place-items-center tw-text-2xl
+                                tw-border-solid tw-border-gray-300 tw-border-2">
+                        <i class="bi bi-arrow-left"></i>
+                    </div>
+                    <div class="testmonial-next tw-w-[40px] tw-h-[40px] tw-rounded-full tw-flex 
+                                tw-place-content-center tw-place-items-center tw-text-2xl
+                                tw-border-solid tw-border-gray-300 tw-border-2">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="tw-w-full tw-max-w-[100vw] tw-min-h-[80vh]
+                    tw-flex tw-flex-col tw-overflow-hidden tw-relative 
+                    tw-place-items-center tw-place-content-center tw-p-6
+                    "
+                    id=""
+                    >
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-gap-5 tw-place-items-center">
+            <div class="reveal-up tw-flex tw-flex-col tw-gap-3 tw-text-center tw-mt-5">
+                <h2 class="tw-text-4xl tw-font-semibold">Take your negotiation to next level</h2>
+            </div>
+            <div class="tw-flex tw-flex-wrap tw-max-w-[60%] tw-place-content-center tw-mt-6 max-lg:tw-flex-col tw-gap-2">
+                <div class="reveal-up tw-flex tw-flex-col tw-w-[350px] tw-h-[150px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="tw-text-2xl  bi bi-boombox-fill "></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 1</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-flex-col tw-w-[350px] tw-h-[150px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="tw-text-2xl  bi bi-0-circle-fill "></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 2</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-flex-col tw-w-[350px] tw-h-[150px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="tw-text-2xl  bi bi-0-square-fill"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 3</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-flex-col tw-w-[350px] tw-h-[150px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="tw-text-2xl  bi bi-airplane-engines-fill "></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 4</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-flex-col tw-w-[350px] tw-h-[150px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="tw-text-2xl  bi bi-cake-fill"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 5</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-flex-col tw-w-[350px] tw-h-[150px] tw-p-4 tw-gap-2">
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="tw-text-2xl  bi bi-shield-fill "></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 6</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                
+            </div>
+
+            <a href=""
+                    aria-label="download"
+                    class=" reveal-up
+                            tw-p-1
+                            tw-pl-4
+                            tw-rounded-full
+                            tw-bg-black
+                            tw-text-white
+                            tw-flex tw-gap-2
+                            tw-h-[40px]
+                            tw-place-items-center
+                        "   
+                        >
+                    <span>Download</span>
+                    <div class="tw-bg-primary tw-w-[30px] tw-h-[30px] tw-rounded-full tw-flex 
+                                    tw-place-items-center tw-place-content-center
+                                     tw-text-black tw-font-semibold">
+                        <i class="bi bi-download" ></i>
+                    </div>
+                </a>
+        </div>
+    </section>
+
 
     <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
                      tw-place-items-center">
 
-        <h3 class="tw-text-3xl max-md:tw-text-2xl tw-text-primary tw-font-medium">
-            What our clients say
-        </h3>
-        <!-- Testimonials -->
-        <div class="max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3 tw-space-y-8 tw-gap-10 tw-mt-8">
-            <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
-                <div class="tw-flex tw-gap-3 tw-place-items-center">
-                    <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
-                            tw-border-[2px] tw-border-primary
-                            tw-overflow-hidden tw-rounded-full">
-                        <img src="./assets/images/people/women.jpg" 
-                                class="tw-w-full tw-h-full tw-object-cover" alt="women">
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-font-semibold">Trich B</div>
-                        <div class="tw-text-[#4b4b4b]">AMI, ceo</div>
-                    </div>
-
-                </div>
-                <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sequi sunt velit aut omnis nulla ut, autem corrupti nemo optio ipsam amet ducimus illum? Repellendus itaque autem alias eos quis.
-                </p>
-            </div>
-            <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
-                <div class="tw-flex tw-gap-3 tw-place-items-center">
-                    <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
-                            tw-border-[2px] tw-border-primary
-                            tw-overflow-hidden tw-rounded-full">
-                        <img src="./assets/images/people/man.jpg" 
-                                class="tw-w-full tw-h-full tw-object-cover" alt="man">
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-font-semibold">John B</div>
-                        <div class="tw-text-[#4b4b4b]">ABC, cto</div>
-                    </div>
-
-                </div>
-                <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore deserunt delectus consectetur enim cupiditate ab nemo voluptas repellendus qui quas..
-                </p>
-            </div>
-            <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
-                <div class="tw-flex tw-gap-3 tw-place-items-center">
-                    <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
-                            tw-border-[2px] tw-border-primary
-                            tw-overflow-hidden tw-rounded-full">
-                        <img src="./assets/images/people/man2.jpg" 
-                                class="tw-w-full tw-h-full tw-object-cover" alt="man">
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-font-semibold">Mante </div>
-                        <div class="tw-text-[#4b4b4b]">xyz, cto</div>
-                    </div>
-
-                </div>
-                <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, numquam.
-                </p>
-            </div>
-            <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
-                <div class="tw-flex tw-gap-3 tw-place-items-center">
-                    <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
-                            tw-border-[2px] tw-border-primary
-                            tw-overflow-hidden tw-rounded-full">
-                        <img src="./assets/images/people/women.jpg" 
-                                class="tw-w-full tw-h-full tw-object-cover" alt="man">
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-font-semibold">Lara </div>
-                        <div class="tw-text-[#4b4b4b]">xz, cto</div>
-                    </div>
-
-                </div>
-                <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, saepe illum. Dicta quisquam praesentium quod!
-                </p>
-            </div>
-            <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
-                <div class="tw-flex tw-gap-3 tw-place-items-center">
-                    <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
-                            tw-border-[2px] tw-border-primary
-                            tw-overflow-hidden tw-rounded-full">
-                        <img src="./assets/images/people/man.jpg" 
-                                class="tw-w-full tw-h-full tw-object-cover" alt="man">
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-font-semibold">James </div>
-                        <div class="tw-text-[#4b4b4b]">app, cto</div>
-                    </div>
-
-                </div>
-                <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus non enim debitis rem neque beatae explicabo corrupti porro ullam?
-                </p>
-            </div>
-            <div class="tw-break-inside-avoid tw-flex tw-flex-col tw-w-[350px] max-lg:tw-w-[320px] tw-h-fit tw-shadow-lg tw-p-4 tw-rounded-lg ">
-                <div class="tw-flex tw-gap-3 tw-place-items-center">
-                    <div class="tw-w-[50px] tw-h-[50px] tw-border-solid 
-                            tw-border-[2px] tw-border-primary
-                            tw-overflow-hidden tw-rounded-full">
-                        <img src="./assets/images/people/man2.jpg" 
-                                class="tw-w-full tw-h-full tw-object-cover" alt="man">
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-font-semibold">Ron </div>
-                        <div class="tw-text-[#4b4b4b]">marketplace, cto</div>
-                    </div>
-
-                </div>
-                <p class="tw-italic tw-text-gray-600 tw-mt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga accusamus non enim debitis rem neque beatae explicabo corrupti porro ullam?
-                </p>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
-                     tw-place-items-center" id="pricing">
-
-        <h3 class="tw-text-3xl max-md:tw-text-2xl tw-text-primary tw-font-medium">
-            Simple pricing
+        <h3 class="reveal-up tw-text-4xl max-md:tw-text-2xl  tw-font-medium">
+            Read our articles for more insights
         </h3>
         <!-- pricing -->
-        <div class="tw-flex tw-flex-wrap tw-gap-8 tw-place-content-center max-lg:tw-flex-col tw-mt-10">
+        <div class="reveal-up tw-flex tw-flex-wrap tw-gap-10 tw-place-content-center max-lg:tw-flex-col tw-mt-10">
 
-            <div class="tw-w-[380px] max-lg:tw-w-[320px] tw-p-8 tw-flex tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl">
-                <h3 class="">
-                    <span class="tw-text-5xl tw-font-semibold">$9</span>
-                    <span class="tw-text-gray-600 tw-text-2xl">/mo</span>
-                </h3>
-                <p class="tw-text-center tw-text-gray-600 tw-mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
-                <hr>
-                <ul class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-lg tw-text-center tw-text-gray-600">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-                <a href="http://" class="tw-mt-8 btn !tw-w-full hover:tw-scale-x-[1.02] 
-                                         tw-transition-transform tw-duration-[0.3s]">
-                    Get now
-                </a>
-            </div>
-            <div class="tw-w-[380px] max-lg:tw-w-[320px] tw-p-8 tw-flex tw-flex-col tw-place-items-center tw-gap-2 
-                        tw-rounded-lg tw-shadow-xl tw-border-2 tw-border-primary">
-                <h3 class="">
-                    <span class="tw-text-5xl tw-font-semibold">$19</span>
-                    <span class="tw-text-gray-600 tw-text-2xl">/mo</span>
-                </h3>
-                <p class="tw-text-center tw-text-gray-600 tw-mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
-                <hr>
-                <ul class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-lg tw-text-center tw-text-gray-600">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-                <a href="http://" class="tw-mt-8 btn !tw-w-full hover:tw-scale-x-[1.02] 
-                                         tw-transition-transform tw-duration-[0.3s]">
-                    Get now
-                </a>
-            </div>
-            <div class="tw-w-[380px] max-lg:tw-w-[320px] tw-p-8 tw-flex tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl">
-                <h3 class="">
-                    <span class="tw-text-5xl tw-font-semibold">$49</span>
-                    <span class="tw-text-gray-600 tw-text-2xl">/mo</span>
-                </h3>
-                <p class="tw-text-center tw-text-gray-600 tw-mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
-                <hr>
-                <ul class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-lg tw-text-center tw-text-gray-600">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-                <a href="http://" class="tw-mt-8 btn !tw-w-full hover:tw-scale-x-[1.02] 
-                                         tw-transition-transform tw-duration-[0.3s]">
-                    Get now
-                </a>
-            </div>
-        </div>
-
-    </section>
-    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[2%]
-                     tw-place-items-center" id="pricing">
-
-        <h3 class="tw-text-3xl max-md:tw-text-2xl tw-text-primary tw-font-medium">
-            Read more
-        </h3>
-        <!-- pricing -->
-        <div class="tw-flex tw-flex-wrap tw-gap-8 tw-place-content-center max-lg:tw-flex-col tw-mt-10">
-
-            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[300px] tw-p-2 tw-flex tw-flex-col 
-                        tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl tw-overflow-clip">
+            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[400px] tw-p-4 tw-flex tw-flex-col 
+                                tw-gap-2 tw-rounded-lg tw-shadow-xl tw-bg-[#edecec79] tw-overflow-clip">
 
                 <div class="tw-rounded-md tw-overflow-hidden tw-h-[200px] tw-w-full">
                     <img src="./assets/images/home/sample.jpg" 
@@ -586,14 +568,17 @@
                         class="tw-w-full tw-h-full tw-object-cover"
                         srcset="">
                 </div>
-                <h3 class="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                <h3 class="tw-text-2xl max-md:tw-text-xl tw-font-semibold">
                     Article 1
                 </h3>
-                <p class="tw-text-center tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
-               
+                <p class=" tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
+                <span>
+                    <span>Learn more</span>
+                    <i class="bi bi-arrow-right"></i>
+                </span>
             </a>
-            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[300px] tw-p-2 tw-flex tw-flex-col 
-                        tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl tw-overflow-clip">
+            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[400px] tw-p-4 tw-flex tw-flex-col 
+                                tw-gap-2 tw-rounded-lg tw-shadow-xl tw-bg-[#edecec79] tw-overflow-clip">
 
                 <div class="tw-rounded-md tw-overflow-hidden tw-h-[200px] tw-w-full">
                     <img src="./assets/images/home/sample.jpg" 
@@ -601,14 +586,17 @@
                         class="tw-w-full tw-h-full tw-object-cover"
                         srcset="">
                 </div>
-                <h3 class="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                <h3 class="tw-text-2xl max-md:tw-text-xl tw-font-semibold">
                     Article 2
                 </h3>
-                <p class="tw-text-center tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
-               
+                <p class=" tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
+                <span>
+                    <span>Learn more</span>
+                    <i class="bi bi-arrow-right"></i>
+                </span>
             </a>
-            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[300px] tw-p-2 tw-flex tw-flex-col 
-                        tw-place-items-center tw-gap-2 tw-rounded-lg tw-shadow-xl tw-overflow-clip">
+            <a href="" class="tw-w-[350px] max-lg:tw-w-[300px] tw-h-[400px] tw-p-4 tw-flex tw-flex-col 
+                                tw-gap-2 tw-rounded-lg tw-shadow-xl tw-bg-[#edecec79] tw-overflow-clip">
 
                 <div class="tw-rounded-md tw-overflow-hidden tw-h-[200px] tw-w-full">
                     <img src="./assets/images/home/sample.jpg" 
@@ -616,11 +604,14 @@
                         class="tw-w-full tw-h-full tw-object-cover"
                         srcset="">
                 </div>
-                <h3 class="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                <h3 class="tw-text-2xl max-md:tw-text-xl tw-font-semibold">
                     Article 3
                 </h3>
-                <p class="tw-text-center tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
-               
+                <p class=" tw-text-gray-600 tw-mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo!</p>
+                <span>
+                    <span>Learn more</span>
+                    <i class="bi bi-arrow-right"></i>
+                </span>
             </a>
         </div>
     </section>
@@ -639,7 +630,6 @@
                     tw-place-items-center
                     ">
 
-            <h2 class="tw-text-2xl max-md:tw-text-xl tw-text-primary">Special Newsletter signup</h2>
             <h2 class="tw-text-xl max-md:tw-text-lg">Keep yourself updated</h2>
 
             <div class="tw-flex tw-h-[60px]  tw-p-2 
@@ -698,6 +688,19 @@
                     tw-gap-4">
 
             <h2 class="tw-text-3xl max-md:tw-text-xl">
+                Company
+            </h2>
+            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                <a href="" class="footer-link">Pricing</a>
+                <a href="" class="footer-link">FAQ</a>
+                <a href="" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+        
+        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
+                    tw-gap-4">
+
+            <h2 class="tw-text-3xl max-md:tw-text-xl">
                 Resources
             </h2>
             <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
@@ -709,15 +712,66 @@
             </div>
         </div>
 
-
     </footer>
 
 </body>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js" integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
 <script src="./index.js"></script>
+
+<style>
+   .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        /* font-size: 12px; */
+        opacity: 1;
+        background: #f7f7f7fa;
+        left: auto;
+    }
+    .swiper-pagination-bullet:hover {
+        color: #000;
+        opacity: 1;
+        background: #ede0e0bd;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: #f39696 !important;
+    }
+
+    .swiper{
+        padding: 10px !important;
+    }
+</style>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+
+    // If we need pagination
+    pagination: {
+            el: ".pagination-container",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return `<span class="${className}"></span>`
+            },
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.testmonial-next',
+        prevEl: '.testmonial-prev',
+    },
+
+    });
+</script>
 
 </html>

@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/apps/**/*.{html,jsx, js}",
-		"./src/apps/**/*.js",
-		"./src/apps/**/*.html",
+		"./src/apps/AISales/**/*.{html,jsx, js}",
+		"./src/apps/AISales/**/*.js",
+		"./src/apps/AISales/**/*.html",
 	
 		// "*.{html,jsx}"
 	],

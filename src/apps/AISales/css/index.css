@@ -3,11 +3,12 @@
 :root{
 
     --btn-color: #fdfdfd;/* button color*/
-    --btn-bg: #155eef;/* button bg color*/
+    --btn-bg: #0d0d0d;/* button bg color*/
 
-    --primary-text-color: #155eef;
-    --link-hover: #155eef;
-    --input-hover-bd-color: #155eef;
+    --primary-text-color: #000;
+    --link-hover: #6dbb00;
+    --footer-link-hover: #6dbb00;
+    --input-focus-bd-color: #0d0d0d;
 }
 
 
@@ -50,6 +51,10 @@ header > .collapsible-header{
     color: var(--link-hover);
 }
 
+.material-icons.md-40 { 
+    font-size: 40px; 
+}
+
 .primary-text-color{
     color: var(--primary-text-color);
 }
@@ -65,7 +70,7 @@ header > .collapsible-header{
 .btn{
     padding: 10px 15px;
     width: max-content;
-    border-radius: 6px;
+    border-radius: 25px;
     color: var(--btn-color);
     background-color: var(--btn-bg);
     justify-content: center;
@@ -85,7 +90,7 @@ header > .collapsible-header{
 .input{
     padding: 10px;
     background-color: transparent;
-    border-radius: 6px;
+    border-radius: 25px;
     /* outline: none; */
     min-width: 100px;
     border: 2px solid #818080;
@@ -93,7 +98,7 @@ header > .collapsible-header{
 }
 
 .input:active, .input:focus, .input:focus-within{
-    border: 2px solid var(--input-hover-bd-color);
+    border: 2px solid var(--input-focus-bd-color);
 }
 
 .input-error{
@@ -117,7 +122,7 @@ header > .collapsible-header{
 }
 
 .footer-link:hover{
-    color: #483cf4;
+    color: var(--footer-link-hover);
 }
 
 

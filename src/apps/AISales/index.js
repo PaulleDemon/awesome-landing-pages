@@ -58,31 +58,75 @@ window.addEventListener("resize", responsive)
 
 gsap.registerPlugin(ScrollTrigger)
 
-
-const numberTimeline = gsap.timeline({paused: true, scrollTrigger: {
-    trigger: "#numbers",
-    start: "100% 100%", // when the top of the trigger hits the top of the viewport
-    end: "100% 90%", // when bottom trigger hits bottom of the viewport
-    // markers: true,
-}
+gsap.to(".reveal-hero-text", {
+    opacity: 0,
+    y: "100%",
 })
 
-numberTimeline.fromTo("#numbers-container", {
-    scale: 0.8,
-}, {
+gsap.to(".reveal-hero-img", {
+    opacity: 0,
+    y: "100%",
+})
 
-    scale: 1,
-    duration: 3
-}).to("#installs", {
-    innerText: 300,
-    duration: 3,
-    snap: {
-        innerText: 1
-    },
-}, "<").to("#hours", {
-    innerText: 500,
-    duration: 3,
-    snap: {
-        innerText: 1
-    }
-}, "<")
+gsap.to("#hero-img-bg", {
+    scale: 0
+})
+
+gsap.to(".reveal-up", {
+    opacity: 0,
+    y: "100%",
+})
+
+
+window.addEventListener("load", () => {
+    // animate from initial position
+    gsap.to(".reveal-hero-text", {
+        opacity: 1,
+        y: "0%",
+        duration: 0.8,
+        // ease: "power3.out",
+        stagger: 0.5, // Delay between each word's reveal,
+        // delay: 3
+    })
+
+    gsap.to(".reveal-hero-img", {
+        opacity: 1,
+        y: "0%",
+    })
+
+    gsap.to("#hero-img-bg", {
+        scale: 1,
+        duration: 0.8,
+        delay: 0.4
+    })
+    
+})
+
+
+// ------------- reveal section animations ---------------
+
+const sections = gsap.utils.toArray("section")
+
+sections.forEach((sec) => {
+
+    const revealUptimeline = gsap.timeline({paused: true, 
+                                            scrollTrigger: {
+                                                            trigger: sec,
+                                                            start: "10% 80%", // top of trigger hits the top of viewport
+                                                            end: "20% 90%",
+                                                            // markers: true,
+                                                            // scrub: 1,
+                                                        }})
+
+    revealUptimeline.to(sec.querySelectorAll(".reveal-up"), {
+        opacity: 1,
+        duration: 0.8,
+        y: "0%",
+        stagger: 0.2,
+    })
+
+
+})
+
+
+
