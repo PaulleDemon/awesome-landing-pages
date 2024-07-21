@@ -1,845 +1,824 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Law Group</title>
-    <meta name="description" content="">
-    
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Title of the project" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
-    <meta property="og:image" content="" />
-    
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+        <title>Law Group</title>
+        <meta name="description" content="" />
 
-    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
-    <link rel="stylesheet" href="./css/tailwind-build.css">
-    <link rel="stylesheet" href="./css/index.css">
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
 
-</head>
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        />
 
-<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#ffffff] 
-                tw-flex tw-flex-col">
-    
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="./css/index.css" />
 
-    <header class="tw-flex tw-w-full tw-z-20
-                    tw-h-[80px]  
-                    tw-px-[10%]
-                    max-md:tw-mr-auto
-                    tw-bg-primary
-                    tw-place-items-center
-                    tw-relative
-                    max-lg:tw-px-[5%]
-                    ">
-            
-        <div class="tw-w-full tw-h-full tw-relative tw-flex tw-place-items-center">
-            <div class="tw-absolute tw-bottom-1 tw-h-[1px] tw-w-[100%] tw-bg-white"></div>
-        
-            <div class="tw-flex tw-w-fit">
-                <div class="tw-w-[50px] tw-p-1">
-                    <img src="./assets/logo.png" 
-                        alt="law logo" class="tw-object-contain">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-bg-[#ffffff]"
+    >
+        <header
+            class="tw-relative tw-z-20 tw-flex tw-h-[80px] tw-w-full tw-place-items-center tw-bg-primary tw-px-[10%] max-lg:tw-px-[5%] max-md:tw-mr-auto"
+        >
+            <div
+                class="tw-relative tw-flex tw-h-full tw-w-full tw-place-items-center"
+            >
+                <div
+                    class="tw-absolute tw-bottom-1 tw-h-[1px] tw-w-[100%] tw-bg-white"
+                ></div>
+
+                <div class="tw-flex tw-w-fit">
+                    <div class="tw-w-[50px] tw-p-1">
+                        <img
+                            src="./assets/logo.png"
+                            alt="law logo"
+                            class="tw-object-contain"
+                        />
+                    </div>
                 </div>
-            </div>
-            <div class="collapsible-header  animated-collapse"
-                        id="collapsed-header-items"
-                        >
-                <div class=" tw-w-fit
-                                tw-flex tw-gap-3 tw-h-full
-                                lg:tw-place-items-center 
-                                max-lg:tw-place-items-end
-                                max-lg:tw-flex-col
-                                max-lg:tw-mt-[30px]
-                                max-lg:tw-gap-5
-                                tw-text-lg
-                            ">
-                    <a class="header-links" href="">
-                        About us
-                    </a>
-                    <a class="header-links" href="">
-                        Services
-                    </a>
-                    <a class="header-links" href="">
-                        Practice areas
-                    </a>
-                    <a class="header-links" href="">
-                        Contact
-                    </a>
-                
-                </div>
-                <div class="tw-ml-auto tw-flex tw-gap-[20px] tw-place-items-center tw-text-xl
-                            tw-text-gray-100
-                             max-md:tw-place-content-center
-                             max-md:tw-w-full
-                             ">
-                    <a href="https://www.facebook.com/" 
-                            target="_blank" 
+                <div
+                    class="collapsible-header animated-collapse"
+                    id="collapsed-header-items"
+                >
+                    <div
+                        class="tw-flex tw-h-full tw-w-fit tw-gap-3 tw-text-lg max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-place-items-center"
+                    >
+                        <a class="header-links" href=""> About us </a>
+                        <a class="header-links" href=""> Services </a>
+                        <a class="header-links" href=""> Practice areas </a>
+                        <a class="header-links" href=""> Contact </a>
+                    </div>
+                    <div
+                        class="tw-ml-auto tw-flex tw-place-items-center tw-gap-[20px] tw-text-xl tw-text-gray-100 max-md:tw-w-full max-md:tw-place-content-center"
+                    >
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
                             rel="noreferrer noopener"
                             area-label="facebook"
-                            class="hover:tw-text-white
-                                    tw-transition-colors
-                                    tw-duration-[0.3s]
-                                    "
-                            >
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.twitter.com/"
+                            class="tw-transition-colors tw-duration-[0.3s] hover:tw-text-white"
+                        >
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a
+                            href="https://www.twitter.com/"
                             target="_blank"
                             rel="noreferrer noopener"
                             area-label="twitter"
-                            class="hover:tw-text-white
-                                    tw-transition-colors
-                                    tw-duration-[0.3s]
-                                    "
-                                >
-                        <i class="bi bi-twitter"></i>
-                    </a>
-    
-                   
+                            class="tw-transition-colors tw-duration-[0.3s] hover:tw-text-white"
+                        >
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
                 </div>
+                <button
+                    class="bi bi-list tw-absolute tw-right-3 tw-top-5 tw-z-50 tw-text-2xl tw-text-white lg:tw-hidden"
+                    onclick="toggleHeader()"
+                    aria-label="menu"
+                    id="collapse-btn"
+                >
+                    <!-- <i class="bi bi-list"></i> -->
+                </button>
             </div>
-            <button class="tw-absolute tw-text-white tw-z-50 
-                            tw-right-3
-                            tw-top-5    
-                            tw-text-2xl  bi bi-list lg:tw-hidden" 
-                    onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
-                <!-- <i class="bi bi-list"></i> -->
-            </button>
-        </div>
-        
-    </header>
+        </header>
 
-    <section class="tw-w-full tw-min-h-[100vh] tw-max-w-[100vw] tw-place-content-center
-                     tw-flex tw-flex-col tw-overflow-hidden tw-bg-primary tw-text-white">
-
-        <div class="tw-w-full tw-h-full  tw-flex tw-flex-col tw-px-[10%] tw-mt-4">
-
-            <div class="tw-w-full tw-h-full tw-flex max-md:tw-flex-col tw-gap-4">
-                <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-gap-5 tw-place-content-center">
-                    <h2 class="tw-text-7xl max-lg:tw-text-4xl tw-leading-normal">
-                        Legal experts at 
-                        <br>
-                        your service
-                    </h2>
-                    <div class="tw-max-w-[550px]">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque illum vitae quo a explicabo in maxime dolores repudiandae rerum tempora.
-                    </div>
-                    <div class="tw-flex tw-gap-4 !tw-text-base max-md:tw-flex-col">
-                        <a href="" class="btn !tw-bg-[#fff] !tw-text-black">
-                            <span>Watch videos</span>
-                            <i class="bi bi-camera-video-fill"></i>
-                        </a>
-                        <a href="" class="btn !tw-bg-secondary 
-                                        hover:tw-translate-x-2 
-                                        tw-duration-[0.3s] 
-                                        tw-transition-transform
-                                        ">
-                            <span>Get free consultation</span> 
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class=" tw-w-full tw-h-full tw-flex tw-place-content-center tw-place-items-center">
-
-                    <div class="tw-w-[550px] tw-max-w-[450px] tw-max-h-[650px] 
-                                tw-overflow-hidden tw-relative">
-                        <img src="./assets/images/homepage/lawyer3.png" 
-                                alt="lawyer" class="tw-w-full tw-h-full tw-object-cover">
-
-                        <div class="tw-absolute gradient tw-w-full tw-h-full tw-left-0 tw-top-0">
-                            
+        <section
+            class="tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-overflow-hidden tw-bg-primary tw-text-white"
+        >
+            <div
+                class="tw-mt-4 tw-flex tw-h-full tw-w-full tw-flex-col tw-px-[10%]"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-full tw-gap-4 max-md:tw-flex-col"
+                >
+                    <div
+                        class="tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-5"
+                    >
+                        <h2
+                            class="tw-text-7xl tw-leading-normal max-lg:tw-text-4xl"
+                        >
+                            Legal experts at
+                            <br />
+                            your service
+                        </h2>
+                        <div class="tw-max-w-[550px]">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Neque illum vitae quo a explicabo in maxime
+                            dolores repudiandae rerum tempora.
                         </div>
-                        
+                        <div
+                            class="tw-flex tw-gap-4 !tw-text-base max-md:tw-flex-col"
+                        >
+                            <a href="" class="btn !tw-bg-[#fff] !tw-text-black">
+                                <span>Watch videos</span>
+                                <i class="bi bi-camera-video-fill"></i>
+                            </a>
+                            <a
+                                href=""
+                                class="btn !tw-bg-secondary tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                            >
+                                <span>Get free consultation</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
 
+                    <div
+                        class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-center"
+                    >
+                        <div
+                            class="tw-relative tw-max-h-[650px] tw-w-[550px] tw-max-w-[450px] tw-overflow-hidden"
+                        >
+                            <img
+                                src="./assets/images/homepage/lawyer3.png"
+                                alt="lawyer"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                            />
+
+                            <div
+                                class="gradient tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-full"
+                            ></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-        </div>
 
-        <div class="tw-w-full tw-gap-6
-                         tw-bg-transparent tw-z-10 
-                         tw-flex max-md:tw-flex-col tw-p-6 tw-place-content-center">
-
-                                
-                <div class="tw-flex tw-bg-secondary tw-p-6 tw-gap-6 tw-place-content-center 
-                            tw-w-[350px] tw-h-[150px]">
+            <div
+                class="tw-z-10 tw-flex tw-w-full tw-place-content-center tw-gap-6 tw-bg-transparent tw-p-6 max-md:tw-flex-col"
+            >
+                <div
+                    class="tw-flex tw-h-[150px] tw-w-[350px] tw-place-content-center tw-gap-6 tw-bg-secondary tw-p-6"
+                >
                     <div class="tw-flex tw-flex-col tw-gap-2">
-                        <p class="tw-text-xl tw-text-md">
-                            “Highly trustworthy and skilled lawyers” 
+                        <p class="tw-text-md tw-text-xl">
+                            “Highly trustworthy and skilled lawyers”
                         </p>
-                        <h3 class="tw-text-small tw-mt-auto tw-font-medium">Ben alkman</h3>
+                        <h3 class="tw-text-small tw-mt-auto tw-font-medium">
+                            Ben alkman
+                        </h3>
                     </div>
-
                 </div>
 
-                <div class="tw-flex tw-bg-secondary tw-p-6 tw-gap-6 tw-place-content-center 
-                            tw-w-[350px] tw-h-[150px]">
+                <div
+                    class="tw-flex tw-h-[150px] tw-w-[350px] tw-place-content-center tw-gap-6 tw-bg-secondary tw-p-6"
+                >
                     <div class="tw-flex tw-flex-col tw-gap-2">
-                        <p class="tw-text-xl tw-text-md">
-                            “Won our million dollar suite. We trust them to get it done” 
+                        <p class="tw-text-md tw-text-xl">
+                            “Won our million dollar suite. We trust them to get
+                            it done”
                         </p>
-                        <h3 class="tw-text-small tw-mt-auto tw-font-medium">Laura</h3>
+                        <h3 class="tw-text-small tw-mt-auto tw-font-medium">
+                            Laura
+                        </h3>
                     </div>
-
                 </div>
 
-                <div class="tw-flex tw-bg-secondary tw-p-6 tw-gap-6 tw-place-content-center 
-                            tw-w-[350px] tw-h-[150px]">
+                <div
+                    class="tw-flex tw-h-[150px] tw-w-[350px] tw-place-content-center tw-gap-6 tw-bg-secondary tw-p-6"
+                >
                     <div class="tw-flex tw-flex-col tw-gap-2">
-                        <p class="tw-text-xl tw-text-md">
-                            “The best lawyer group I have worked with.” 
+                        <p class="tw-text-md tw-text-xl">
+                            “The best lawyer group I have worked with.”
                         </p>
-                        <h3 class="tw-text-small tw-mt-auto tw-font-medium">Sam</h3>
+                        <h3 class="tw-text-small tw-mt-auto tw-font-medium">
+                            Sam
+                        </h3>
                     </div>
-
                 </div>
-
-        </div>
-        
-    </section>
-
-    <section class="tw-w-full tw-flex 
-                    tw-flex-col
-                    tw-place-content-center 
-                    tw-min-h-[100vh]
-                    tw-px-[20%]
-                    max-md:tw-px-[5%]
-                    tw-p-4
-                    tw-gap-[10%]
-                    max-md:tw-gap-[4%]
-                    tw-place-items-center
-                    tw-bg-[#fff]
-                    
-                    ">
-
-
-        <div class="tw-flex max-lg:tw-flex-col tw-gap-[10%] tw-mt-[5%]
-                        max-lg:tw-place-items-center
-                        max-lg:tw-gap-5 tw-w-full tw-place-content-center">
-
-            <div>
-                <div class="tw-relative ">
-                    <div class="
-                                tw-w-[400px] tw-h-[350px] 
-                                tw-min-w-[300px]
-                                max-lg:tw-w-[300px] max-lg:tw-h-[300px]
-                                tw-flex tw-overflow-hidden
-                                max-lg:tw-mt-[5%]
-                                ">
-                        <img src="./assets/images/homepage/law-group.jpg" 
-                                alt="law group" class="tw-w-full tw-object-cover">
-                    </div>
-                    <div class="max-lg:tw-hidden tw-absolute tw-bottom-[-100px] tw-left-[-100px] tw-w-[250px] tw-h-[250px] tw-overflow-hidden">
-                        <video class="tw-w-full tw-h-full tw-object-cover"
-                                disablepictureinpicture 
-                                muted autoplay loop
-                                >
-                            <source src="assets/videos/law.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>  
             </div>
-            <div class="tw-flex tw-flex-col tw-gap-2 tw-h-full tw-max-w-[500px]
-                        max-lg:tw-mt-2 max-lg:tw-gap-4 max-lg:tw-text-center 
-                        max-lg:tw-place-items-center">
-                
-                <h2 class="tw-text-5xl max-lg:tw-text-3xl primary-text-color">Get the right guidance and support</h2>
-                <div class=" tw-mt-6 
-                            tw-text-justify max-lg:tw-text-sm">
-                    Navigating legal challenges can be tough, but our law firm is here to help. We offer clear, personalized advice and strong support every step of the way. Whether you need expert consultation or robust representation, trust us to protect your rights and achieve the best possible outcome.
+        </section>
+
+        <section
+            class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-md:tw-gap-[4%] max-md:tw-px-[5%]"
+        >
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-place-items-center max-lg:tw-gap-5"
+            >
+                <div>
+                    <div class="tw-relative">
+                        <div
+                            class="tw-flex tw-h-[350px] tw-w-[400px] tw-min-w-[300px] tw-overflow-hidden max-lg:tw-mt-[5%] max-lg:tw-h-[300px] max-lg:tw-w-[300px]"
+                        >
+                            <img
+                                src="./assets/images/homepage/law-group.jpg"
+                                alt="law group"
+                                class="tw-w-full tw-object-cover"
+                            />
+                        </div>
+                        <div
+                            class="tw-absolute tw-bottom-[-100px] tw-left-[-100px] tw-h-[250px] tw-w-[250px] tw-overflow-hidden max-lg:tw-hidden"
+                        >
+                            <video
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                disablepictureinpicture
+                                muted
+                                autoplay
+                                loop
+                            >
+                                <source
+                                    src="assets/videos/law.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                 </div>
-                <a href="" class="btn tw-mt-2">
-                    Learn more
+                <div
+                    class="tw-flex tw-h-full tw-max-w-[500px] tw-flex-col tw-gap-2 max-lg:tw-mt-2 max-lg:tw-place-items-center max-lg:tw-gap-4 max-lg:tw-text-center"
+                >
+                    <h2
+                        class="primary-text-color tw-text-5xl max-lg:tw-text-3xl"
+                    >
+                        Get the right guidance and support
+                    </h2>
+                    <div class="tw-mt-6 tw-text-justify max-lg:tw-text-sm">
+                        Navigating legal challenges can be tough, but our law
+                        firm is here to help. We offer clear, personalized
+                        advice and strong support every step of the way. Whether
+                        you need expert consultation or robust representation,
+                        trust us to protect your rights and achieve the best
+                        possible outcome.
+                    </div>
+                    <a href="" class="btn tw-mt-2"> Learn more </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#EFEFEF] tw-p-8 tw-px-[15%] max-md:tw-h-max max-md:tw-min-h-[unset] max-md:tw-gap-[4%] max-md:tw-px-[5%]"
+        >
+            <h2 class="tw-text-2xl tw-text-secondary max-md:tw-text-lg">
+                Our services
+            </h2>
+            <h2 class="primary-text-color tw-text-4xl max-md:tw-text-2xl">
+                Services to help you win
+            </h2>
+            <!-- <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-text-center"></h2> -->
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-flex-wrap tw-place-content-center tw-place-items-center tw-gap-8 max-lg:tw-mt-4 max-lg:tw-gap-5 max-md:tw-mt-8"
+            >
+                <div
+                    class="tw-flex tw-h-[200px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-bg-white tw-p-2 tw-text-center"
+                >
+                    <div
+                        class="tw-flex tw-h-[150px] tw-w-full tw-place-content-center tw-place-items-center max-md:tw-h-[100px]"
+                    >
+                        <i
+                            class="material-icons"
+                            style="font-size: 92px; color: #a29252"
+                            >gavel</i
+                        >
+                        <!-- <img src="./assets/icons/court.svg" 
+                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-xl max-md:tw-text-lg"
+                    >
+                        Legal Counsel
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[200px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-bg-white tw-p-2 tw-text-center"
+                >
+                    <div
+                        class="tw-flex tw-h-[150px] tw-w-full tw-place-content-center tw-place-items-center max-md:tw-h-[100px]"
+                    >
+                        <i
+                            class="material-icons"
+                            style="font-size: 92px; color: #a29252"
+                        >
+                            location_city
+                        </i>
+                        <!-- <img src="./assets/icons/court.svg" 
+                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-xl max-md:tw-text-lg"
+                    >
+                        Real estate
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[200px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-bg-white tw-p-2 tw-text-center"
+                >
+                    <div
+                        class="tw-flex tw-h-[150px] tw-w-full tw-place-content-center tw-place-items-center max-md:tw-h-[100px]"
+                    >
+                        <i
+                            class="material-icons"
+                            style="font-size: 92px; color: #a29252"
+                        >
+                            group
+                        </i>
+                        <!-- <img src="./assets/icons/court.svg" 
+                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-xl max-md:tw-text-lg"
+                    >
+                        Divorce
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[200px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-bg-white tw-p-2 tw-text-center"
+                >
+                    <div
+                        class="tw-flex tw-h-[150px] tw-w-full tw-place-content-center tw-place-items-center max-md:tw-h-[100px]"
+                    >
+                        <i
+                            class="material-icons"
+                            style="font-size: 92px; color: #a29252"
+                        >
+                            groups
+                        </i>
+                        <!-- <img src="./assets/icons/court.svg" 
+                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-xl max-md:tw-text-lg"
+                    >
+                        Discrimination
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[200px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-bg-white tw-p-2 tw-text-center"
+                >
+                    <div
+                        class="tw-flex tw-h-[150px] tw-w-full tw-place-content-center tw-place-items-center max-md:tw-h-[100px]"
+                    >
+                        <i
+                            class="material-icons"
+                            style="font-size: 92px; color: #a29252"
+                        >
+                            minor_crash
+                        </i>
+                        <!-- <img src="./assets/icons/court.svg" 
+                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-xl max-md:tw-text-lg"
+                    >
+                        Accidents
+                    </div>
+                </div>
+            </div>
+
+            <a
+                href=""
+                target="_blank"
+                rel="noreferrer"
+                class="tw-mt-[5%] tw-flex tw-gap-2 tw-bg-primary tw-p-3 tw-px-[20px] tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-1 max-md:tw-p-2"
+            >
+                <span>Explore more</span>
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-bg-primary tw-p-[5%] tw-text-white max-md:tw-px-[5%]"
+        >
+            <h3
+                class="tw-text-5xl tw-font-medium tw-text-secondary max-lg:tw-text-3xl"
+            >
+                Case studies
+            </h3>
+
+            <div
+                class="grid-cols-min-auto tw-mt-[5%] tw-grid tw-w-full tw-place-content-center tw-place-items-center tw-gap-x-10 tw-gap-y-16 max-lg:tw-flex max-lg:tw-flex-wrap max-lg:tw-gap-3"
+            >
+                <a
+                    href=""
+                    class="tw-flex tw-h-[350px] tw-w-[300px] tw-flex-col tw-gap-2"
+                >
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden">
+                        <img
+                            src="assets/images/homepage/case-study1.jpg"
+                            alt="case1"
+                            class="tw-h-full tw-w-full tw-scale-[1.04] tw-object-cover tw-duration-[0.5s] hover:tw-scale-[1]"
+                        />
+                    </div>
+                    <div class="tw-flex tw-flex-col">
+                        <h3 class="tw-text-xl tw-font-medium">
+                            Discrimination suite wins $3 million
+                        </h3>
+                        <p class="tw-text-gray-300">Discrimination</p>
+                    </div>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[350px] tw-w-[300px] tw-flex-col tw-gap-2"
+                >
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden">
+                        <img
+                            src="assets/images/homepage/case-study2.jpg"
+                            alt="case1"
+                            class="tw-h-full tw-w-full tw-scale-[1.04] tw-object-cover tw-duration-[0.5s] hover:tw-scale-[1]"
+                        />
+                    </div>
+                    <div class="tw-flex tw-flex-col">
+                        <h3 class="tw-text-xl tw-font-medium">
+                            Tamber sued for accident that led to paralysis
+                        </h3>
+                        <p class="tw-text-gray-300">accidents</p>
+                    </div>
+                </a>
+
+                <a
+                    href=""
+                    class="tw-flex tw-h-[350px] tw-w-[300px] tw-flex-col tw-gap-2"
+                >
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden">
+                        <img
+                            src="assets/images/homepage/case-study3.jpg"
+                            alt="case1"
+                            class="tw-h-full tw-w-full tw-scale-[1.04] tw-object-cover tw-duration-[0.5s] hover:tw-scale-[1]"
+                        />
+                    </div>
+                    <div class="tw-flex tw-flex-col">
+                        <h3 class="tw-text-xl tw-font-medium">
+                            James wins after suing university for discrimination
+                        </h3>
+                        <p class="tw-text-gray-300">discrimination</p>
+                    </div>
+                </a>
+
+                <a
+                    href=""
+                    class="tw-flex tw-h-[350px] tw-w-[300px] tw-flex-col tw-gap-2"
+                >
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden">
+                        <img
+                            src="assets/images/homepage/case-study3.jpg"
+                            alt="case1"
+                            class="tw-h-full tw-w-full tw-scale-[1.04] tw-object-cover tw-duration-[0.5s] hover:tw-scale-[1]"
+                        />
+                    </div>
+                    <div class="tw-flex tw-flex-col">
+                        <h3 class="tw-text-xl tw-font-medium">
+                            Another win for public
+                        </h3>
+                        <p class="tw-text-gray-300">accidents</p>
+                    </div>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[350px] tw-w-[300px] tw-flex-col tw-gap-2"
+                >
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden">
+                        <img
+                            src="assets/images/homepage/case-study1.jpg"
+                            alt="case1"
+                            class="tw-h-full tw-w-full tw-scale-[1.04] tw-object-cover tw-duration-[0.5s] hover:tw-scale-[1]"
+                        />
+                    </div>
+                    <div class="tw-flex tw-flex-col">
+                        <h3 class="tw-text-xl tw-font-medium">
+                            Another win for public
+                        </h3>
+                        <p class="tw-text-gray-300">accidents</p>
+                    </div>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[350px] tw-w-[300px] tw-flex-col tw-gap-2"
+                >
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden">
+                        <img
+                            src="assets/images/homepage/case-study2.jpg"
+                            alt="case1"
+                            class="tw-h-full tw-w-full tw-scale-[1.04] tw-object-cover tw-duration-[0.5s] hover:tw-scale-[1]"
+                        />
+                    </div>
+                    <div class="tw-flex tw-flex-col">
+                        <h3 class="tw-text-xl tw-font-medium">
+                            Family wins back their home
+                        </h3>
+                        <p class="tw-text-gray-300">real estate</p>
+                    </div>
                 </a>
             </div>
-        </div>
-    </section>
-    
-    <section class="tw-w-full tw-flex 
-                    tw-flex-col
-                    tw-min-h-[100vh]
-                    max-md:tw-min-h-[unset]
-                    max-md:tw-h-max
-                    tw-px-[15%]
-                    max-md:tw-px-[5%]
-                    tw-p-8
-                    tw-gap-[10%]
-                    max-md:tw-gap-[4%]
-                    tw-place-items-center
-                    tw-place-content-center
-                    tw-bg-[#EFEFEF]
-                    ">
+        </section>
 
-        <h2 class="tw-text-2xl max-md:tw-text-lg tw-text-secondary">Our services</h2>
-        <h2 class="tw-text-4xl max-md:tw-text-2xl primary-text-color">Services to help you win</h2>
-        <!-- <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-text-center"></h2> -->
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[5%]"
+        >
+            <h3
+                class="primary-text-color tw-text-3xl tw-font-medium max-md:tw-text-2xl"
+            >
+                What some of our clients say
+            </h3>
 
-        <div class="tw-w-full tw-mt-[5%] tw-flex 
-                    tw-flex-wrap
-                    tw-gap-8
-                    max-md:tw-mt-8
-                    max-lg:tw-gap-5
-                    max-lg:tw-mt-4
-                    tw-place-items-center
-                    tw-place-content-center">
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]"
+            >
+                <div class="review-container tw-flex tw-flex-col">
+                    <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
+                        <!-- testimonials -->
+                        <div
+                            class="slides fade tw-text-justify tw-text-lg max-md:tw-text-base"
+                        >
+                            <q class="tw-italic tw-text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Architecto sapiente laudantium
+                                id ratione! Fugiat nulla ut, possimus facere sit
+                                natus.
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Sandra Brooks</p>
+                        </div>
 
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-p-2
-                        tw-w-[200px] tw-h-[200px]
-                        tw-bg-white
-                        ">
+                        <div
+                            class="slides fade tw-text-justify tw-text-lg max-md:tw-text-base"
+                        >
+                            <q class="tw-italic tw-text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Laudantium tempora
+                                reprehenderit illo accusamus minus sunt.
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Joshua Simmons</p>
+                        </div>
 
-                <div class="tw-w-full tw-h-[150px] tw-flex 
-                            tw-place-items-center tw-place-content-center 
-                            max-md:tw-h-[100px]">
-                    <i class="material-icons" style="font-size: 92px; color: #A29252">gavel</i>
-                    <!-- <img src="./assets/icons/court.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
+                        <div
+                            class="slides fade tw-text-justify tw-text-lg max-md:tw-text-base"
+                        >
+                            <q class="tw-italic tw-text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Cupiditate quaerat quia aut
+                                eveniet ipsa quae consectetur placeat debitis
+                                doloribus animi.
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Roger Neely</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation dots -->
+                    <div class="dots-container tw-mt-auto">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
-                <div class="tw-text-xl max-md:tw-text-lg 
-                            primary-text-color ">
-                    Legal Counsel
-                </div>
+            </div>
+        </section>
 
+        <section
+            class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 tw-px-[10%] max-md:tw-flex-col"
+            id="booking"
+        >
+            <div
+                class="tw-mt-4 tw-flex tw-w-full tw-max-w-[550px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-5"
+            >
+                <iframe
+                    src="https://www.google.com/maps/embed?"
+                    class="tw-h-[500px] tw-w-[500px] max-md:tw-h-[250px] max-md:tw-w-[300px]"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
 
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-p-2
-                        tw-w-[200px] tw-h-[200px]
-                        tw-bg-white
-                        ">
-
-                <div class="tw-w-full tw-h-[150px] tw-flex 
-                            tw-place-items-center tw-place-content-center 
-                            max-md:tw-h-[100px]">
-                    <i class="material-icons" style="font-size: 92px; color: #A29252">
-                        location_city
-                    </i>
-                    <!-- <img src="./assets/icons/court.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
-                </div>
-                <div class="tw-text-xl max-md:tw-text-lg 
-                            primary-text-color ">
-                    Real estate
-                </div>
-
-            </div>
-
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-p-2
-                        tw-w-[200px] tw-h-[200px]
-                        tw-bg-white
-                        ">
-
-                <div class="tw-w-full tw-h-[150px] tw-flex 
-                            tw-place-items-center tw-place-content-center 
-                            max-md:tw-h-[100px]">
-                    <i class="material-icons" style="font-size: 92px; color: #A29252">
-                        group
-                    </i>
-                    <!-- <img src="./assets/icons/court.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
-                </div>
-                <div class="tw-text-xl max-md:tw-text-lg 
-                            primary-text-color ">
-                    Divorce
-                </div>
-
-            </div>
-
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-p-2
-                        tw-w-[200px] tw-h-[200px]
-                        tw-bg-white
-                        ">
-
-                <div class="tw-w-full tw-h-[150px] tw-flex 
-                            tw-place-items-center tw-place-content-center 
-                            max-md:tw-h-[100px]">
-                    <i class="material-icons" style="font-size: 92px; color: #A29252">
-                        groups
-                    </i>
-                    <!-- <img src="./assets/icons/court.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
-                </div>
-                <div class="tw-text-xl max-md:tw-text-lg 
-                            primary-text-color ">
-                    Discrimination
-                </div>
-
-            </div>
-            
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-p-2
-                        tw-w-[200px] tw-h-[200px]
-                        tw-bg-white
-                        ">
-
-                <div class="tw-w-full tw-h-[150px] tw-flex 
-                            tw-place-items-center tw-place-content-center 
-                            max-md:tw-h-[100px]">
-                    <i class="material-icons" style="font-size: 92px; color: #A29252">
-                        minor_crash
-                    </i>
-                    <!-- <img src="./assets/icons/court.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain"> -->
-                </div>
-                <div class="tw-text-xl max-md:tw-text-lg 
-                            primary-text-color ">
-                    Accidents
-                </div>
-
-            </div>
-            
-
-        </div>
-
-        <a href=""
-                    target="_blank" rel="noreferrer"
-                    class="tw-p-3 tw-px-[20px] 
-                            tw-flex
-                            tw-gap-2
-                            tw-mt-[5%]
-                            tw-duration-[0.3s]
-                            tw-transition-transform
-                            tw-bg-primary
-                           tw-text-white
-                           hover:tw-translate-x-1
-                           max-md:tw-p-2
-                        "
+            <div class="tw-mt-[5%] tw-flex tw-h-full tw-flex-col tw-gap-[5%]">
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h2
+                        class="primary-text-color tw-text-5xl tw-font-medium max-md:tw-text-3xl"
                     >
-            <span>Explore more</span> 
-            <i class="bi bi-arrow-right"></i>
-        </a>
-        
-    </section>
-
-    <section class="tw-w-full tw-flex tw-flex-col
-                    tw-place-content-center 
-                    max-md:tw-px-[5%]
-                    tw-p-[5%]
-                    tw-place-items-center
-                    tw-bg-primary tw-text-white
-                    ">
-        <h3 class="tw-text-5xl max-lg:tw-text-3xl tw-font-medium tw-text-secondary">Case studies</h3>
-        
-        <div class="tw-w-full tw-grid grid-cols-min-auto 
-                    max-lg:tw-flex 
-                    max-lg:tw-gap-3
-                    max-lg:tw-flex-wrap tw-place-items-center
-                    tw-mt-[5%] tw-gap-y-16 tw-gap-x-10 tw-place-content-center">
-
-            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
-
-                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
-                    <img src="assets/images/homepage/case-study1.jpg" 
-                        alt="case1" class="tw-w-full tw-h-full 
-                                    tw-scale-[1.04]
-                                    tw-object-cover hover:tw-scale-[1]
-                                    tw-duration-[0.5s]
-                                    ">
+                        Request a consult
+                    </h2>
                 </div>
-                <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Discrimination suite wins $3 million</h3>
-                    <p class="tw-text-gray-300">Discrimination</p>
-                </div>
-            </a>
-            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
-
-                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
-                    <img src="assets/images/homepage/case-study2.jpg" 
-                        alt="case1" class="tw-w-full tw-h-full 
-                                    tw-scale-[1.04]
-                                    tw-object-cover hover:tw-scale-[1]
-                                    tw-duration-[0.5s]
-                                    ">
-                </div>
-                <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Tamber sued for accident that led to paralysis</h3>
-                    <p class="tw-text-gray-300">accidents</p>
-                </div>
-            </a>
-
-            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
-
-                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
-                    <img src="assets/images/homepage/case-study3.jpg" 
-                        alt="case1" class="tw-w-full tw-h-full 
-                                    tw-scale-[1.04]
-                                    tw-object-cover hover:tw-scale-[1]
-                                    tw-duration-[0.5s]
-                                    ">
-                </div>
-                <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">James wins after suing university for discrimination</h3>
-                    <p class="tw-text-gray-300">discrimination</p>
-                </div>
-            </a>
-
-            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
-
-                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
-                    <img src="assets/images/homepage/case-study3.jpg" 
-                        alt="case1" class="tw-w-full tw-h-full 
-                                    tw-scale-[1.04]
-                                    tw-object-cover hover:tw-scale-[1]
-                                    tw-duration-[0.5s]
-                                    ">
-                </div>
-                <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Another win for public</h3>
-                    <p class="tw-text-gray-300">accidents</p>
-                </div>
-            </a>
-            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
-
-                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
-                    <img src="assets/images/homepage/case-study1.jpg" 
-                        alt="case1" class="tw-w-full tw-h-full 
-                                    tw-scale-[1.04]
-                                    tw-object-cover hover:tw-scale-[1]
-                                    tw-duration-[0.5s]
-                                    ">
-                </div>
-                <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Another win for public</h3>
-                    <p class="tw-text-gray-300">accidents</p>
-                </div>
-            </a>
-            <a href="" class="tw-w-[300px] tw-h-[350px] tw-flex tw-flex-col tw-gap-2">
-
-                <div class="tw-w-full tw-h-[300px] tw-overflow-hidden">
-                    <img src="assets/images/homepage/case-study2.jpg" 
-                        alt="case1" class="tw-w-full tw-h-full 
-                                    tw-scale-[1.04]
-                                    tw-object-cover hover:tw-scale-[1]
-                                    tw-duration-[0.5s]
-                                    ">
-                </div>
-                <div class="tw-flex tw-flex-col">
-                    <h3 class="tw-text-xl tw-font-medium">Family wins back their home</h3>
-                    <p class="tw-text-gray-300">real estate</p>
-                </div>
-            </a>
-
-        </div>
-
-
-    </section>
-
-    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]
-                     tw-place-items-center">
-
-        <h3 class="tw-text-3xl max-md:tw-text-2xl primary-text-color tw-font-medium">
-            What some of our clients say
-        </h3>
-        
-        <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
-
-            <div class="review-container tw-flex tw-flex-col">
-                <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
-                    <!-- testimonials -->
-                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente laudantium id ratione! Fugiat nulla ut, possimus facere sit natus.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Sandra Brooks</p>
-                    </div>
-                
-                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tempora reprehenderit illo accusamus minus sunt.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Joshua Simmons</p>
-                    </div>
-
-                    <div class="slides fade tw-text-lg max-md:tw-text-base tw-text-justify">
-                        
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quaerat quia aut eveniet ipsa quae consectetur placeat debitis doloribus animi.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Roger Neely</p>
-
-                    </div>
-                </div>
-              
-                <!-- Navigation dots -->
-                <div class="dots-container tw-mt-auto">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="tw-w-full tw-flex 
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-4
-                    tw-gap-[10%]
-                    tw-place-items-center
-                    tw-bg-[#EFEFEF]
-                    max-md:tw-flex-col
-                    tw-overflow-hidden
-                    "
-                    id="booking"
-                    >
-
-        <div class="tw-max-w-[550px]
-                    tw-mt-4 tw-flex tw-flex-col tw-w-full 
-                    tw-place-items-center tw-place-content-center tw-gap-5">
-            <iframe src="https://www.google.com/maps/embed?" 
-                    class="tw-w-[500px] 
-                            tw-h-[500px]
-                            max-md:tw-h-[250px]
-                            max-md:tw-w-[300px]
-                            "
-                    style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-       
-        <div class="tw-flex tw-flex-col tw-gap-[5%] tw-h-full tw-mt-[5%]">
-            <div class="tw-flex tw-flex-col tw-gap-2">
-                <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-font-medium">Request a consult</h2>
-            </div>
-            <form class="tw-max-w-fit tw-p-2 tw-overflow-hidden tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-
-                <div class="tw-flex tw-gap-2">
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">First name</div>
-                        <input type="text" 
-                                class="input" 
+                <form
+                    class="tw-mt-4 tw-flex tw-max-w-fit tw-flex-col tw-gap-3 tw-overflow-hidden tw-p-2"
+                >
+                    <div class="tw-flex tw-gap-2">
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">First name</div>
+                            <input
+                                type="text"
+                                class="input"
                                 maxlength="10"
                                 required
-                                placeholder="name" >
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Last name</div>
-                        <input type="text" 
-                                class="input" 
+                                placeholder="name"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Last name</div>
+                            <input
+                                type="text"
+                                class="input"
                                 maxlength="10"
                                 required
-                                placeholder="name" >
+                                placeholder="name"
+                            />
+                        </div>
                     </div>
-                </div>
 
-                <div class="tw-flex tw-w-full tw-flex-col tw-gap-4">
-                
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Phone</div>
-                        <input type="text" 
-                                class="input" 
+                    <div class="tw-flex tw-w-full tw-flex-col tw-gap-4">
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Phone</div>
+                            <input
+                                type="text"
+                                class="input"
                                 required
                                 placeholder="phone"
-                                >
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Email</div>
-                        <input type="email" 
-                                class="input" 
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Email</div>
+                            <input
+                                type="email"
+                                class="input"
                                 required
                                 placeholder="email"
                                 id="email"
-                                >
+                            />
+                        </div>
                     </div>
-                    
-                </div>
 
+                    <div class="tw-flex tw-w-full tw-flex-col tw-gap-2">
+                        <div class="tw-text-gray-500">Inquiry</div>
+                        <textarea
+                            class="input tw-max-h-[250px] tw-min-h-[40px] tw-w-full tw-resize-y"
+                        ></textarea>
+                    </div>
 
-                <div class="tw-flex tw-flex-col tw-w-full tw-gap-2">
-                    <div class="tw-text-gray-500">Inquiry</div>
-                    <textarea class="input tw-resize-y 
-                                     tw-w-full
-                                     tw-max-h-[250px]
-                                     tw-min-h-[40px]
-                                     "></textarea>
-                    
-                </div>
-                
-                <button type="submit" 
-                        class="btn
-                            tw-transition-transform
-                            hover:tw-translate-x-2
-                            tw-duration-[0.3s]
-                            tw-mt-5
-                            tw-ml-auto
-                        ">
-                    <span>Request</span>  
-                    <i class="bi bi-arrow-right"></i> 
-                </button>
-
-            </form>
-            <!-- <div class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-center">
+                    <button
+                        type="submit"
+                        class="btn tw-ml-auto tw-mt-5 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Request</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </form>
+                <!-- <div class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-center">
                 <h3 class="tw-text-xl">To book call</h3>
                 
                 <div class="tw-text-3xl primary-text-color">
                     +1 122-122-122
                 </div>
             </div> -->
-        </div>
-        
-    </section>
+            </div>
+        </section>
 
-    <section class="tw-w-full tw-flex
-                    tw-flex-col 
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-[5%]
-                    tw-gap-[10%]
-                    tw-place-items-center
-                    tw-bg-[#EFEFEF]
-                    ">
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#EFEFEF] tw-p-[5%] tw-px-[10%]"
+        >
+            <div
+                class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
+            >
+                <h2 class="primary-text-color tw-text-3xl max-md:tw-text-xl">
+                    Special Newsletter signup
+                </h2>
+                <h2 class="tw-text-xl max-md:tw-text-lg">
+                    Get offers and updates
+                </h2>
 
-        <div class="tw-w-full tw-place-content-center 
-                    tw-flex tw-flex-col tw-gap-3
-                    tw-place-items-center
-                    ">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color">Special Newsletter signup</h2>
-            <h2 class="tw-text-xl max-md:tw-text-lg">Get offers and updates</h2>
-
-            <div class="tw-flex tw-h-[40px] 
-                        tw-overflow-hidden tw-place-items-center ">
-                <input type="email" class="input tw-w-full tw-h-full tw-outline-none tw-px-3"
+                <div
+                    class="tw-flex tw-h-[40px] tw-place-items-center tw-overflow-hidden"
+                >
+                    <input
+                        type="email"
+                        class="input tw-h-full tw-w-full tw-px-3 tw-outline-none"
                         placeholder="email"
+                    />
+                    <button
+                        class="btn tw-transition-colors tw-duration-[0.3s] hover:tw-bg-blue-900"
                     >
-                <button class="btn 
-                            hover:tw-bg-blue-900
-                            tw-duration-[0.3s]
-                            tw-transition-colors
-                            ">
-                    Signup
-                </button>   
-            </div>
-
-        </div>
-
-
-    </section>
-
-
-
-    <footer class="tw-flex  tw-w-full tw-pt-[5%] tw-pb-4
-                    tw-px-[10%] tw-place-content-around tw-gap-3 
-                    tw-bg-primary
-                    tw-text-white tw-relative
-                    ">
-
-        <div class="tw-flex tw-flex-col tw-w-full tw-relative tw-h-full tw-gap-2">
-            
-            <div class="tw-flex tw-w-full max-md:tw-flex-col tw-place-content-around tw-gap-3 tw-my-2">
-                <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                            tw-gap-6 tw-place-items-center max-md:tw-w-full">
-                    
-                    <img src="./assets/logo.png" 
-                        alt="logo" class="tw-w-[150px]">
-                    <div>
-                        12111 Cypress,   
-                        <br>
-                        TX,
-                        <br>
-                        Europe
-                    </div>
-                </div>
-
-                <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                            tw-gap-4">
-
-                    <h2 class="tw-text-3xl max-md:tw-text-xl">
-                        Practice areas
-                    </h2>
-                    <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                        <a href="" class="footer-link">Divorce</a>
-                        <a href="" class="footer-link">Real estate</a>
-                        <a href="" class="footer-link">Defamation</a>
-                        <a href="" class="footer-link">Discrimination</a>
-                    </div>
-                </div>
-                <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                            tw-gap-4">
-
-                    <h2 class="tw-text-3xl max-md:tw-text-xl">
-                        Resources
-                    </h2>
-                    <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                        <a href="" class="footer-link">About us</a>
-                        <a href="" class="footer-link">FAQ</a>
-                        <a href="" class="footer-link">Contact Us</a>
-                        <a href="" class="footer-link">Locations</a>
-                        <a href="" class="footer-link">Privacy policy</a>
-                    </div>
+                        Signup
+                    </button>
                 </div>
             </div>
-            <div class="tw-h-[1px] tw-w-[100%] tw-bg-white"></div>
-           
-            <div class="tw-flex tw-gap-4 tw-text-2xl tw-mt-3">
-                <a href="" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i>
-                </a>
+        </section>
+
+        <footer
+            class="tw-relative tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-bg-primary tw-px-[10%] tw-pb-4 tw-pt-[5%] tw-text-white"
+        >
+            <div
+                class="tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-gap-2"
+            >
+                <div
+                    class="tw-my-2 tw-flex tw-w-full tw-place-content-around tw-gap-3 max-md:tw-flex-col"
+                >
+                    <div
+                        class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+                    >
+                        <img
+                            src="./assets/logo.png"
+                            alt="logo"
+                            class="tw-w-[150px]"
+                        />
+                        <div>
+                            12111 Cypress,
+                            <br />
+                            TX,
+                            <br />
+                            Europe
+                        </div>
+                    </div>
+
+                    <div
+                        class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4"
+                    >
+                        <h2 class="tw-text-3xl max-md:tw-text-xl">
+                            Practice areas
+                        </h2>
+                        <div
+                            class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm"
+                        >
+                            <a href="" class="footer-link">Divorce</a>
+                            <a href="" class="footer-link">Real estate</a>
+                            <a href="" class="footer-link">Defamation</a>
+                            <a href="" class="footer-link">Discrimination</a>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4"
+                    >
+                        <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                        <div
+                            class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm"
+                        >
+                            <a href="" class="footer-link">About us</a>
+                            <a href="" class="footer-link">FAQ</a>
+                            <a href="" class="footer-link">Contact Us</a>
+                            <a href="" class="footer-link">Locations</a>
+                            <a href="" class="footer-link">Privacy policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-h-[1px] tw-w-[100%] tw-bg-white"></div>
+
+                <div class="tw-mt-3 tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        
+        </footer>
+    </body>
 
-    </footer>
-
-</body>
-
-<script src="./scripts/utils.js"></script>
-<script src="index.js"></script>
-
+    <script src="./scripts/utils.js"></script>
+    <script src="index.js"></script>
 </html>

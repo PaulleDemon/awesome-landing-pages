@@ -18,13 +18,15 @@
   "author": "Paul",
   "license": "MIT",
   "devDependencies": {
+    "chart.js": "^4.4.2",
+    "gsap": "^3.12.5",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "swiper": "^11.1.1",
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
-    "chart.js": "^4.4.2",
-    "gsap": "^3.12.5",
     "postcss": "^8.4.33",
-    "postcss-simple-vars": "^7.0.1",
-    "swiper": "^11.1.1"
+    "postcss-simple-vars": "^7.0.1"
   }
 }

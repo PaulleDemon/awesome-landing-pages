@@ -1,867 +1,789 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Supreme car wash</title>
-    <meta name="description" content="">
-    
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Title of the project" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
-    <meta property="og:image" content="" />
-    
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+        <title>Supreme car wash</title>
+        <meta name="description" content="" />
 
-    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
-    <link rel="stylesheet" href="./css/tailwind-build.css">
-    <link rel="stylesheet" href="./css/index.css">
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-</head>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
 
-<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#ffffff] 
-                tw-flex tw-flex-col">
-    
-    <div class="tw-w-full tw-justify-around 
-                tw-bg-gray-200 tw-h-[80px]
-                tw-flex tw-px-5
-                max-md:tw-hidden
-                tw-place-items-center
-                ">
-        <p class="tw-text-3xl primary-text-color tw-font-semibold">Supreme car wash</p>
-        
-        <div class="tw-flex tw-gap-4">
-            <div class="tw-w-[50px] tw-h-[50px] 
-                        tw-flex tw-place-items-center
-                        tw-place-content-center
-                        tw-rounded-full tw-bg-secondary
-                        tw-text-white
-                        tw-p-3
-                        ">
-                <i class="bi bi-clock tw-text-3xl 
-                            tw-font-bold"></i>
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-bg-[#ffffff]"
+    >
+        <div
+            class="tw-flex tw-h-[80px] tw-w-full tw-place-items-center tw-justify-around tw-bg-gray-200 tw-px-5 max-md:tw-hidden"
+        >
+            <p class="primary-text-color tw-text-3xl tw-font-semibold">
+                Supreme car wash
+            </p>
+
+            <div class="tw-flex tw-gap-4">
+                <div
+                    class="tw-flex tw-h-[50px] tw-w-[50px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-secondary tw-p-3 tw-text-white"
+                >
+                    <i class="bi bi-clock tw-text-3xl tw-font-bold"></i>
+                </div>
+                <div>
+                    <p class="tw-text-xl tw-font-semibold tw-text-primary">
+                        Opening hours
+                    </p>
+                    <p class="tw-text-gray-600">Mon-Fri, 8:00 - 9:00</p>
+                </div>
             </div>
-            <div>
-                <p class="tw-text-xl tw-text-primary 
-                            tw-font-semibold">Opening hours</p>
-                <p class="tw-text-gray-600">Mon-Fri, 8:00 - 9:00</p>
-            </div>
-        </div>
 
-        <div class="tw-flex tw-gap-4">
-            <div class="tw-w-[50px] tw-h-[50px] 
-                        tw-flex tw-place-items-center
-                        tw-place-content-center
-                        tw-rounded-full tw-bg-secondary
-                        tw-text-white
-                        tw-p-3
-                        ">
-                <i class="bi bi-telephone tw-text-3xl 
-                            tw-font-bold"></i>
+            <div class="tw-flex tw-gap-4">
+                <div
+                    class="tw-flex tw-h-[50px] tw-w-[50px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-secondary tw-p-3 tw-text-white"
+                >
+                    <i class="bi bi-telephone tw-text-3xl tw-font-bold"></i>
+                </div>
+                <div>
+                    <p class="tw-text-xl tw-font-semibold tw-text-primary">
+                        Call us
+                    </p>
+                    <p class="tw-text-gray-600">+1 222-222-222</p>
+                </div>
             </div>
-            <div>
-                <p class="tw-text-xl tw-text-primary 
-                            tw-font-semibold">Call us</p>
-                <p class="tw-text-gray-600">+1 222-222-222</p>
-            </div>
-        </div>
 
-        <div class="tw-flex tw-gap-4">
-            <div class="tw-w-[50px] tw-h-[50px] 
-                        tw-flex tw-place-items-center
-                        tw-place-content-center
-                        tw-rounded-full 
-                        tw-bg-secondary
-                        tw-text-white
-                        tw-p-3
-                        ">
-                <i class="bi bi-envelope tw-text-3xl 
-                            tw-font-bold"></i>
-            </div>
-            <div>
-                <p class="tw-text-xl tw-text-primary 
-                            tw-font-semibold">Email us</p>
-                <p class="tw-text-gray-600">supreme@example.com</p>
-            </div>
-        </div>
-
-    </div>  
-
-    <header class="tw-flex tw-w-full tw-z-20
-                    tw-h-[60px]  
-                    md:tw-justify-around
-                    tw-sticky tw-top-0 tw-px-[10%]
-                    tw-bg-white
-                    max-md:tw-bg-primary
-                    max-md:tw-mr-auto
-                    tw-shadow-lg
-                    ">
-        <div class="tw-flex tw-w-fit">
-            <div class="tw-w-[50px] tw-p-1">
-                <img src="./assets/logo.png" 
-                    alt="supreme-car-wash logo" class="tw-object-contain">
+            <div class="tw-flex tw-gap-4">
+                <div
+                    class="tw-flex tw-h-[50px] tw-w-[50px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-secondary tw-p-3 tw-text-white"
+                >
+                    <i class="bi bi-envelope tw-text-3xl tw-font-bold"></i>
+                </div>
+                <div>
+                    <p class="tw-text-xl tw-font-semibold tw-text-primary">
+                        Email us
+                    </p>
+                    <p class="tw-text-gray-600">supreme@example.com</p>
+                </div>
             </div>
         </div>
-        <div class="collapsible-header animated-collapse"
-                    id="collapsed-items"
-                    >
-            <div class=" tw-w-max
-                            tw-flex tw-gap-5 tw-h-full md:tw-mx-auto
-                            md:tw-place-items-center 
-                            max-md:tw-place-items-end
-                            tw-text-base max-md:tw-flex-col
-                            max-md:tw-mt-[30px]
-                            max-md:tw-gap-5
-                        ">
-                <a class="header-links" href="">
-                    About us
-                </a>
-                <a class="header-links" href="">
-                    Services
-                </a>
-                <a class="header-links" href="">
-                    Price
-                </a>
-                <a class="header-links" href="">
-                    Contact us
-                </a>
+
+        <header
+            class="tw-sticky tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-white tw-px-[10%] tw-shadow-lg max-md:tw-mr-auto max-md:tw-bg-primary md:tw-justify-around"
+        >
+            <div class="tw-flex tw-w-fit">
+                <div class="tw-w-[50px] tw-p-1">
+                    <img
+                        src="./assets/logo.png"
+                        alt="supreme-car-wash logo"
+                        class="tw-object-contain"
+                    />
+                </div>
             </div>
-            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-xl
-                         primary-text-color
-                         max-md:!tw-text-white
-                         max-md:tw-place-content-center
-                         max-md:tw-w-full
-                         ">
-                <a href="https://www.facebook.com/" 
-                        target="_blank" 
+            <div
+                class="collapsible-header animated-collapse"
+                id="collapsed-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-md:tw-mt-[30px] max-md:tw-flex-col max-md:tw-place-items-end max-md:tw-gap-5 md:tw-mx-auto md:tw-place-items-center"
+                >
+                    <a class="header-links" href=""> About us </a>
+                    <a class="header-links" href=""> Services </a>
+                    <a class="header-links" href=""> Price </a>
+                    <a class="header-links" href=""> Contact us </a>
+                </div>
+                <div
+                    class="primary-text-color tw-flex tw-place-items-center tw-gap-[20px] tw-text-xl max-md:tw-w-full max-md:tw-place-content-center max-md:!tw-text-white"
+                >
+                    <a
+                        href="https://www.facebook.com/"
+                        target="_blank"
                         rel="noreferrer noopener"
                         area-label="facebook"
-                        class="hover:tw-text-blue-600 
-                                tw-transition-colors
-                                tw-duration-[0.3s]
-                                "
-                        >
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com//"
+                        class="tw-transition-colors tw-duration-[0.3s] hover:tw-text-blue-600"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com//"
                         target="_blank"
                         rel="noreferrer noopener"
                         area-label="instagram"
-                        class="hover:tw-text-blue-600
-                                tw-transition-colors
-                                tw-duration-[0.3s]
-                                "
-                            >
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </div>
-        </div>
-        <button class="tw-absolute tw-text-white tw-z-50 
-                        tw-right-3
-                        tw-top-3
-                         tw-text-2xl  bi bi-list md:tw-hidden" 
-                onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
-            <!-- <i class="bi bi-list"></i> -->
-        </button>
-    </header>
-
-    <section class="tw-w-full tw-h-[650px] max-md:tw-h-[300px] tw-max-w-[100vw]
-                     tw-flex tw-flex-col tw-overflow-hidden">
-        <div class="slideshow-container  tw-h-full 
-                    tw-w-full tw-flex tw-flex-col">
-
-            <div class="tw-relative tw-w-full  tw-h-[650px] max-md:tw-h-full tw-overflow-clip">
-                <div class="slides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="./assets/images/slideshow/car-wash.jpg" 
-                            alt="Delux car wash"
-                            class="tw-object-cover tw-w-full tw-h-full">
-                    <div class="text">Supreme car wash</div>
-                </div>
-            
-                <div class="slides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="./assets/images/slideshow/interior.jpg" 
-                        alt="Car wash"
-                        class="tw-object-cover tw-w-full tw-h-full">
-                <div class="text">Interior car wash</div>
-                </div>
-            
-                <div class="slides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="./assets/images/slideshow/sponge-car-wash.jpg" 
-                        alt="supreme car wash"
-                        class="tw-object-cover tw-w-full tw-h-full">
-                <div class="text">Best car wash</div>
-                </div>
-
-                 <!-- Next and previous buttons -->
-                <p class="prev">&#10094;</a>
-                <p class="next">&#10095;</a>
-            </div>
-           
-              
-            <!-- The dots/circles -->
-            <div class="dots-container tw-z-10">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="tw-w-full tw-flex 
-                    tw-flex-col
-                    tw-place-content-center 
-                    tw-min-h-[60vh]
-                    tw-px-[20%]
-                    max-md:tw-px-[5%]
-                    tw-p-4
-                    tw-gap-[10%]
-                    max-md:tw-gap-[4%]
-                    tw-place-items-center
-                    tw-bg-[#fff]
-                    
-                    ">
-
-        <h1 class="tw-text-5xl primary-text-color 
-                    tw-text-center
-                    tw-font-medium max-md:tw-text-4xl">
-            Supreme Car Wash, TX
-        </h1>
-
-        <div class="tw-flex max-md:tw-flex-col tw-gap-[10%] tw-mt-[5%]
-                        max-md:tw-place-items-center
-                        max-md:tw-gap-[4%] tw-w-full tw-place-content-center">
-            <div class="tw-w-[400px] tw-h-[350px] 
-                        max-md:tw-w-[300px] max-md:tw-h-[300px]
-                        tw-flex tw-overflow-hidden
-                        max-md:tw-mt-[5%]
-                        ">
-                <img src="./assets/images/homepage/garage.jpg" 
-                        alt="engine" class="tw-w-full tw-object-cover">
-            </div>
-            <div class="tw-flex tw-flex-col tw-gap-[5%] tw-h-full 
-                        max-md:tw-mt-2 max-md:tw-gap-[3%] max-md:tw-text-center">
-                
-                <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color">About us</h2>
-                <div class="tw-max-w-[400px] tw-mt-6 
-                            tw-text-justify max-md:tw-text-sm">
-                            Supreme Car Wash offers premium car cleaning services, providing meticulous attention to detail to ensure your vehicle shines like new. Our experienced team uses top-quality products and advanced techniques to deliver superior results. Visit us today for a professional 
-                            car wash experience that leaves your vehicle looking pristine inside and out. 
-                </div>
-                <a href="https://maps.app.goo.gl/" 
-                    class="btn
-                            tw-transition-transform
-                            hover:tw-translate-x-2
-                            tw-duration-[0.3s]
-                            tw-mt-5
-                            max-md:tw-mx-auto
-                        ">
-                    <span>View on map</span>  
-                    <i class="bi bi-arrow-right"></i> 
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="tw-w-full tw-flex 
-                    tw-flex-col
-                    tw-min-h-[60vh]
-                    max-md:tw-min-h-[unset]
-                    max-md:tw-h-max
-                    tw-px-[20%]
-                    max-md:tw-px-[5%]
-                    tw-p-8
-                    tw-gap-[10%]
-                    max-md:tw-gap-[4%]
-                    tw-place-items-center
-                    tw-bg-[#EFEFEF]
-                    ">
-
-        <h2 class="tw-text-2xl max-md:tw-text-lg tw-text-secondary">Our services</h2>
-        <h2 class="tw-text-5xl max-md:tw-text-3xl tw-text-primary tw-text-center">Premium washing service</h2>
-
-        <div class="tw-w-full tw-mt-[5%] tw-flex 
-                    tw-gap-[10%]
-                    tw-justify-around
-                    max-md:tw-mt-8
-                    tw-place-content-center">
-
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-w-[200px] tw-h-[350px]
-                        max-md:tw-w-[150px] max-md:tw-h-[150px]
-                        ">
-
-                <div class="tw-w-full tw-h-[150px] max-md:tw-h-[100px]">
-                    <img src="./assets/images/icons/car-wash.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain">
-                </div>
-                <div class="tw-text-2xl max-md:tw-text-lg primary-text-color">
-                    Exterior washing
-                </div>
-
-            </div>
-
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-w-[200px] tw-h-[350px]
-                        max-md:tw-w-[150px] max-md:tw-h-[150px]
-                        ">
-
-                <div class="tw-w-full tw-h-[150px] max-md:tw-h-[100px]">
-                    <img src="./assets/images/icons/seat-cleaning.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain">
-                </div>
-                <div class="tw-text-2xl max-md:tw-text-lg primary-text-color">
-                    Seat cleaning
-                </div>
-
-            </div>
-
-            <div class="tw-flex tw-flex-col tw-gap-4
-                        tw-place-content-center
-                        tw-place-items-center
-                        tw-text-center
-                        tw-w-[200px] tw-h-[350px]
-                        max-md:tw-w-[150px] max-md:tw-h-[150px]
-                        ">
-
-                <div class="tw-w-full tw-h-[100px]">
-                    <img src="./assets/images/icons/vaccuming.svg" 
-                        alt="car wash" class="tw-h-full tw-w-full tw-object-contain">
-                </div>
-                <div class="tw-text-2xl max-md:tw-text-lg primary-text-color">
-                    Vacuuming
-                </div>
-
-            </div>
-
-        </div>
-        
-    </section>
-
-    <section class="tw-w-full tw-flex tw-flex-col
-                    tw-place-content-center 
-                    max-md:tw-px-[5%]
-                    tw-p-[5%]
-                    tw-place-items-center
-                    tw-bg-[#fff]
-                    ">
-        <h3 class="tw-text-2xl tw-font-semibold tw-text-secondary">Washing plans</h3>
-        <h3 class="tw-text-4xl tw-font-semibold primary-text-color ">Choose your plan</h3>
-        
-        <div class="tw-w-full tw-flex
-                    max-md:tw-flex-col tw-place-items-center
-                    tw-mt-[5%] tw-gap-4 tw-place-content-center">
-
-            <div class="tw-flex tw-flex-col 
-                        tw-w-[350px] tw-h-[400px]
-                        tw-bg-white
-                        tw-p-4
-                        tw-place-items-center
-                        tw-gap-3
-                        tw-rounded-lg
-                        ">
-
-                <h2 class="tw-text-3xl primary-text-color">Basic cleaning</h2>
-                <h3 class="tw-text-5xl tw-font-semibold tw-text-blue-950">$14</h3>
-                <ul class="tw-flex tw-mt-2 tw-flex-col tw-gap-2 
-                            tw-text-lg">
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Seat Washing</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Vacuum Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Exterior Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-x-circle"></i>
-                        <span>Interior Wet Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-x-circle"></i>
-                        <span>Window Wiping</span>
-                    </li>
-                </ul>
-                <a href="" class="tw-p-2 btn tw-mt-auto 
-                                hover:tw-scale-[1.02]
-                                tw-duration-[0.3s]
-                                tw-transition-transform
-                                ">
-                    Book now
-                </a>
-            </div>
-
-            <div class="tw-flex tw-flex-col 
-                        tw-w-[350px] tw-h-[400px]
-                        tw-bg-white
-                        tw-p-4
-                        tw-shadow-2xl
-                        tw-border-2
-                        tw-place-items-center
-                        tw-gap-3
-                        tw-rounded-lg
-                        ">
-
-                <h2 class="tw-text-3xl primary-text-color">Executive cleaning</h2>
-                <h3 class="tw-text-5xl tw-font-semibold">$25</h3>
-                <ul class="tw-flex tw-mt-2 tw-flex-col tw-gap-2 
-                            tw-text-lg">
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Seat Washing</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Vacuum Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Exterior Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Interior Wet Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-x-circle"></i>
-                        <span>Window Wiping</span>
-                    </li>
-                </ul>
-                <a href="" class="tw-p-2 btn tw-mt-auto
-                            hover:tw-scale-[1.02]
-                            tw-duration-[0.3s]
-                            tw-transition-transform
-                            ">
-                    Book now
-                </a>
-            </div>
-
-            <div class="tw-flex tw-flex-col 
-                        tw-w-[350px] tw-h-[400px]
-                        tw-bg-white
-                        tw-p-4
-                        tw-place-items-center
-                        tw-gap-3
-                        tw-rounded-lg
-                        ">
-
-                <h2 class="tw-text-3xl primary-text-color">Presidential cleaning</h2>
-                <h3 class="tw-text-5xl tw-font-semibold tw-text-blue-950">$35</h3>
-                <ul class="tw-flex tw-mt-2 tw-flex-col tw-gap-2 
-                            tw-text-lg">
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Seat Washing</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Vacuum Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Exterior Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Interior Wet Cleaning</span>
-                    </li>
-                    <li class="tw-flex tw-gap-2">
-                        <i class="bi bi-check-circle tw-text-green-500"></i>
-                        <span>Window Wiping</span>
-                    </li>
-                </ul>
-                <a href="" class="tw-p-2 btn tw-mt-auto
-                                    hover:tw-scale-[1.02]
-                                    tw-duration-[0.3s]
-                                    tw-transition-transform">
-                    Book now
-                </a>
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <section class="tw-w-full tw-flex 
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-4
-                    tw-gap-[10%]
-                    tw-place-items-center
-                    tw-bg-[#EFEFEF]
-                    max-md:tw-flex-col
-                    tw-overflow-hidden
-                    "
-                    id="booking"
+                        class="tw-transition-colors tw-duration-[0.3s] hover:tw-text-blue-600"
                     >
-
-        <div class="tw-w-[350px] tw-h-[350px] tw-rounded-md tw-flex 
-                    max-md:tw-hidden
-                    tw-overflow-hidden">
-            <img src="./assets/images/homepage/car-washing.jpg" 
-                    alt="car wash" class="tw-w-full tw-object-cover">
-        </div>
-        <div class="tw-flex tw-flex-col tw-gap-[5%] tw-h-full tw-mt-[5%]">
-            <div class="tw-flex tw-flex-col tw-gap-2">
-                <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-font-medium">Request car wash</h2>
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
             </div>
-            <form class="tw-max-w-[350px] tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-               
-                <div class="tw-flex tw-flex-col tw-gap-4">
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Name</div>
-                        <input type="text" 
-                                class="input" 
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-2xl tw-text-white md:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            >
+                <!-- <i class="bi bi-list"></i> -->
+            </button>
+        </header>
+
+        <section
+            class="tw-flex tw-h-[650px] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-h-[300px]"
+        >
+            <div
+                class="slideshow-container tw-flex tw-h-full tw-w-full tw-flex-col"
+            >
+                <div
+                    class="tw-relative tw-h-[650px] tw-w-full tw-overflow-clip max-md:tw-h-full"
+                >
+                    <div class="slides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img
+                            src="./assets/images/slideshow/car-wash.jpg"
+                            alt="Delux car wash"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                        <div class="text">Supreme car wash</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img
+                            src="./assets/images/slideshow/interior.jpg"
+                            alt="Car wash"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                        <div class="text">Interior car wash</div>
+                    </div>
+
+                    <div class="slides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img
+                            src="./assets/images/slideshow/sponge-car-wash.jpg"
+                            alt="supreme car wash"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                        <div class="text">Best car wash</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <p class="prev">&#10094;</p>
+                    <p class="next">&#10095;</p>
+                </div>
+
+                <!-- The dots/circles -->
+                <div class="dots-container tw-z-10">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-min-h-[60vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-md:tw-gap-[4%] max-md:tw-px-[5%]"
+        >
+            <h1
+                class="primary-text-color tw-text-center tw-text-5xl tw-font-medium max-md:tw-text-4xl"
+            >
+                Supreme Car Wash, TX
+            </h1>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[10%] max-md:tw-flex-col max-md:tw-place-items-center max-md:tw-gap-[4%]"
+            >
+                <div
+                    class="tw-flex tw-h-[350px] tw-w-[400px] tw-overflow-hidden max-md:tw-mt-[5%] max-md:tw-h-[300px] max-md:tw-w-[300px]"
+                >
+                    <img
+                        src="./assets/images/homepage/garage.jpg"
+                        alt="engine"
+                        class="tw-w-full tw-object-cover"
+                    />
+                </div>
+                <div
+                    class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-md:tw-mt-2 max-md:tw-gap-[3%] max-md:tw-text-center"
+                >
+                    <h2
+                        class="primary-text-color tw-text-5xl max-md:tw-text-3xl"
+                    >
+                        About us
+                    </h2>
+                    <div
+                        class="tw-mt-6 tw-max-w-[400px] tw-text-justify max-md:tw-text-sm"
+                    >
+                        Supreme Car Wash offers premium car cleaning services,
+                        providing meticulous attention to detail to ensure your
+                        vehicle shines like new. Our experienced team uses
+                        top-quality products and advanced techniques to deliver
+                        superior results. Visit us today for a professional car
+                        wash experience that leaves your vehicle looking
+                        pristine inside and out.
+                    </div>
+                    <a
+                        href="https://maps.app.goo.gl/"
+                        class="btn tw-mt-5 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2 max-md:tw-mx-auto"
+                    >
+                        <span>View on map</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-min-h-[60vh] tw-w-full tw-flex-col tw-place-items-center tw-gap-[10%] tw-bg-[#EFEFEF] tw-p-8 tw-px-[20%] max-md:tw-h-max max-md:tw-min-h-[unset] max-md:tw-gap-[4%] max-md:tw-px-[5%]"
+        >
+            <h2 class="tw-text-2xl tw-text-secondary max-md:tw-text-lg">
+                Our services
+            </h2>
+            <h2
+                class="tw-text-center tw-text-5xl tw-text-primary max-md:tw-text-3xl"
+            >
+                Premium washing service
+            </h2>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-justify-around tw-gap-[10%] max-md:tw-mt-8"
+            >
+                <div
+                    class="tw-flex tw-h-[350px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-text-center max-md:tw-h-[150px] max-md:tw-w-[150px]"
+                >
+                    <div class="tw-h-[150px] tw-w-full max-md:tw-h-[100px]">
+                        <img
+                            src="./assets/images/icons/car-wash.svg"
+                            alt="car wash"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-2xl max-md:tw-text-lg"
+                    >
+                        Exterior washing
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[350px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-text-center max-md:tw-h-[150px] max-md:tw-w-[150px]"
+                >
+                    <div class="tw-h-[150px] tw-w-full max-md:tw-h-[100px]">
+                        <img
+                            src="./assets/images/icons/seat-cleaning.svg"
+                            alt="car wash"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-2xl max-md:tw-text-lg"
+                    >
+                        Seat cleaning
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[350px] tw-w-[200px] tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-text-center max-md:tw-h-[150px] max-md:tw-w-[150px]"
+                >
+                    <div class="tw-h-[100px] tw-w-full">
+                        <img
+                            src="./assets/images/icons/vaccuming.svg"
+                            alt="car wash"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                    <div
+                        class="primary-text-color tw-text-2xl max-md:tw-text-lg"
+                    >
+                        Vacuuming
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-bg-[#fff] tw-p-[5%] max-md:tw-px-[5%]"
+        >
+            <h3 class="tw-text-2xl tw-font-semibold tw-text-secondary">
+                Washing plans
+            </h3>
+            <h3 class="primary-text-color tw-text-4xl tw-font-semibold">
+                Choose your plan
+            </h3>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-4 max-md:tw-flex-col"
+            >
+                <div
+                    class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-3 tw-rounded-lg tw-bg-white tw-p-4"
+                >
+                    <h2 class="primary-text-color tw-text-3xl">
+                        Basic cleaning
+                    </h2>
+                    <h3 class="tw-text-5xl tw-font-semibold tw-text-blue-950">
+                        $14
+                    </h3>
+                    <ul class="tw-mt-2 tw-flex tw-flex-col tw-gap-2 tw-text-lg">
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Seat Washing</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Vacuum Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Exterior Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-x-circle"></i>
+                            <span>Interior Wet Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-x-circle"></i>
+                            <span>Window Wiping</span>
+                        </li>
+                    </ul>
+                    <a
+                        href=""
+                        class="btn tw-mt-auto tw-p-2 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.02]"
+                    >
+                        Book now
+                    </a>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-3 tw-rounded-lg tw-border-2 tw-bg-white tw-p-4 tw-shadow-2xl"
+                >
+                    <h2 class="primary-text-color tw-text-3xl">
+                        Executive cleaning
+                    </h2>
+                    <h3 class="tw-text-5xl tw-font-semibold">$25</h3>
+                    <ul class="tw-mt-2 tw-flex tw-flex-col tw-gap-2 tw-text-lg">
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Seat Washing</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Vacuum Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Exterior Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Interior Wet Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-x-circle"></i>
+                            <span>Window Wiping</span>
+                        </li>
+                    </ul>
+                    <a
+                        href=""
+                        class="btn tw-mt-auto tw-p-2 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.02]"
+                    >
+                        Book now
+                    </a>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-3 tw-rounded-lg tw-bg-white tw-p-4"
+                >
+                    <h2 class="primary-text-color tw-text-3xl">
+                        Presidential cleaning
+                    </h2>
+                    <h3 class="tw-text-5xl tw-font-semibold tw-text-blue-950">
+                        $35
+                    </h3>
+                    <ul class="tw-mt-2 tw-flex tw-flex-col tw-gap-2 tw-text-lg">
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Seat Washing</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Vacuum Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Exterior Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Interior Wet Cleaning</span>
+                        </li>
+                        <li class="tw-flex tw-gap-2">
+                            <i class="bi bi-check-circle tw-text-green-500"></i>
+                            <span>Window Wiping</span>
+                        </li>
+                    </ul>
+                    <a
+                        href=""
+                        class="btn tw-mt-auto tw-p-2 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.02]"
+                    >
+                        Book now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 tw-px-[10%] max-md:tw-flex-col"
+            id="booking"
+        >
+            <div
+                class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden tw-rounded-md max-md:tw-hidden"
+            >
+                <img
+                    src="./assets/images/homepage/car-washing.jpg"
+                    alt="car wash"
+                    class="tw-w-full tw-object-cover"
+                />
+            </div>
+            <div class="tw-mt-[5%] tw-flex tw-h-full tw-flex-col tw-gap-[5%]">
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h2
+                        class="primary-text-color tw-text-5xl tw-font-medium max-md:tw-text-3xl"
+                    >
+                        Request car wash
+                    </h2>
+                </div>
+                <form
+                    class="tw-mt-4 tw-flex tw-max-w-[350px] tw-flex-col tw-gap-3"
+                >
+                    <div class="tw-flex tw-flex-col tw-gap-4">
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Name</div>
+                            <input
+                                type="text"
+                                class="input"
                                 maxlength="10"
                                 required
-                                placeholder="name" >
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Phone</div>
-                        <input type="text" 
-                                class="input" 
+                                placeholder="name"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Phone</div>
+                            <input
+                                type="text"
+                                class="input"
                                 required
                                 placeholder="phone"
-                                >
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Email</div>
-                        <input type="email" 
-                                class="input" 
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Email</div>
+                            <input
+                                type="email"
+                                class="input"
                                 required
                                 placeholder="email"
                                 id="email"
-                                >
+                            />
+                        </div>
                     </div>
-                    
-                </div>
 
-                <div class="tw-flex tw-gap-4">
-                    <div class="tw-flex tw-flex-col tw-gap-1 tw-w-full">
-                        <div class="tw-text-gray-500">Time</div>
-                        <select name="timings" id="timings" class="input">
-                            
-                        </select>
-                    </div>
-                    <div class="tw-flex tw-flex-col tw-gap-1">
-                        <div class="tw-text-gray-500">Date</div>
-                        <input type="date" 
-                                class="input" 
+                    <div class="tw-flex tw-gap-4">
+                        <div class="tw-flex tw-w-full tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Time</div>
+                            <select
+                                name="timings"
+                                id="timings"
+                                class="input"
+                            ></select>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Date</div>
+                            <input
+                                type="date"
+                                class="input"
                                 required
                                 placeholder="date"
                                 id="date"
-                                >
-                    </div>
-                </div>
-
-                <div class="tw-flex tw-flex-col tw-w-full tw-gap-2">
-                    <div class="tw-text-gray-500">Inquiry</div>
-                    <textarea class="input tw-resize-y 
-                                     tw-w-full
-                                     tw-max-h-[250px]
-                                     tw-min-h-[40px]
-                                     "></textarea>
-                    
-                </div>
-                
-                <button href="#" 
-                    class="btn
-                            tw-transition-transform
-                            hover:tw-translate-x-2
-                            tw-duration-[0.3s]
-                            tw-mt-5
-                            tw-ml-auto
-                        ">
-                    <span>Request</span>  
-                    <i class="bi bi-arrow-right"></i> 
-                </button>
-
-            </form>
-            <div class="tw-flex tw-flex-col tw-gap-2 tw-mt-4 tw-text-center">
-                <h3 class="tw-text-xl">To book call</h3>
-                
-                <div class="tw-text-3xl primary-text-color">
-                    +1 122-122-122
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]
-                     tw-place-items-center">
-
-        <h3 class="tw-text-3xl max-md:tw-text-2xl primary-text-color tw-font-medium">
-            What some of our clients say
-        </h3>
-        
-        <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
-
-            <div class="review-container tw-flex tw-flex-col">
-                <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
-                    <!-- testimonials -->
-                    <div class="slides fade tw-text-lg tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente laudantium id ratione! Fugiat nulla ut, possimus facere sit natus.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                            />
                         </div>
-                        <p class="tw-mt-3">- Sandra Brooks</p>
-                    </div>
-                
-                    <div class="slides fade tw-text-lg tw-text-justify">
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tempora reprehenderit illo accusamus minus sunt.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Joshua Simmons</p>
                     </div>
 
-                    <div class="slides fade tw-text-lg tw-text-justify">
-                        
-                        <q class="tw-italic tw-text-gray-600 ">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quaerat quia aut eveniet ipsa quae consectetur placeat debitis doloribus animi.
-                        </q>
-                        <div class="tw-mt-2 tw-text-yellow-400">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="tw-mt-3">- Roger Neely</p>
-
+                    <div class="tw-flex tw-w-full tw-flex-col tw-gap-2">
+                        <div class="tw-text-gray-500">Inquiry</div>
+                        <textarea
+                            class="input tw-max-h-[250px] tw-min-h-[40px] tw-w-full tw-resize-y"
+                        ></textarea>
                     </div>
-                </div>
-              
-                <!-- Navigation dots -->
-                <div class="dots-container tw-mt-auto">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </div>
 
-        <div class="tw-mt-[5%] tw-flex tw-flex-col tw-w-full tw-place-items-center tw-place-content-center tw-gap-5">
-            <h2 class="tw-text-3xl primary-text-color">On the map</h2>
-            <iframe src="https://www.google.com/maps/embed?" 
-                    class="tw-w-[600px] 
-                            tw-h-[350px]
-                            max-md:tw-w-full
-                            "
-                    style="border:0;" allowfullscreen="" loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </section>
-
-    <section class="tw-w-full tw-flex
-                    tw-flex-col 
-                    tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-[5%]
-                    tw-gap-[10%]
-                    tw-place-items-center
-                    tw-bg-[#EFEFEF]
-                    ">
-
-        <div class="tw-w-full tw-place-content-center 
-                    tw-flex tw-flex-col tw-gap-3
-                    tw-place-items-center
-                    ">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color">Special Newsletter signup</h2>
-            <h2 class="tw-text-xl max-md:tw-text-lg">Get offers and updates</h2>
-
-            <div class="input tw-flex tw-h-[50px] tw-bg-white tw-p-2 
-                        !tw-rounded-full tw-overflow-hidden tw-place-items-center ">
-                <input type="email" class="tw-w-full tw-h-full tw-outline-none tw-px-3"
-                        placeholder="email"
+                    <button
+                        href="#"
+                        class="btn tw-ml-auto tw-mt-5 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
                     >
-                <button class="btn tw-h-[35px] 
-                            hover:tw-bg-blue-900
-                            tw-duration-[0.3s]
-                            tw-transition-colors
-                            ">
-                    Signup
-                </button>   
+                        <span>Request</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </form>
+                <div
+                    class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center"
+                >
+                    <h3 class="tw-text-xl">To book call</h3>
+
+                    <div class="primary-text-color tw-text-3xl">
+                        +1 122-122-122
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[5%]"
+        >
+            <h3
+                class="primary-text-color tw-text-3xl tw-font-medium max-md:tw-text-2xl"
+            >
+                What some of our clients say
+            </h3>
 
-        <div class="tw-w-full tw-place-content-center 
-            tw-flex tw-flex-col tw-gap-3
-            tw-place-items-center tw-mt-[5%]
-            ">
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]"
+            >
+                <div class="review-container tw-flex tw-flex-col">
+                    <div class="tw-flex tw-h-[150px] tw-max-w-[550px]">
+                        <!-- testimonials -->
+                        <div class="slides fade tw-text-justify tw-text-lg">
+                            <q class="tw-italic tw-text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Architecto sapiente laudantium
+                                id ratione! Fugiat nulla ut, possimus facere sit
+                                natus.
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Sandra Brooks</p>
+                        </div>
 
-            <h2 class="tw-text-3xl max-md:tw-text-xl primary-text-color">Like us?</h2>
-            <h2 class="tw-text-xl max-md:tw-text-lg">Tell us more</h2>
+                        <div class="slides fade tw-text-justify tw-text-lg">
+                            <q class="tw-italic tw-text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Laudantium tempora
+                                reprehenderit illo accusamus minus sunt.
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Joshua Simmons</p>
+                        </div>
 
-            <div class="tw-flex">
-                <div class="stars" data-rating="0">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+                        <div class="slides fade tw-text-justify tw-text-lg">
+                            <q class="tw-italic tw-text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Cupiditate quaerat quia aut
+                                eveniet ipsa quae consectetur placeat debitis
+                                doloribus animi.
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Roger Neely</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation dots -->
+                    <div class="dots-container tw-mt-auto">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
             </div>
 
-        </div>
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-5"
+            >
+                <h2 class="primary-text-color tw-text-3xl">On the map</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?"
+                    class="tw-h-[350px] tw-w-[600px] max-md:tw-w-full"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </section>
 
-    </section>
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#EFEFEF] tw-p-[5%] tw-px-[10%]"
+        >
+            <div
+                class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
+            >
+                <h2 class="primary-text-color tw-text-3xl max-md:tw-text-xl">
+                    Special Newsletter signup
+                </h2>
+                <h2 class="tw-text-xl max-md:tw-text-lg">
+                    Get offers and updates
+                </h2>
 
-    <div class="tw-fixed
-                tw-top-[50%] tw-translate-y-[-50%]
-                tw-left-[50%] tw-translate-x-[-50%]
-                tw-w-[450px] tw-max-h-[450px] 
-                max-md:tw-w-[350px]
-                tw-z-40
-                tw-p-3
-                tw-hidden
-                tw-flex 
-                tw-flex-col
-                tw-rounded-md
-                tw-shadow-2xl
-                tw-bg-white"
-                id="modal"
+                <div
+                    class="input tw-flex tw-h-[50px] tw-place-items-center tw-overflow-hidden !tw-rounded-full tw-bg-white tw-p-2"
                 >
-        <div class="tw-w-full tw-relative tw-h-[40px]">
-            <button class="tw-text-4xl 
-                            bi bi-x
-                            tw-absolute
-                            tw-right-2
-                            "
+                    <input
+                        type="email"
+                        class="tw-h-full tw-w-full tw-px-3 tw-outline-none"
+                        placeholder="email"
+                    />
+                    <button
+                        class="btn tw-h-[35px] tw-transition-colors tw-duration-[0.3s] hover:tw-bg-blue-900"
+                    >
+                        Signup
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
+            >
+                <h2 class="primary-text-color tw-text-3xl max-md:tw-text-xl">
+                    Like us?
+                </h2>
+                <h2 class="tw-text-xl max-md:tw-text-lg">Tell us more</h2>
+
+                <div class="tw-flex">
+                    <div class="stars" data-rating="0">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div
+            class="tw-fixed tw-left-[50%] tw-top-[50%] tw-z-40 tw-flex tw-hidden tw-max-h-[450px] tw-w-[450px] tw-translate-x-[-50%] tw-translate-y-[-50%] tw-flex-col tw-rounded-md tw-bg-white tw-p-3 tw-shadow-2xl max-md:tw-w-[350px]"
+            id="modal"
+        >
+            <div class="tw-relative tw-h-[40px] tw-w-full">
+                <button
+                    class="bi bi-x tw-absolute tw-right-2 tw-text-4xl"
                     id="modal-close"
-                            >
-        </div>
-        </button>
-        <h2 class="tw-text-2xl tw-text-center tw-mt-[5%]" 
-                id="modal-title"></h2>
+                ></button>
+            </div>
+            <h2
+                class="tw-mt-[5%] tw-text-center tw-text-2xl"
+                id="modal-title"
+            ></h2>
 
-        <div class="tw-text-base tw-font-normal tw-mt-2" 
-                id="modal-description">
-        </div>
+            <div
+                class="tw-mt-2 tw-text-base tw-font-normal"
+                id="modal-description"
+            ></div>
 
-        <textarea id="modal-input" 
+            <textarea
+                id="modal-input"
                 placeholder="write..."
                 maxlength="2000"
-                class="input tw-w-full 
-                        tw-hidden
-                        tw-mt-2
-                        tw-resize-y 
-                        tw-text-base
-                        tw-font-normal
-                        tw-min-h-[50px]
-                        tw-max-h-[150px]"></textarea>
+                class="input tw-mt-2 tw-hidden tw-max-h-[150px] tw-min-h-[50px] tw-w-full tw-resize-y tw-text-base tw-font-normal"
+            ></textarea>
 
-        <div class="tw-w-full tw-flex tw-place-content-center tw-mt-3">
-            <a href="#" class="btn tw-text-sm tw-cursor-pointer" id="modal-action-btn">
-                Open
-            </a>
-        </div>
-        
-    </div>
-
-
-    <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
-                    tw-px-[10%] tw-place-content-around tw-gap-3 
-                    tw-bg-primary
-                    tw-text-white
-                    ">
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-6 tw-place-items-center max-md:tw-w-full">
-            
-            <img src="./assets/logo.png" 
-                alt="logo" class="tw-w-[150px]">
-            <div>
-                12111 Cypress,   
-                <br>
-                TX,
-                <br>
-                United States
-            </div>
-            <div class="tw-mt-3 tw-font-semibold tw-text-lg">
-                Follow us
-            </div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i>
+            <div class="tw-mt-3 tw-flex tw-w-full tw-place-content-center">
+                <a
+                    href="#"
+                    class="btn tw-cursor-pointer tw-text-sm"
+                    id="modal-action-btn"
+                >
+                    Open
                 </a>
             </div>
         </div>
 
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-4">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Services
-            </h2>
-            <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">Car wash</a>
-                <a href="" class="footer-link">Interior cleaning</a>
-                <a href="" class="footer-link">Window wiping</a>
-                <a href="" class="footer-link">Oil change</a>
+        <footer
+            class="tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-bg-primary tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img src="./assets/logo.png" alt="logo" class="tw-w-[150px]" />
+                <div>
+                    12111 Cypress,
+                    <br />
+                    TX,
+                    <br />
+                    United States
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-4">
 
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Resources
-            </h2>
-            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Locations</a>
-                <a href="" class="footer-link">Privacy policy</a>
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Services</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Car wash</a>
+                    <a href="" class="footer-link">Interior cleaning</a>
+                    <a href="" class="footer-link">Window wiping</a>
+                    <a href="" class="footer-link">Oil change</a>
+                </div>
             </div>
-        </div>
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">About us</a>
+                    <a href="" class="footer-link">FAQ</a>
+                    <a href="" class="footer-link">Contact Us</a>
+                    <a href="" class="footer-link">Locations</a>
+                    <a href="" class="footer-link">Privacy policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
 
-    </footer>
-
-</body>
-
-<script src="./scripts/utils.js"></script>
-<script src="index.js"></script>
-
+    <script src="./scripts/utils.js"></script>
+    <script src="index.js"></script>
 </html>

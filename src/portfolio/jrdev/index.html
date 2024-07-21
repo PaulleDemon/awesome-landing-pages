@@ -1,331 +1,404 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="warning" data-mode="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jr dev</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jr dev</title>
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Title of the project" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/PaulleDemon" /> <!--Replace with the current website url-->
-    <meta property="og:image" content="" />
-  
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
 
-    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
-    <link rel="stylesheet" href="./css/tailwind-build.css">
-    <link rel="stylesheet" href="css/index.css">
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="css/index.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-</head>
-<body class="lg:tw-h-[100vh] tw-w-full tw-bg-[#fff] dark:tw-bg-slate-800
-             tw-flex tw-flex-col tw-text-black dark:tw-text-white">
-    
-    <main class="tw-w-full tw-h-full tw-overflow-hidden tw-flex max-lg:tw-flex-col">
-
-        <section class="tw-w-[450px] max-lg:tw-w-full tw-h-full lg:tw-shadow-xl lg:dark:tw-shadow-gray-600 tw-gap-4
-                        tw-flex tw-flex-col tw-p-4 tw-place-items-center">
-            <!-- sidebar -->
-            <div class="tw-w-[250px] tw-h-[250px] tw-overflow-hidden tw-rounded-full">
-                <img src="./assets/images/people/man.jpg" 
-                     class="tw-w-full tw-h-full tw-object-cover"   alt="man" srcset="">
-            </div>
-            
-            <h1 class="tw-text-3xl tw-font-semibold">James mabe</h1>
-
-            <p class="tw-text-justify tw-text-gray-800 dark:tw-text-gray-300 tw-mt-6 tw-max-w-[550px]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores veritatis laboriosam obcaecati est minima pariatur dicta facilis, consequatur quod, hic nostrum qui voluptatibus laborum dolorum. Voluptates animi accusantium quos consequuntur!
-            </p>
-
-            <a href="https://tally.so/r/woO0Kx" class="btn-primary !tw-w-full
-                                    hover:tw-scale-[1.02] tw-transition-transform   
-                                    tw-duration-[0.3s] tw-max-w-[550px]
-                                    ">
-                Contact me
-            </a>
-
-            <div class="tw-flex tw-flex-col tw-gap-2 tw-mt-auto">
-                
-                <h3 class="tw-text-xl">News letter</h3>
-                <form class="tw-flex tw-gap-2">
-                    <input type="email" name="" placeholder="joe@mail.com"
-                            class="input">
-                    <button type="submit" class="btn-primary">Signup</button>
-                </form>
-
-            </div>
-
-            <div class="tw-mt-5 tw-flex tw-gap-5 tw-text-2xl">
-
-                <a href="http://github.com/PaulleDemon" class="link">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a href="http://twitter.com/pauls_freeman" class="link">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
-                <a href="http://www.youtube.com/@paultalkstech" class="link">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a href="mailto:paul@example.com" class="link">
-                    <i class="bi bi-envelope-at-fill"></i>
-                </a>
-            </div>
-
-        </section>
-
-        <div class="tw-h-full tw-w-full tw-overflow-hidden">
-            <header class="tw-relative tw-w-full lg:tw-h-[80px]
-                            max-lg:tw-h-[150px]
-                            tw-overflow-hidden tw-p-2 tw-flex max-lg:tw-flex-col">
-
-                <!-- tabs section -->
-                <div class="tw-absolute tw-top-4 tw-left-[50%] tw-translate-x-[-50%]  
-                            tw-flex tw-p-1 tw-px-4 tw-rounded-md tw-gap-4 
-                            tw-border-2 tw-border-primary max-md:tw-w-full
-                            md:tw-w-fit tw-overflow-x-auto tw-h-[60px]">
-                    <button class="tab-btn tab-active" onclick="openTab(event, 'about')">About</button>
-                    <button class="tab-btn" onclick="openTab(event, 'skills')">Skills</button>
-                    <button class="tab-btn" onclick="openTab(event, 'experience')">Experience</button>
-                    <button class="tab-btn" onclick="openTab(event, 'call')">Schedule call</button>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="tw-flex tw-w-full tw-flex-col tw-bg-[#fff] tw-text-black dark:tw-bg-slate-800 dark:tw-text-white lg:tw-h-[100vh]"
+    >
+        <main
+            class="tw-flex tw-h-full tw-w-full tw-overflow-hidden max-lg:tw-flex-col"
+        >
+            <section
+                class="tw-flex tw-h-full tw-w-[450px] tw-flex-col tw-place-items-center tw-gap-4 tw-p-4 max-lg:tw-w-full lg:tw-shadow-xl lg:dark:tw-shadow-gray-600"
+            >
+                <!-- sidebar -->
+                <div
+                    class="tw-h-[250px] tw-w-[250px] tw-overflow-hidden tw-rounded-full"
+                >
+                    <img
+                        src="./assets/images/people/man.jpg"
+                        class="tw-h-full tw-w-full tw-object-cover"
+                        alt="man"
+                        srcset=""
+                    />
                 </div>
-                
-                <div class="tw-ml-auto tw-m-2 max-lg:tw-mt-auto tw-flex tw-gap-2  tw-place-items-center">
-                    <select onchange="switchTheme()" id="theme-selector" 
-                            class="input !tw-h-fit !tw-p-1 tw-text-black dark:tw-text-white ">
-                        <option value="primary">Primary</option>
-                        <option value="warning" selected>warning</option>
-                        <option value="success">success</option>
-                    </select>
 
-                    <button class="tw-w-[30px]" onclick="toggleMode()">
-                        <i class="bi bi-sun-fill" id="toggle-mode-icon"></i>
-                    </button>
+                <h1 class="tw-text-3xl tw-font-semibold">James mabe</h1>
+
+                <p
+                    class="tw-mt-6 tw-max-w-[550px] tw-text-justify tw-text-gray-800 dark:tw-text-gray-300"
+                >
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Dolores veritatis laboriosam obcaecati est minima pariatur
+                    dicta facilis, consequatur quod, hic nostrum qui
+                    voluptatibus laborum dolorum. Voluptates animi accusantium
+                    quos consequuntur!
+                </p>
+
+                <a
+                    href="https://tally.so/r/woO0Kx"
+                    class="btn-primary !tw-w-full tw-max-w-[550px] tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.02]"
+                >
+                    Contact me
+                </a>
+
+                <div class="tw-mt-auto tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl">News letter</h3>
+                    <form class="tw-flex tw-gap-2">
+                        <input
+                            type="email"
+                            name=""
+                            placeholder="joe@mail.com"
+                            class="input"
+                        />
+                        <button type="submit" class="btn-primary">
+                            Signup
+                        </button>
+                    </form>
                 </div>
-            </header>
 
-            <!-- tab contents -->
-            <div>
-                <section class="tab-content tw-w-full tw-h-full
-                                    max-lg:tw-p-4 
-                                    tw-flex tw-flex-col tw-overflow-hidden tw-relative"
-                                    data-tab-name="about"
+                <div class="tw-mt-5 tw-flex tw-gap-5 tw-text-2xl">
+                    <a href="http://github.com/PaulleDemon" class="link">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="http://twitter.com/pauls_freeman" class="link">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a
+                        href="http://www.youtube.com/@paultalkstech"
+                        class="link"
+                    >
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="mailto:paul@example.com" class="link">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </a>
+                </div>
+            </section>
+
+            <div class="tw-h-full tw-w-full tw-overflow-hidden">
+                <header
+                    class="tw-relative tw-flex tw-w-full tw-overflow-hidden tw-p-2 max-lg:tw-h-[150px] max-lg:tw-flex-col lg:tw-h-[80px]"
+                >
+                    <!-- tabs section -->
+                    <div
+                        class="tw-absolute tw-left-[50%] tw-top-4 tw-flex tw-h-[60px] tw-translate-x-[-50%] tw-gap-4 tw-overflow-x-auto tw-rounded-md tw-border-2 tw-border-primary tw-p-1 tw-px-4 max-md:tw-w-full md:tw-w-fit"
+                    >
+                        <button
+                            class="tab-btn tab-active"
+                            onclick="openTab(event, 'about')"
+                        >
+                            About
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'skills')"
+                        >
+                            Skills
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'experience')"
+                        >
+                            Experience
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'call')"
+                        >
+                            Schedule call
+                        </button>
+                    </div>
+
+                    <div
+                        class="tw-m-2 tw-ml-auto tw-flex tw-place-items-center tw-gap-2 max-lg:tw-mt-auto"
+                    >
+                        <select
+                            onchange="switchTheme()"
+                            id="theme-selector"
+                            class="input !tw-h-fit !tw-p-1 tw-text-black dark:tw-text-white"
+                        >
+                            <option value="primary">Primary</option>
+                            <option value="warning" selected>warning</option>
+                            <option value="success">success</option>
+                        </select>
+
+                        <button class="tw-w-[30px]" onclick="toggleMode()">
+                            <i class="bi bi-sun-fill" id="toggle-mode-icon"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- tab contents -->
+                <div>
+                    <section
+                        class="tab-content tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-overflow-hidden max-lg:tw-p-4"
+                        data-tab-name="about"
+                    >
+                        <div
+                            class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col"
+                        >
+                            <div
+                                class="tw-flex tw-flex-col tw-place-content-center"
+                            >
+                                <div
+                                    class="tw-text-6xl tw-font-semibold tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                                >
+                                    Hi 👋,
+                                    <br />
+                                    I am
+                                    <span class="tw-text-primary">
+                                        James mabe
+                                    </span>
+                                </div>
+                                <div
+                                    class="tw-mt-4 tw-max-w-[450px] tw-p-2 tw-text-justify max-lg:tw-max-w-full"
+                                >
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Enim velit odit
+                                    necessitatibus sint eos cumque illo harum,
+                                    quam facilis iste. Accusamus quisquam earum
+                                    repellendus excepturi nobis veniam vitae
+                                    assumenda error.
+                                </div>
+
+                                <div
+                                    class="tw-mt-4 tw-flex tw-place-content-end tw-gap-4 tw-overflow-hidden tw-p-2"
+                                >
+                                    <a
+                                        href="https://github.com/PaulleDemon"
+                                        class="btn-primary !tw-bg-[#c8cbf984] !tw-text-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
                                     >
-                        
-                    <div class="tw-w-full tw-h-full tw-p-[5%]
-                                tw-place-content-center
-                                tw-gap-6 max-xl:tw-place-items-center
-                                tw-flex max-lg:tw-flex-col">
+                                        <span>Projects</span>
+                                    </a>
+                                    <a
+                                        class="btn-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                                        href="https://tally.so/r/woO0Kx"
+                                    >
+                                        Contact
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                        <div class="tw-flex tw-flex-col tw-place-content-center">
-                            <div class="tw-text-6xl max-lg:tw-text-4xl tw-font-semibold 
-                                        tw-leading-[80px]
-                                        max-md:tw-leading-snug " 
+                    <section
+                        class="tab-content tw-relative tw-flex tw-hidden tw-h-full tw-w-full tw-flex-col tw-overflow-hidden max-lg:tw-p-4"
+                        data-tab-name="skills"
+                    >
+                        <div
+                            class="tw-flex tw-h-full tw-w-full tw-flex-wrap tw-place-content-center tw-gap-6 tw-p-[5%] tw-px-[25%] max-xl:tw-place-items-center max-lg:tw-px-[10%] max-md:tw-px-2"
+                        >
+                            <div
+                                class="tw-flex tw-h-[150px] tw-w-[150px] tw-place-content-center tw-items-center tw-rounded-lg tw-border-2 tw-border-primary tw-bg-white tw-shadow-xl"
+                            >
+                                <div>
+                                    <img
+                                        src="./assets/images/icons/html5.png"
+                                        alt="html5"
+                                        srcset=""
+                                        class="tw-object-contain"
+                                    />
+                                </div>
+                            </div>
+
+                            <div
+                                class="tw-flex tw-h-[150px] tw-w-[150px] tw-place-content-center tw-items-center tw-rounded-lg tw-border-2 tw-border-primary tw-bg-white tw-shadow-xl"
+                            >
+                                <div>
+                                    <img
+                                        src="./assets/images/icons/django.png"
+                                        alt="html5"
+                                        srcset=""
+                                        class="tw-object-contain"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="tw-flex tw-h-[150px] tw-w-[150px] tw-place-content-center tw-items-center tw-rounded-lg tw-border-2 tw-border-primary tw-bg-white tw-shadow-xl"
+                            >
+                                <div>
+                                    <img
+                                        src="./assets/images/icons/reactjs.png"
+                                        alt="react js"
+                                        srcset=""
+                                        class="tw-object-contain"
+                                    />
+                                </div>
+                            </div>
+
+                            <div
+                                class="tw-flex tw-h-[150px] tw-w-[150px] tw-place-content-center tw-items-center tw-rounded-lg tw-border-2 tw-border-primary tw-bg-white tw-shadow-xl"
+                            >
+                                <div>
+                                    <img
+                                        src="./assets/images/icons/tailwind.png"
+                                        alt="react js"
+                                        srcset=""
+                                        class="tw-object-contain"
+                                    />
+                                </div>
+                            </div>
+
+                            <div
+                                class="tw-flex tw-h-[150px] tw-w-[150px] tw-place-content-center tw-items-center tw-rounded-lg tw-border-2 tw-border-primary tw-bg-white tw-shadow-xl"
+                            >
+                                <div>
+                                    <img
+                                        src="./assets/images/icons/aws.png"
+                                        alt="aws"
+                                        srcset=""
+                                        class="tw-object-contain"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section
+                        class="tab-content tw-relative tw-flex tw-hidden tw-h-full tw-w-full tw-flex-col tw-overflow-hidden max-lg:tw-p-4"
+                        data-tab-name="experience"
+                    >
+                        <div
+                            class="tw-flex tw-h-full tw-w-full tw-flex-wrap tw-place-content-center tw-gap-6 tw-p-[5%] tw-px-[25%] max-xl:tw-place-items-center max-md:tw-px-1"
+                        >
+                            <div></div>
+
+                            <div class="timeline tw-flex tw-flex-col tw-gap-5">
+                                <div
+                                    class="timeline-container tw-relative tw-mb-8"
+                                >
+                                    <div
+                                        class="tw-flex tw-max-w-[550px] tw-flex-col tw-gap-2 tw-p-1 max-lg:tw-max-w-[320px]"
+                                    >
+                                        <h3 class="tw-text-3xl">Apple</h3>
+                                        <p
+                                            class="tw-text-gray-500 dark:tw-text-gray-200"
                                         >
-                                Hi 👋,
-                                <br>
-                                I am 
-                                <span class="tw-text-primary">
-                                    James mabe
-                                </span>
-                            </div>  
-                            <div class="tw-mt-4 tw-max-w-[450px] tw-text-justify tw-p-2 max-lg:tw-max-w-full">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim velit odit necessitatibus sint eos 
-                                cumque illo harum, quam facilis iste. Accusamus quisquam earum repellendus excepturi 
-                                nobis veniam vitae assumenda error.
-                            </div>
-                            
-                            <div class="tw-mt-4 tw-flex 
-                                        tw-overflow-hidden tw-gap-4 
-                                        tw-p-2
-                                        tw-place-content-end ">
-                                <a href="https://github.com/PaulleDemon" 
-                                        class="btn-primary  
-                                            !tw-text-primary
-                                            !tw-bg-[#c8cbf984]
-                                            tw-duration-[0.3s]
-                                            hover:tw-scale-x-[1.03]
-                                            tw-transition-transform
-                                            "
-                                            >
-                                    <span>Projects</span>
-                                </a>
-                                <a class="btn-primary
-                                            tw-duration-[0.3s]
-                                            hover:tw-scale-x-[1.03]
-                                            tw-transition-transform
-                                            "
-                                            href="https://tally.so/r/woO0Kx"
-                                            >
-                                    Contact
-                                </a>  
-                                  
-                            </div>
-
-                        </div>
-
-                    </div>
-                    
-                </section>
-
-                <section class="tab-content tw-w-full tw-h-full
-                                    max-lg:tw-p-4 
-                                    tw-hidden
-                                    tw-flex tw-flex-col 
-                                    tw-overflow-hidden tw-relative"
-                                    data-tab-name="skills"
-                                    >
-                        
-                    <div class="tw-w-full tw-h-full tw-p-[5%]
-                                tw-place-content-center
-                                tw-gap-6 max-xl:tw-place-items-center
-                                tw-flex tw-flex-wrap tw-px-[25%] max-lg:tw-px-[10%] max-md:tw-px-2">
-
-                        <div class="tw-w-[150px] tw-h-[150px] tw-bg-white tw-shadow-xl tw-rounded-lg
-                                    tw-border-primary tw-border-2 
-                                    tw-flex tw-place-content-center tw-items-center">
-                            <div>
-                                <img src="./assets/images/icons/html5.png" 
-                                    alt="html5" srcset="" class="tw-object-contain">
-                            </div>
-                        </div>
-
-                        <div class="tw-w-[150px] tw-h-[150px] tw-bg-white tw-shadow-xl tw-rounded-lg
-                                    tw-border-primary tw-border-2 
-                                    tw-flex tw-place-content-center tw-items-center">
-                            <div>
-                                <img src="./assets/images/icons/django.png" 
-                                    alt="html5" srcset="" class="tw-object-contain">
-                            </div>
-                        </div>
-                        <div class="tw-w-[150px] tw-h-[150px] tw-bg-white tw-shadow-xl tw-rounded-lg
-                                    tw-border-primary tw-border-2 
-                                    tw-flex tw-place-content-center tw-items-center">
-                            <div>
-                                <img src="./assets/images/icons/reactjs.png" 
-                                    alt="react js" srcset="" class="tw-object-contain">
-                            </div>
-                        </div>
-
-                        <div class="tw-w-[150px] tw-h-[150px] tw-bg-white tw-shadow-xl tw-rounded-lg
-                                    tw-border-primary tw-border-2 
-                                    tw-flex tw-place-content-center tw-items-center">
-                            <div>
-                                <img src="./assets/images/icons/tailwind.png" 
-                                    alt="react js" srcset="" class="tw-object-contain">
-                            </div>
-                        </div>
-
-                        <div class="tw-w-[150px] tw-h-[150px] tw-bg-white tw-shadow-xl tw-rounded-lg
-                                    tw-border-primary tw-border-2 
-                                    tw-flex tw-place-content-center tw-items-center">
-                            <div>
-                                <img src="./assets/images/icons/aws.png" 
-                                    alt="aws" srcset="" class="tw-object-contain">
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                </section>
-
-                <section class="tab-content tw-w-full tw-h-full
-                                    max-lg:tw-p-4 
-                                    tw-hidden
-                                    tw-flex tw-flex-col 
-                                    tw-overflow-hidden tw-relative"
-                                    data-tab-name="experience"
-                                    >
-                        
-                    <div class="tw-w-full tw-h-full tw-p-[5%]
-                                tw-place-content-center
-                                tw-gap-6 max-xl:tw-place-items-center
-                                tw-flex tw-flex-wrap tw-px-[25%] max-md:tw-px-1">
-
-                        <div>
-
-                        </div>
-
-                        <div class="tw-flex tw-flex-col tw-gap-5 timeline">
-                            
-                            <div class="tw-relative tw-mb-8 timeline-container">
-                                <div class="tw-flex tw-flex-col tw-gap-2 tw-max-w-[550px] 
-                                            max-lg:tw-max-w-[320px] tw-p-1">
-                                    <h3 class="tw-text-3xl">Apple</h3>
-                                    <p class="tw-text-gray-500 dark:tw-text-gray-200">2023 - current</p>
-                                    <p class="">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium rem modi deleniti praesentium pariatur cum aliquid ullam aperiam ut!
-                                    </p>
+                                            2023 - current
+                                        </p>
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Tempora accusantium rem modi
+                                            deleniti praesentium pariatur cum
+                                            aliquid ullam aperiam ut!
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="tw-relative tw-mb-8 timeline-container">
-                                <div class="tw-flex tw-flex-col tw-gap-2 tw-max-w-[550px] 
-                                            max-lg:tw-max-w-[320px] tw-p-1">
-                                    <h3 class="tw-text-3xl">IBM</h3>
-                                    <p class="tw-text-gray-500 dark:tw-text-gray-200">2020 - 2023</p>
-                                    <p class="">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium rem modi deleniti praesentium pariatur cum aliquid ullam aperiam ut!
-                                    </p>
+
+                                <div
+                                    class="timeline-container tw-relative tw-mb-8"
+                                >
+                                    <div
+                                        class="tw-flex tw-max-w-[550px] tw-flex-col tw-gap-2 tw-p-1 max-lg:tw-max-w-[320px]"
+                                    >
+                                        <h3 class="tw-text-3xl">IBM</h3>
+                                        <p
+                                            class="tw-text-gray-500 dark:tw-text-gray-200"
+                                        >
+                                            2020 - 2023
+                                        </p>
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Tempora accusantium rem modi
+                                            deleniti praesentium pariatur cum
+                                            aliquid ullam aperiam ut!
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="tw-relative tw-mb-8 timeline-container">
-                                <div class="tw-flex tw-flex-col tw-gap-2 tw-max-w-[550px] 
-                                            max-lg:tw-max-w-[320px] tw-p-1">
-                                    <h3 class="tw-text-3xl">Google</h3>
-                                    <p class="tw-text-gray-500 dark:tw-text-gray-200">2018 - 2020</p>
-                                    <p class="">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora accusantium rem modi deleniti praesentium pariatur cum aliquid ullam aperiam ut!
-                                    </p>
+
+                                <div
+                                    class="timeline-container tw-relative tw-mb-8"
+                                >
+                                    <div
+                                        class="tw-flex tw-max-w-[550px] tw-flex-col tw-gap-2 tw-p-1 max-lg:tw-max-w-[320px]"
+                                    >
+                                        <h3 class="tw-text-3xl">Google</h3>
+                                        <p
+                                            class="tw-text-gray-500 dark:tw-text-gray-200"
+                                        >
+                                            2018 - 2020
+                                        </p>
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Tempora accusantium rem modi
+                                            deleniti praesentium pariatur cum
+                                            aliquid ullam aperiam ut!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </section>
 
-                    </div>
-                    
-                </section>
+                    <section
+                        class="tab-content tw-relative tw-flex tw-hidden tw-h-full tw-w-full tw-flex-col tw-overflow-hidden max-lg:tw-p-2"
+                        data-tab-name="call"
+                    >
+                        <div
+                            class="tw-flex tw-h-full tw-w-full tw-flex-wrap tw-place-content-center tw-gap-6 tw-p-4 max-xl:tw-place-items-center"
+                        >
+                            <iframe
+                                src="https://koalendar.com/e/meet-with-paul-about-webdesign?embed=true"
+                                width="100%"
+                                height="800px"
+                                frameborder="0"
+                            ></iframe>
+                        </div>
+                    </section>
+                </div>
 
-                <section class="tab-content tw-w-full tw-h-full
-                                    max-lg:tw-p-2 
-                                    tw-hidden
-                                    tw-flex tw-flex-col 
-                                    tw-overflow-hidden tw-relative"
-                                    data-tab-name="call"
-                                    >
-                        
-                    <div class="tw-w-full tw-h-full tw-p-4
-                                tw-place-content-center
-                                tw-gap-6 max-xl:tw-place-items-center
-                                tw-flex tw-flex-wrap">
-
-                                <iframe src="https://koalendar.com/e/meet-with-paul-about-webdesign?embed=true" width="100%" height="800px" frameborder="0"></iframe>
-
-                    </div>
-                    
-                </section>
-
+                <footer
+                    class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-black max-md:tw-flex-col"
+                ></footer>
             </div>
-            
-            <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
-                            tw-px-[10%] tw-place-content-around tw-gap-3 
-                            tw-text-black
-                            tw-mt-auto
-                            ">
-            </footer>
-        </div>
-    </mai>
-</body>
+        </main>
+    </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js" integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
 
-
-<script src="./index.js"></script>
-
+    <script src="./index.js"></script>
 </html>

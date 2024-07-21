@@ -10,7 +10,13 @@ Download from browsable page: https://landingpage-templates.vercel.app/
 - Create a new [issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template
   request have enough thumbs up, we'll make one.
 
-## Features
+### Hover preview VsCode extension
+It can sometimes be hard to quickly modify templates created by someone else without visual cues, 
+so to overcome this I have created a vscode plugin called [Hover Preview](https://github.com/PaulleDemon/Hover-Preview). 
+
+Make sure to check that out.
+
+## Features of Landing page templates
 * Responsive.
 * Technical SEO optimized (uses correct tags, like h1, h2, section etc)
 * Tailwind built in, for rapid development (uses tw- to separate tailwind classes)
@@ -64,7 +70,7 @@ Almost all the folder structure is similar to below shown
 1. If you are planning to modify tailwind you must have node installed.
 
 > [!NOTE] 
-> Install dependencies from `.package.json` not package.json, as package.json contains additional dependencies to help with types
+> Install dependencies from `.package.json` not package.json, as package.json contains additional dev dependencies to help with types
 
 2.Add a file called `tailwind.config.js` (Note: every folder has this file, with theme)
 ```js
