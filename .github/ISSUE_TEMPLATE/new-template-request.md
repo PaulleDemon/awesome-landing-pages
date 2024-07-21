@@ -29,5 +29,5 @@ If you need a custom unique landing page you should contact [here](https://tally
 **Additional context**
 - Add any other context or screenshots about the template request here.
 
-The temple pripirty are based on number of reaction, a good number of thumbs up will make it to proiorty queue
+The template priority are based on number of reaction, a good number of thumbs up will make it to priority queue
 
