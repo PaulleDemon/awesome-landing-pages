@@ -4,19 +4,19 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/apps/AISales/**/*.{html,jsx, js}",
-		"./src/apps/AISales/**/*.js",
-		"./src/apps/AISales/**/*.html",
-	
+		"./src/law/**/*.{html,jsx, js}",
+		"./src/law/**/*.js",
+		"./src/law/**/*.html",
+		
+		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
 	],
 	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				primary: "#BFFE66",
-				secondary: "#BDB8FF", 
-				
+				primary: '#282E3F',
+				secondary: "#CF9455", 	
 			}
 		},
 	},
