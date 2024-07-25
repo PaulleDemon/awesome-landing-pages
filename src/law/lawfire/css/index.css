@@ -213,7 +213,7 @@ header .collapsible-header{
         padding-bottom: 5%;
         place-items: end;
         color: white ;
-        box-shadow: -1px 0px 5px #6087e9ef;
+        box-shadow: -1px 0px 5px #29375bef;
         background-color: var(--primary-color);
     }
 }

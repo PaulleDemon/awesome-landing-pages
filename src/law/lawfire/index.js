@@ -7,9 +7,6 @@ let isHeaderCollapsed = window.innerWidth < RESPONSIVE_WIDTH
 const collapseBtn = document.getElementById("collapse-btn")
 const collapseHeaderItems = document.getElementById("collapsed-header-items")
 
-const reviewContainer = document.querySelector(".review-container")
-const reviewSlideShow = new SlideShow(reviewContainer, true, 10000)
-
 
 function onHeaderClickOutside(e) {
 
@@ -53,3 +50,69 @@ function responsive() {
 
 window.addEventListener("resize", responsive)
 
+
+
+/** --------------------------- animations --------------------- */
+
+gsap.to(".reveal-up", {
+    opacity: 0,
+    y: "100%",
+})
+
+gsap.to(".reveal-lr", { // reveal from left to right
+    opacity: 0,
+    x: "-100%",
+})
+
+gsap.to(".reveal-rl", { // reveal from left to right
+    opacity: 0,
+    x: "100%",
+})
+
+const sections = gsap.utils.toArray("section")
+
+
+sections.forEach((sec) => {
+
+    const scrollTriggerOptions = {
+        trigger: sec,
+        start: "10% 80%", // top of trigger hits the top of viewport
+        end: "20% 90%",
+        // markers: true,
+        // scrub: 1,
+    }
+    
+    const revealUptimeline = gsap.timeline({paused: true, 
+                                            scrollTrigger: scrollTriggerOptions})
+    
+    const revealLrTimeline = gsap.timeline({paused: true, 
+                                                scrollTrigger: scrollTriggerOptions})
+    
+    const revealRlTimeline = gsap.timeline({paused: true, 
+                                                    scrollTrigger: scrollTriggerOptions})
+    
+
+    revealUptimeline.to(sec.querySelectorAll(".reveal-up"), {
+        opacity: 1,
+        duration: 0.8,
+        y: "0%",
+        stagger: 0.2,
+    })
+
+    
+    revealLrTimeline.to(sec.querySelectorAll(".reveal-lr"), {
+        opacity: 1,
+        duration: 0.8,
+        x: "0%",
+        stagger: 0.2,
+    }, "<")
+
+    revealRlTimeline.to(sec.querySelectorAll(".reveal-rl"), {
+        opacity: 1,
+        duration: 0.8,
+        x: "0%",
+        stagger: 0.2,
+    }, "<")
+
+
+})
