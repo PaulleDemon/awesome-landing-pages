@@ -9,8 +9,8 @@ body:
     attributes:
       value: |
         > [!NOTE]
-        > your template request has to be generic
-        If you need a custom unique landing page you should contact [here](https://tally.so/r/woO0Kx)
+        > Your template request has to be **generic**
+        If you need a custom unique landing page you should **contact [here](https://tally.so/r/woO0Kx)**
 
   - type: input
     id: template-category
