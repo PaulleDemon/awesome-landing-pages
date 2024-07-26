@@ -1,6 +1,3 @@
-## Jamie Portfolio
-This template is given free of charges on the purchase of license for Hover Preview: https://github.com/PaulleDemon/Hover-Preview
-
 
 ## Usage
 
