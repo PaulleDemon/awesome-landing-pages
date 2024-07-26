@@ -6,7 +6,7 @@ Contains free and open-sourced website templates, including but not limited to S
 
 
 #### Updated weekly
-Feel free to star this repository. New templates will be uploaded every friday
+New templates will be uploaded every Friday. Feel free to star this repository 🌟. 
 
 **Have a generic template in mind?**
 - Create a new [issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template
