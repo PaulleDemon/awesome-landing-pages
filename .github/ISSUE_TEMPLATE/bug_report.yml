@@ -23,9 +23,9 @@ body:
   - type: input
     id: browser
     attributes:
-      label: Browser
+      label: Browser & version
       description: Please tell us which browser and version of the browser you are using
-      placeholder: Browser name
+      placeholder: Browser name & version
       value: "Browser name"
     validations:
         required: true

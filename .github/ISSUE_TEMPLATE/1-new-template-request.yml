@@ -1,0 +1,87 @@
+name: New Template request
+description: Have an idea for template? well tell us
+title: "[TEMPLATE REQUEST]: "
+labels: ["new template"]
+assignees: 
+  - PaulleDemon
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        > your template request has to be generic
+        If you need a custom unique landing page you should contact [here](https://tally.so/r/woO0Kx)
+
+  - type: input
+    id: template-category
+    attributes:
+      label: Template Category
+      description:  "A category of the template you want eg: Realestate, SaaS etc"
+      placeholder: "Template category eg: Realestate, SaaS etc" 
+      value: "Template category"
+    validations:
+        required: true
+
+  - type: textarea
+    id: inspiration
+    attributes:
+      label: Design Inspiration links
+      description: If you have a sample design for inspiration paste it here, or add a link. I take inspiration from the landing page, I don't produce a copy.
+      placeholder: Sample design links
+      value: "Design inspiration"
+    validations:
+        required: false
+
+  - type: textarea
+    id: color-theme
+    attributes:
+      label: Color theme
+      description: If you know the primary color, secondary color add it here
+      placeholder: "Theme color eg: primary: #000"
+      value: "Color theme"
+    validations:
+        required: false
+
+  - type: textarea
+    id: fonts
+    attributes:
+      label: Fonts
+      description: Do you know what fonts where used in the design? if so add a link to google fonts.
+      placeholder: "Font names and link"
+      value: "Font names"
+    validations:
+        required: false
+
+  - type: textarea
+    id: sections
+    attributes:
+      label: Sections
+      description: "What sections would the landing page have, eg: Pricing section, contact section etc"
+      placeholder: "Sections in the template"
+      value: "Template sections"
+    validations:
+        required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: "Add any other context or screenshots about the template request here."
+      placeholder: "Additional context"
+      value: "Additional context"
+    validations:
+        required: false
+
+  - type: checkboxes
+    id: related-issues
+    attributes:
+      label: This is a generic template
+      description: I acknowledge this is not a custom template requirement, but a generic one.
+      options:
+        - label: "Yes"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        The template priority are based on number of reaction, a good number of thumbs up will make it to priority queue
