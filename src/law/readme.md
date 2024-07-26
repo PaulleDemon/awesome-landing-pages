@@ -8,7 +8,14 @@ The names don't mean much, you can use any templates for your purpose
 
 [Live preview](https://lawgroup.netlify.app/)
 
-![restaurant landing page](./screenshots/lawgroup.png) - 
+![lawgroup landing page](./screenshots/lawgroup.png) - 
+
+
+### Law Fire
+
+[Live preview](https://law-fire.netlify.app/)
+
+![law fire landing page](./screenshots/law-fire.png) - 
 
 
 #tailwind templates #website templates #law website

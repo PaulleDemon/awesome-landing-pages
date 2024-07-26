@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SaaS AI</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="tw-flex tw-font-mono tw-min-h-[100vh] tw-flex-col tw-bg-[#181B20] tw-text-white">
+      
+
+        <header
+            class="lg:tw-justify-around tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] 
+                    tw-text-white"
+        >
+            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href=""> About us </a>
+                    <a class="header-links" href="#pricing"> Pricing </a>
+                    <a class="header-links" href=""> Features </a>
+                    <a class="header-links" href=""> Company </a>
+                </div>
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href=""
+                        aria-label="signup"
+                        class="tw-rounded-full tw-bg-secondary tw-px-3 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Get started</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] hero-section tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="hero-bg-gradient tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4  max-xl:tw-place-items-center"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up tw-text-center gradient-text tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Ai powered </span>
+                        <br />
+                        <span class=""> Coding Simplified </span>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center max-lg:tw-max-w-full"
+                    >
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Error adipisci corrupti accusamus reiciendis
+                        similique assumenda nostrum fuga dicta vitae ipsum.
+                    </div>
+
+                    <div
+                        class="reveal-up tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2"
+                    >
+                        <a
+                            class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            Get started
+                        </a>
+                        <a
+                            class="btn !tw-bg-white !tw-text-secondary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            <span>Learn more</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="reveal-up tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container">
+                    
+                    <div
+                        class="tw-flex tw-max-h-[750px] tw-min-h-[450px] tw-w-full tw-min-w-[350px] tw-max-w-[950px] tw-rounded-2xl 
+                                    tw-overflow-hidden tw-shadow-xl tw-shadow-[#443e437c]
+                                    max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[150px] max-lg:tw-w-[320px]"
+                    id="dashboard">
+                        <img
+                            src="./assets/images/home/dashboard.png"
+                            alt="dashboard"
+                            class="tw-h-full tw-w-full tw-object-cover  max-lg:tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="tw-relative tw-flex tw-flex-col tw-w-full tw-max-w-[100vw] 
+                    tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">Trusted by brands you know</h2>
+
+            <div class="reveal-up carousel-container">
+                <div class="carousel tw-mt-6 tw-flex tw-w-full lg:w-place-content-center tw-gap-5 max-md:tw-gap-2">
+                    <!-- add the brands using your app  -->
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/google.svg"
+                            alt="Google"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/microsoft.svg"
+                            alt="Microsoft"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/adobe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/airbnb.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/stripe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/reddit.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="./assets/images/home/coding.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl max-md:tw-text-2xl tw-font-medium">Streamlined Coding</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            AI powered
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Reiciendis commodi temporibus at? Aspernatur,
+                            a necessitatibus?
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Locally run
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Reiciendis commodi temporibus at? Aspernatur,
+                            a necessitatibus?
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-min-h-[80vh] tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+            tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center
+                        tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl max-md:tw-text-2xl tw-font-medium">Powerful Version control</h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Git
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Reiciendis commodi temporibus at? Aspernatur,
+                            a necessitatibus?
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Github
+                        </h4>
+                        <span class="tw-text-lg tw-text-gray-300">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Reiciendis commodi temporibus at? Aspernatur,
+                            a necessitatibus?
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tw-flex">
+                    <div class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg 
+                                tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]">
+                        <img
+                            src="./assets/images/home/git.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+
+            </div>
+        
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-min-h-[100vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h3 class="tw-text-xl tw-text-primary">
+                        Features loved by our clients
+                    </h3>
+                    <h2 class="tw-text-4xl tw-font-semibold">Core features</h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[60%] tw-flex-wrap tw-place-content-center tw-gap-2 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                        <i
+                            class="bi bi-boombox-fill tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 1</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                        <i
+                            class="bi bi-award-fill tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 2</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                        <i
+                            class="bi bi-book-fill tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 3</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                        <i
+                            class="bi bi-briefcase-fill tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 4</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                        <i
+                            class="bi bi-credit-card-2-front-fill tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 5</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <!-- <img src="./assets/images/home/sample.jpg" 
+                            alt="feature1"> -->
+                        <i class="bi bi-fire tw-text-5xl tw-text-primary"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Feature 6</h3>
+                        <div class="tw-text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quos, voluptates numquam quam expedita
+                            mollitia possimus. Quos tempora placeat pariatur
+                            est!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-min-h-[100vh] tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+        >
+            <h3
+                class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl"
+            >
+                Loved by our clients
+            </h3>
+            <!-- Testimonials -->
+            <div
+                class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+            >
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            <img
+                                src="./assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="women"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Trich B</div>
+                            <div class="tw-text-gray-400">AMI, ceo</div>
+                        </div>
+                    </div>
+                    <p class="tw-mt-4  tw-text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Beatae, vero.
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            <img
+                                src="./assets/images/people/man.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">John B</div>
+                            <div class="tw-text-gray-400">ABC, cto</div>
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Inventore deserunt delectus consectetur enim cupiditate
+                        ab nemo voluptas repellendus qui quas..
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Mante</div>
+                            <div class="tw-text-gray-400">xyz, cto</div>
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quidem, numquam.
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            <img
+                                src="./assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Lara</div>
+                            <div class="tw-text-gray-400">xz, cto</div>
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Soluta, saepe illum. Dicta quisquam praesentium
+                        quod!
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            <img
+                                src="./assets/images/people/man.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">James</div>
+                            <div class="tw-text-gray-400">app, cto</div>
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Fuga accusamus non enim debitis rem neque beatae
+                        explicabo corrupti porro ullam?
+                    </p>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Ron</div>
+                            <div class="tw-text-gray-400">
+                                marketplace, cto
+                            </div>
+                        </div>
+                    </div>
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Fuga accusamus non enim debitis rem neque beatae
+                        explicabo corrupti porro ullam?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]"
+            id="pricing"
+        >
+            <h3
+                class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl"
+            >
+                Simple pricing
+            </h3>
+            <!-- pricing -->
+            <div
+                class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+            >
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl tw-font-semibold">$9</span>
+                        <span class="tw-text-2xl tw-text-gray-400">/mo</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                    <a
+                        href="http://"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-bg-[#1d2127] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-primary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl tw-font-semibold">$19</span>
+                        <span class="tw-text-2xl tw-text-gray-400">/mo</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                    <a
+                        href="http://"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-border-[#333a44] tw-bg-[#1d2127] tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl tw-font-semibold">$49</span>
+                        <span class="tw-text-2xl tw-text-gray-400">/mo</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                    <a
+                        href="http://"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+        >
+            <h3
+                class="reveal-up tw-text-center tw-text-4xl tw-font-medium max-md:tw-text-2xl"
+            >
+                Read our articles ✨
+            </h3>
+            <!-- pricing -->
+            <div
+                class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+            >
+                <a
+                    href=""
+                    class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src="./assets/images/home/forest.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                            srcset=""
+                        />
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                        Article 1
+                    </h3>
+                    <p class="tw-mt-2 tw-text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src="./assets/images/home/mountain.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                            srcset=""
+                        />
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                        Article 2
+                    </h3>
+                    <p class="tw-mt-2 tw-text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-border-[#333a44] tw-bg-[#1d2127] tw-border-[1px] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src="./assets/images/home/photography.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                            srcset=""
+                        />
+                    </div>
+                    <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                        Article 3
+                    </h3>
+                    <p class="tw-mt-2 tw-text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+        >
+            <div
+                class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
+            >
+                <h2 class="tw-text-2xl tw-text-primary max-md:tw-text-xl">
+                    Special Newsletter signup
+                </h2>
+                <h2 class="tw-text-xl max-md:tw-text-lg">
+                    Keep yourself updated
+                </h2>
+
+                <div
+                    class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+                >
+                    <input
+                        type="email"
+                        class="input tw-h-full tw-w-full tw-p-2 tw-outline-none"
+                        placeholder="email"
+                    />
+                    <a
+                        class="btn tw-transition-colors tw-duration-[0.3s]"
+                        href=""
+                    >
+                        Signup
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-w-[120px]"
+                />
+                <div>
+                    2 Lord Edward St,
+                    <br />
+                    D02 P634,
+                    <br />
+                    United States
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://twitter.com/@pauls_freeman"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="https://instagram.com/"
+                        class="tw-h-[40px] tw-w-[40px]"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">About us</a>
+                    <a href="" class="footer-link">FAQ</a>
+                    <a href="" class="footer-link">Contact Us</a>
+                    <a href="" class="footer-link">Blogs</a>
+                    <a href="" class="footer-link">Privacy policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>

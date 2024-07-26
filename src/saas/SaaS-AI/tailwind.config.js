@@ -7,12 +7,12 @@ module.exports = {
 		"**/*.js",
 		"**/*.html",
 	],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
-				primary: '#282E3F',
-				secondary: "#CF9455",
-				primaryLight: "#3A4053"	
+				primary: "#c490ff",
+				secondary: "#6c72e8", 
 			}
 		},
 	},

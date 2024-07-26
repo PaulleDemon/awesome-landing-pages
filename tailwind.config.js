@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/law/**/*.{html,jsx, js}",
-		"./src/law/**/*.js",
-		"./src/law/**/*.html",
+		"./src/law/lawfire/*.{html,jsx, js}",
+		"./src/law/lawfire/*.js",
+		"./src/law/lawfire/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"

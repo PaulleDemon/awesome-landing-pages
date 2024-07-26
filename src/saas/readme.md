@@ -18,4 +18,11 @@ This is a simple landing page
 ![finance landing page](./screenshots/celestialsaas.png) 
 
 
+### AI SaaS landing page
+
+[Live preview](https://ai-code.netlify.app/)
+
+![finance landing page](./screenshots/ai-saas.png) 
+
+
 #tailwind templates #website templates

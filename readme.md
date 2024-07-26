@@ -1,10 +1,12 @@
 # Free Landing page templates
 
-Contains free and open-sourced website templates, including but not limited to SaaS landing page, portfolio, Restaurant page and more. Useful, for freelancers, SaaS developers, and more.
+Contains free and open-sourced website templates, including but not limited to SaaS landing page, portfolio, Restaurant page and more. Useful, for freelancers, agencies, SaaS developers, and more.
 
-Download from browsable page: https://landingpage-templates.vercel.app/
+**Download from browsable page**: https://landingpage-templates.vercel.app/
 
-**[Continuously developed]** Feel free to star this repository. More templates will be uploaded weekly
+
+#### Updated weekly
+Feel free to star this repository. New templates will be uploaded every friday
 
 **Have a generic template in mind?**
 - Create a new [issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template
@@ -19,7 +21,7 @@ Make sure to check that out.
 ## Features of Landing page templates
 * Responsive.
 * Technical SEO optimized (uses correct tags, like h1, h2, section etc)
-* Tailwind built in, for rapid development (uses tw- to separate tailwind classes)
+* Tailwind built in, for rapid development (uses `tw-` prefix to separate tailwind classes)
 * Quick customization, change only texts.
 * Frontend framework independent: Comes with basic html, css just enough for your perfect landing page, you are free to modify and use any frontend framework (React, Vue) if required.
 
@@ -70,7 +72,7 @@ Almost all the folder structure is similar to below shown
 1. If you are planning to modify tailwind you must have node installed.
 
 > [!NOTE] 
-> Install dependencies from `.package.json` not package.json, as package.json contains additional dev dependencies to help with types
+> If you don't want devDependencies, Install dependencies from `.package.json` not package.json, as package.json contains additional dev dependencies to help with types
 
 2.Add a file called `tailwind.config.js` (Note: every folder has this file, with theme)
 ```js
@@ -86,7 +88,7 @@ module.exports = {
 	plugins: [],
 }
 ```
-3. Now add `postcss.config.js
+3. Now add `postcss.config.js`
 ```js
 module.exports = {
   plugins: {
@@ -146,6 +148,8 @@ Here's the list of website templates
 
 **2. [CelestialSaaS](src/saas/CelestialSaaS/)** - [[`Live preview`](https://celestialsaas.netlify.app/)]
 
+**3. [AI SaaS](src/saas/SaaS-AI/)** - [[`Live preview`](https://ai-code.netlify.app/)]
+
 
 ### App landing pages
 ![app landing page](src/apps/screenshots/chat-origin.png)
@@ -171,9 +175,12 @@ Here's the list of website templates
 
 ### Attorney landing page
 
-![lawyer landing page](src/law/screenshots/lawgroup.png)
+![lawyer landing page](src/law/screenshots/law-fire.png)
 
 1. **[Law Group](src/law/lawgroup)** - [[`Live preview`](https://lawgroup.netlify.app/)]
+
+2. **[Law Fire](src/law/lawfire)** - [[`Live preview`](https://law-fire.netlify.app/)]
+
 
 ### Portfolio
 
@@ -182,6 +189,8 @@ Here's the list of website templates
 1. **[Bella Youtuber](src/portfolio/bella)** - [[`Live preview`](https://bella-youtuber.netlify.app/)]
 
 2. **[Jrdev - developers portfolio](src/portfolio/jrdev)** - [[`Live preview`](https://jrdev-port.netlify.app/)]
+
+3. **[Jamie - developers portfolio](src/portfolio/Jamie-portfolio/)** - [[`Live preview`](https://jamie-dev-portfolio.netlify.app/)]
 
 
 ### Other website templates
