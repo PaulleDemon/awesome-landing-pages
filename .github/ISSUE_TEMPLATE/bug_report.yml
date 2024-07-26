@@ -46,5 +46,5 @@ body:
       label: This is a new issue
       description: I have checked for the same issue in the issues panel
       options:
-        - label: Yes
+        - label: "Yes"
           required: true
