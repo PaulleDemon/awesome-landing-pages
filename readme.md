@@ -2,7 +2,7 @@
 
 Contains free and open-sourced website templates, including but not limited to SaaS landing page, portfolio, Restaurant page and more. Useful, for freelancers, agencies, SaaS developers, and more.
 
-**Download from browsable page**: https://landingpage-templates.vercel.app/
+**Download from browsable page**: https://awesome-landingpages.vercel.app/
 
 
 #### Updated weekly
@@ -76,7 +76,7 @@ for clients or dedicate your time elsewhere.
 Installation and set up is same for almost all the templates
 
 ### Downloading the folder
-You can use the browsable page to download a specific repo: [https://landingpage-templates.vercel.app/](https://landingpage-templates.vercel.app/)
+You can use the browsable page to download a specific repo: [https://awesome-landingpages.vercel.app/](https://awesome-landingpages.vercel.app/)
 
 ### Cloning the folder you want
 
