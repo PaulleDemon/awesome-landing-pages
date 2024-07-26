@@ -1,8 +1,9 @@
 name: Bug report
-about: Create a report to help us improve
+description: Create a report to help us improve
 title: "[BUG]"
 labels: [bug]
-assignees: ['PaulleDemon']
+assignees: 
+  - PaulleDemon
 body:
   - type: markdown
     attributes:
@@ -16,7 +17,7 @@ body:
       description: Please tell us which template is the issue related to
       placeholder: Template name
       value: "Template name"
-      validations:
+    validations:
         required: true
 
   - type: input
@@ -26,7 +27,7 @@ body:
       description: Please tell us which browser and version of the browser you are using
       placeholder: Browser name
       value: "Browser name"
-      validations:
+    validations:
         required: true
 
   - type: textarea
@@ -36,7 +37,7 @@ body:
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
-      validations:
+    validations:
         required: true
 
   - type: checkboxes
@@ -46,6 +47,4 @@ body:
       description: I have checked for the same issue in the issues panel
       options:
         - label: Yes
-          value: yes
-      validations:
-        required: true
+          required: true
