@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/law/lawfire/*.{html,jsx, js}",
-		"./src/law/lawfire/*.js",
-		"./src/law/lawfire/*.html",
+		"./src/law/lawgroup/*.{html,jsx, js}",
+		"./src/law/lawgroup/*.js",
+		"./src/law/lawgroup/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
@@ -15,9 +15,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#282E3F',
-				secondary: "#CF9455", 
-				primaryLight: "#3A4053"	
+				primary: '#00006F',
+				secondary: "#a59451fb",
 			}
 		},
 	},
