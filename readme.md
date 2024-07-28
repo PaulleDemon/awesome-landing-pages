@@ -33,6 +33,7 @@ New templates will be uploaded every Friday. Feel free to star this repository ð
   - [Real estate landing page](#real-estate-landing-page)
   - [Attorney landing page](#attorney-landing-page)
   - [Portfolio](#portfolio)
+  - [Ngo](#ngo)
   - [Other website templates](#other-website-templates)
 - [Credits](#credits)
   - [Images](#images)
@@ -220,6 +221,13 @@ Here's the list of website templates
 2. **[Jrdev - developers portfolio](src/portfolio/jrdev)** - [[`Live preview`](https://jrdev-port.netlify.app/)]
 
 3. **[Jamie - developers portfolio](src/portfolio/Jamie-portfolio/)** - [[`Live preview`](https://jamie-dev-portfolio.netlify.app/)]
+
+
+### NGO landing pages
+
+![Ngo landing page](src/ngo/screenshots/project-africa.png)
+
+1. **[Project Africa](src/ngo/project-africa/)** - [[`Live preview`](https://project-africa.netlify.app/)]
 
 
 ### Other website templates
