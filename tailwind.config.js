@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/law/lawgroup/*.{html,jsx, js}",
-		"./src/law/lawgroup/*.js",
-		"./src/law/lawgroup/*.html",
+		"./src/ngo/project-africa/*.{html,jsx, js}",
+		"./src/ngo/project-africa/*.js",
+		"./src/ngo/project-africa/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
@@ -15,8 +15,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#00006F',
-				secondary: "#a59451fb",
+				primary: '#094c3b',
+				secondary: "#ffe353",
 			}
 		},
 	},

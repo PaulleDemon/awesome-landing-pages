@@ -9,8 +9,7 @@ Contains free and open-sourced website templates, including but not limited to S
 New templates will be uploaded every Friday. Feel free to star this repository 🌟. 
 
 **Have a generic template in mind?**
-- Create a new [issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template
-  request have enough thumbs up, we'll make one.
+- Create a new [template issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template request have enough thumbs up, we'll make one. If you are looking for a custom one, contact [here](https://tally.so/r/woO0Kx)
 
 ## Table of content
 
