@@ -33,7 +33,7 @@ New templates will be uploaded every Friday. Feel free to star this repository ð
   - [Real estate landing page](#real-estate-landing-page)
   - [Attorney landing page](#attorney-landing-page)
   - [Portfolio](#portfolio)
-  - [Ngo](#ngo)
+  - [Ngo](#ngo-landing-pages)
   - [Other website templates](#other-website-templates)
 - [Credits](#credits)
   - [Images](#images)
