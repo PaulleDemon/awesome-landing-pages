@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/ngo/project-africa/*.{html,jsx, js}",
-		"./src/ngo/project-africa/*.js",
-		"./src/ngo/project-africa/*.html",
+		"./src/saas/SaaSyDark/*.{html,jsx, js}",
+		"./src/saas/SaaSyDark/*.js",
+		"./src/saas/SaaSyDark/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
@@ -15,8 +15,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#094c3b',
-				secondary: "#ffe353",
+				primary: '#7e22ce',
+				secondary: "#080808",
+				outlineColor: "#1F2123"
 			}
 		},
 	},
