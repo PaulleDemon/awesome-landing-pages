@@ -180,6 +180,8 @@ Here's the list of website templates
 
 **3. [AI SaaS](src/saas/SaaS-AI/)** - [[`Live preview`](https://ai-code.netlify.app/)]
 
+**4. [SaaSy Dark](src/saas/SaaSyDark//)** - [[`Live preview`](https://saasy-dark.netlify.app/)]
+
 
 ### App landing pages
 ![app landing page](src/apps/screenshots/chat-origin.png)

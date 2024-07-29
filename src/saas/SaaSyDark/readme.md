@@ -1,4 +1,6 @@
 
+**Github**: https://github.com/PaulleDemon/awesome-landing-pages
+
 ## Usage
 
 * This template uses tailwind css every tailwind class are prefixed with `tw-`, to help differentiate
