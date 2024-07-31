@@ -192,7 +192,7 @@ Here's the list of website templates
 
 2. **[AiSales](src/apps/AISales/)** - [[`Live preview`](https://aisales-app.netlify.app/)]
 
-3. **[AiSales](src/apps/navigator)** - [[`Live preview`](https://navigator-app.netlify.app/)]
+3. **[Navigator](src/apps/navigator)** - [[`Live preview`](https://navigator-app.netlify.app/)]
 
 
 
