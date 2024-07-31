@@ -1,0 +1,19 @@
+{
+    "name": "Paul's portfolio",
+    "icon": "./assets/images/home/man.jpg",
+
+    "pages": [
+        {
+            "icon": "bi bi-person-fill",
+            "name": "About",
+            "link": "/about",
+            "content": "content/about.md"
+        },
+        {
+            "name": "Projects",
+            "link": "/projects",
+            "content": "content/about.md"
+        }
+    ]
+
+}

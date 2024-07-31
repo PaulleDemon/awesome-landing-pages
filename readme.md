@@ -9,7 +9,9 @@ Contains free and open-sourced website templates, including but not limited to S
 New templates will be uploaded every Friday. Feel free to star this repository 🌟. 
 
 **Have a generic template in mind?**
-- Create a new [template issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template request have enough thumbs up, we'll make one. If you are looking for a custom one, contact [here](https://tally.so/r/woO0Kx)
+- Create a new [template issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template request have enough thumbs up, we'll make one. 
+  
+- If you are looking for a custom one, contact [here](https://tally.so/r/woO0Kx)
 
 ## Table of content
 
@@ -189,6 +191,8 @@ Here's the list of website templates
 1. **[Chatorigin](src/apps/chatorigin)** - [[`Live preview`](https://chatorigin.netlify.app/)]
 
 2. **[AiSales](src/apps/AISales/)** - [[`Live preview`](https://aisales-app.netlify.app/)]
+
+3. **[AiSales](src/apps/navigator)** - [[`Live preview`](https://navigator-app.netlify.app/)]
 
 
 

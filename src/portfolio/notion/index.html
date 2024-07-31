@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notion Portfolio</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" />
+        <!-- <link rel="stylesheet" href="./css/tailwind-build.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-text-base tw-bg-[#fff] tw-overflow-hidden tw-font-sans"
+    >
+
+        <div class="tw-flex">
+            <section
+                class="tw-relative tw-bg-secondary tw-text-textColor tw-flex tw-min-h-[100vh] tw-max-w-[240px] tw-min-w-[240px] tw-flex-col 
+                        tw-overflow-hidden  max-md:tw-mt-[50px] "
+            >
+
+                <div class="tw-w-full tw-gap-2 tw-flex tw-p-4 tw-flex-col">
+
+                    <div class="page-link tw-flex tw-flex-gap-1">
+
+                        <div class="icon">
+                            <img src="./assets/images/home/man.jpg" class="tw-object-contain">
+                        </div>
+
+                        <div class="">Paul's Portfolio</div>
+
+                        <i class="bi bi-chevron-down tw-text-sm"></i>
+
+                    </div>
+
+                    <div class="page-link tw-text-base tw-flex tw-flex-gap-1">
+                        <i class="bi bi-search"></i>
+                        <div class="">Search</div>
+                    </div>
+
+                    <div class="page-link tw-text-base tw-flex tw-flex-gap-1">
+                        <i class="bi bi-house"></i>
+                        <div class="">Home</div>
+                    </div>
+
+                </div>
+
+                <div class="tw-mt-4 tw-px-4 tw-text-sm">
+                    private
+                </div>
+
+                <div
+                    class="tw-flex tw-px-4 tw-p-1 tw tw-overflow-y-auto tw-h-full tw-min-h-[100vh] tw-w-full tw-gap-1 tw-flex-col"
+                    id="sidebar-content"
+                >   
+                    
+                </div>
+            </section>
+
+            <section
+                class="tw-relative tw-bg-white tw-flex tw-overflow-auto tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center tw-p-6 tw-py-5"
+                
+            >
+                <h3 class="reveal-up tw-text-6xl tw-font-medium max-lg:tw-text-3xl">
+                    Past works
+                </h3>
+                <div
+                    class="reveal-up tw-my-4 tw-h-[1px] tw-w-[80%] tw-bg-black"
+                ></div>
+                <div
+                    class="tw-mt-8 tw-gap-10" id="content"
+                >
+                    
+                </div>
+            </section>
+        
+        </div>
+
+    </body>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js
+    "></script>
+
+    <script src="./scripts/utils.js"></script>
+    <script src="./index.js"></script>
+</html>

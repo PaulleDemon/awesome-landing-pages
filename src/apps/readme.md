@@ -18,5 +18,12 @@ The names don't mean much, you can use any templates for your purpose
 ![app landing page](./screenshots/aisales.png) - 
 
 
+### Navigator
+
+[Live preview](https://navigator-app.netlify.app/)
+
+![app landing page](./screenshots/navigator.png) - 
+
+
 
 #tailwind templates #website templates
