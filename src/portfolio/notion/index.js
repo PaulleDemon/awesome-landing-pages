@@ -75,7 +75,7 @@ async function fetchDB(){
 
 
 async function fetchContent(path){
-    console.log("path: ", path)
+    
     try{
         const response = await fetch(path)
 
@@ -115,7 +115,12 @@ function buildSideBar(icon, name, link, content){
     `
 }
 
-function updateContent(body){
-    content.innerHTML = md.render(body)
+function updateContent(body, icon){
+    content.innerHTML = `
 
+        ${icon ?? "<img src=''>"}
+
+        ${md.render(body)}
+    `
+    console.log("body: ", body, content.innerHTML)
 }

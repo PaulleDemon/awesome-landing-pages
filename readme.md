@@ -194,6 +194,8 @@ Here's the list of website templates
 
 3. **[Navigator](src/apps/navigator)** - [[`Live preview`](https://navigator-app.netlify.app/)]
 
+4. **[Traveler](src/apps/traveler)** - [[`Live preview`](https://traveler-dyno.netlify.app/)]
+
 
 
 ### Restaurant landing page

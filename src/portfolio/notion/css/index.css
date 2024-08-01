@@ -183,22 +183,6 @@ header > .collapsible-header{
     transition: 0.4s;
 }
 
-/* Style for the collapsible content */
-.content {
-    padding: 0 18px;
-    /* display: none; */
-    height: 0px;
-    overflow: hidden;
-    background-color: transparent;
-    transition: height 0.5s;
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.collapsible .active,
-.collapsible:hover {
-    /* background-color: #dedddd; */
-}
 
 @media not all and (min-width: 1024px) {
     header .collapsible-header {

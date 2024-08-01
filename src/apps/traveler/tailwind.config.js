@@ -3,13 +3,9 @@ module.exports = {
 	prefix: 'tw-',
 	important: false,
 	content: [
-		// "./**/*.{html, jsx, js}",
-		"./src/apps/traveler/*.{html,jsx, js}",
-		"./src/apps/traveler/*.js",
-		"./src/apps/traveler/*.html",
-		
-		"!.hoverpreview.temp.html"
-		// "*.{html,jsx}"
+		"**/*.{html, jsx, js}",
+		"**/*.js",
+		"**/*.html",
 	],
 	darkMode: 'class',
 	theme: {
