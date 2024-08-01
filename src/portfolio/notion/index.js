@@ -78,13 +78,11 @@ async function fetchContent(path){
     
     try{
         const response = await fetch(path)
-
-        const body = await response.text()
-        updateContent(body)
+        return await response.text()
 
     }catch(e){
         console.error(e)
-        return 
+        return ""
     }
 }
 
@@ -102,23 +100,46 @@ function buildSideBar(icon, name, link, content){
     
     if (isFileOrLink(icon)){
         iconElement = `<div class="icon"><img src=${icon} class="tw-object-contain" ></div>`
+    }else if (isEmoji(icon)){
+        iconElement = `<p class="">${icon}</p>` // bootstrap icon class
+
     }else{     
         iconElement = `<i class="${icon ?? "bi bi-file-earmark"}"></i>` // bootstrap icon class
     }
 
 
     sideBarContent.innerHTML += `
-        <button onclick="fetchContent('${content}')"  class="page-link tw-text-base tw-flex tw-flex-gap-1">
+        <button onclick="updateContent('${content}', '${icon}', '${name}')"  class="page-link tw-text-base tw-flex tw-flex-gap-1">
             ${iconElement}
             <div class="">${name}</div>
         </button>
     `
 }
 
-function updateContent(body, icon){
-    content.innerHTML = `
+async function updateContent(path, icon, title){
 
-        ${icon ?? "<img src=''>"}
+    const body = await fetchContent(path)
+
+    let iconElement = ""
+    
+    if (isFileOrLink(icon)){
+        iconElement = `<img src=${icon} class="tw-object-cover tw-w-full tw-h-full" >`
+    }else if (isEmoji(icon)){
+        iconElement = `<p class="">${icon}</p>` // bootstrap icon class
+
+    }else{     
+        iconElement = `<i class="${icon ?? "bi bi-file-earmark"} tw-text-6xl"></i>` // bootstrap icon class
+    }
+
+    document.querySelector("#content-icon").innerHTML = iconElement
+    document.querySelector("#title").innerHTML = `
+                                <div class='tw-flex tw-gap-1'>
+                                    <div class="tw-w-[20px] tw-h-[20px] tw-rounded-sm tw-overflow-hidden">${iconElement}</div> 
+                                    ${title}
+                                </div>
+                                `
+
+    content.innerHTML = `
 
         ${md.render(body)}
     `

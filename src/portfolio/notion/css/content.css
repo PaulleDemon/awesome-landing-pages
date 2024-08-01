@@ -1,3 +1,12 @@
+
+.content{
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .content > h1{
     font-size: 40px;
     font-weight: 700;
@@ -13,6 +22,20 @@
     font-weight: 600;
 }
 
-.content{
-    font-size: 16px;
+.content a{
+    color: #82817f;
+    text-decoration: underline;
 }
+
+.content ul, .content ol{
+    margin-left: 15px;
+}
+
+.content ul{
+    list-style-type: disc;
+}   
+
+
+.content ol{
+    list-style-type: lower-roman;
+}   

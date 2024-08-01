@@ -4,12 +4,13 @@
 
     "pages": [
         {
-            "icon": "bi bi-person-fill",
+            "icon": "./assets/images/home/man.jpg",
             "name": "About",
             "link": "/about",
             "content": "content/about.md"
         },
         {
+            "icon": "😍",
             "name": "Projects",
             "link": "/projects",
             "content": "content/about.md"

@@ -4,9 +4,9 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/apps/traveler/*.{html,jsx, js}",
-		"./src/apps/traveler/*.js",
-		"./src/apps/traveler/*.html",
+		"./src/portfolio/notion/*.{html,jsx, js}",
+		"./src/portfolio/notion/*.js",
+		"./src/portfolio/notion/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
@@ -16,7 +16,9 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: '#fff',
-				secondary: "#000",
+				secondary: "#f7f7f5",
+				hoverColor: "#efefed",
+				textColor: "#1F2123"
 			}
 		},
 	},
