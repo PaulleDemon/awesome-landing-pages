@@ -230,6 +230,8 @@ Here's the list of website templates
 
 3. **[Jamie - developers portfolio](src/portfolio/Jamie-portfolio/)** - [[`Live preview`](https://jamie-dev-portfolio.netlify.app/)]
 
+4. **[Notion - portfolio](src/portfolio/notion/)** - [[`Live preview`](https://notion-portfolio.netlify.app/)]
+
 
 ### NGO landing pages
 

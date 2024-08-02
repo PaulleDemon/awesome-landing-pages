@@ -21,6 +21,12 @@ This is a multi-themed portfolio, easily switch between multiple themes
 
 ![portfolio landing page](./screenshots/dev.png) - 
 
+### Notion portfolio
+
+[Live preview](https://notion-portfolio.netlify.app/)
+
+![notion portfolio landing page](./screenshots/notion.png) - 
+
 
 ### Jamie Portfolio
 
