@@ -7,6 +7,7 @@ module.exports = {
 		"./src/portfolio/notion/*.{html,jsx, js}",
 		"./src/portfolio/notion/*.js",
 		"./src/portfolio/notion/*.html",
+		"./src/portfolio/notion/**/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
