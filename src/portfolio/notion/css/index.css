@@ -6,6 +6,18 @@
     --input-focus-bd-color: #0d0d0d;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d3d1cb;
+}
 
 html {
     scroll-behavior: smooth;
@@ -92,8 +104,8 @@ header > .collapsible-header{
 }
 
 .page-link.active{
-    color: #8a8885;
-    font-weight: 500;
+    color: #272726;
+    font-weight: 420;
 }
 
 .btn{
@@ -117,17 +129,16 @@ header > .collapsible-header{
 }
 
 .input{
-    padding: 10px;
+    padding: 4px;
     background-color: transparent;
-    border-radius: 25px;
     /* outline: none; */
-    min-width: 100px;
-    border: 2px solid #818080;
-    transition: border 0.3s;
+    min-width: 60px;
+    border: none;
+    outline: none;
 }
 
 .input:active, .input:focus, .input:focus-within{
-    border: 2px solid var(--input-focus-bd-color);
+    color: #000;
 }
 
 .input-error{

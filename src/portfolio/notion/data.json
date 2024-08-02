@@ -1,10 +1,10 @@
 {
     "name": "Paul's portfolio",
-    "icon": "./assets/images/home/man.jpg",
+    "icon": "./assets/images/home/paul.png",
 
     "pages": [
         {
-            "icon": "./assets/images/home/man.jpg",
+            "icon": "./assets/images/home/paul.png",
             "name": "About",
             "link": "/about",
             "content": "content/about.md"
@@ -13,6 +13,12 @@
             "icon": "😍",
             "name": "Projects",
             "link": "/projects",
+            "content": "content/about.md"
+        },
+        {
+            "icon": "🔥",
+            "name": "Open source",
+            "link": "/projects2",
             "content": "content/about.md"
         }
     ]

@@ -37,5 +37,20 @@
 
 
 .content ol{
-    list-style-type: lower-roman;
+    list-style-type: decimal;
+}   
+
+.content blockquote{
+    padding: 20px;
+    background-color: #efefed;
+}   
+
+
+.content pre{
+    padding: 10px;
+    background-color: #f7f6f3;
+}  
+
+.content code{
+    background-color: transparent !important;
 }   
