@@ -4,10 +4,10 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/portfolio/notion/*.{html,jsx, js}",
-		"./src/portfolio/notion/*.js",
-		"./src/portfolio/notion/*.html",
-		"./src/portfolio/notion/**/*.html",
+		"./src/restaurant/nutri/*.{html,jsx, js}",
+		"./src/restaurant/nutri/*.js",
+		"./src/restaurant/nutri/*.html",
+		"./src/restaurant/nutri/**/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"

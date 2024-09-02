@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+:root{
+
+    --btn-color: #fdfdfd;/* button color*/
+    --btn-bg: #BE3345;/* button bg color*/
+
+    --primary-text-color: #BE3345;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.khula-font {
+    font-family: "Khula", sans-serif;
+    font-style: normal;
+}
+
+header{
+    background-color:   transparent;
+    color: #fff;
+}
+
+
+header > .collapsible-header{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: inherit;
+    place-content: center;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.animated-collapse{
+    transition: width 0.3s ease;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-links:hover {
+    background-color: #ffffff;
+    color: #240606;
+}
+
+.header-white-bg{
+    color: #000;
+}
+
+.header-white-bg:hover{
+    background-color: #BE3345 !important;
+    color: #fff !important;
+}
+
+.primary-text-color{
+    color: var(--primary-text-color);
+}
+
+.opacity-0{
+    opacity: 0 !important;
+}
+
+.opacity-100{
+    opacity: 100 !important;
+}
+
+.btn{
+    padding: 10px 15px;
+    width: max-content;
+    border-radius: 25px;
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn:hover{
+
+}
+
+.input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    min-width: 100px;
+    border: 2px solid #cecece;
+    transition: border 0.3s;
+}
+
+.input:active, .input:focus, .input:focus-within{
+    border: 2px solid #BE3345;
+}
+
+
+.slides {
+    display: none;
+    position: relative;
+    height: 100%;
+}
+
+
+/* Navigation dots styling */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dots-container .active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* ----- the menu here refers to food menu ------- */
+
+.menu-item-container{
+
+}
+
+.menu-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-btn:hover{
+    background-color: #BE3345;
+    color: #fff;
+}
+/* ----  -------*/
+
+.footer-link{
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-link:hover{
+    color: #ffef0b;
+}
+
+
+.review-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.review-slide {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.fade {
+    animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.stars {
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+}
+.stars .star {
+    color: #ccc;
+    transition: color 0.2s;
+}
+.stars .star:hover,
+.stars .star.active {
+    color: gold;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+    }
+}
+
+
+@media not all and (min-width: 768px) {
+    header .collapsible-header {
+        position: absolute;
+        right: 0px;
+        flex-direction: column;
+        opacity: 0;
+        height: 100vh;
+        height: 100dvh;
+        width: 0vw;
+        justify-content: space-between;
+        padding: 5px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        place-items: end;
+        background-color: #BE3345;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    .header-links{
+        color: white;
+    }
+    
+}
