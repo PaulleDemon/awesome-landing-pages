@@ -4,10 +4,10 @@ module.exports = {
 	important: false,
 	content: [
 		// "./**/*.{html, jsx, js}",
-		"./src/restaurant/nutri/*.{html,jsx, js}",
-		"./src/restaurant/nutri/*.js",
-		"./src/restaurant/nutri/*.html",
-		"./src/restaurant/nutri/**/*.html",
+		"./src/restaurant/nutrio/*.{html,jsx, js}",
+		"./src/restaurant/nutrio/*.js",
+		"./src/restaurant/nutrio/*.html",
+		"./src/restaurant/nutrio/**/*.html",
 		
 		"!.hoverpreview.temp.html"
 		// "*.{html,jsx}"
