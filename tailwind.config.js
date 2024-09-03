@@ -16,10 +16,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#fff',
-				secondary: "#f7f7f5",
-				hoverColor: "#efefed",
-				textColor: "#1F2123"
+				primary: '#f3c776',
+				secondary: '#ed7a36'
 			}
 		},
 	},

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One');
 
 :root{
 
     --btn-color: #fdfdfd;/* button color*/
-    --btn-bg: #BE3345;/* button bg color*/
+    --btn-bg: #ed7a36;/* button bg color*/
+    
+    --input-bd: #ed7a36;/* button bg color*/
 
-    --primary-text-color: #BE3345;
+    --primary-text-color: #f3c776;
 }
 
 html {
@@ -15,6 +18,11 @@ html {
 .khula-font {
     font-family: "Khula", sans-serif;
     font-style: normal;
+}
+
+.rubik-mono-one-family{
+    font-family: "Rubik Mono One", sans-serif;
+    font-weight: 400;
 }
 
 header{
@@ -56,7 +64,7 @@ header > .collapsible-header{
 }
 
 .header-white-bg:hover{
-    background-color: #BE3345 !important;
+    background-color: #f3c776 !important;
     color: #fff !important;
 }
 
@@ -75,7 +83,7 @@ header > .collapsible-header{
 .btn{
     padding: 10px 15px;
     width: max-content;
-    border-radius: 25px;
+    border-radius: 2px;
     color: var(--btn-color);
     background-color: var(--btn-bg);
     justify-content: center;
@@ -97,7 +105,7 @@ header > .collapsible-header{
 }
 
 .input:active, .input:focus, .input:focus-within{
-    border: 2px solid #BE3345;
+    border: 2px solid var(--input-bd);
 }
 
 
@@ -158,7 +166,7 @@ header > .collapsible-header{
 }
 
 .menu-btn:hover{
-    background-color: #BE3345;
+    background-color: var(--btn-bg);
     color: #fff;
 }
 /* ----  -------*/
@@ -169,7 +177,7 @@ header > .collapsible-header{
 }
 
 .footer-link:hover{
-    color: #ffef0b;
+    color: var(--primary-text-color);
 }
 
 

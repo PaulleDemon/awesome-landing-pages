@@ -45,14 +45,14 @@
     </head>
 
     <body
-        class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-bg-[#000]"
+        class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-text-white tw-bg-[#000]"
     >
         <header
             class="tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-px-[10%] max-md:tw-mr-auto md:tw-justify-around"
         >
 
 
-            <div class="tw-h-[50px] tw-w-[150px] tw-p-[4px] tw-text-2xl tw-font-semibold tw-place-content-center">
+            <div class="tw-h-[50px] tw-w-[150px] tw-p-[4px] tw-text-primary tw-text-2xl tw-font-semibold tw-place-content-center">
                 Nutrio
             </div>
             <div
@@ -80,7 +80,7 @@
                     <a
                         href="https://www.facebook.com/"
                         target="_blank"
-                        rel="no-referrer"
+                        rel="noreferrer noopener"
                         area-label="facebook"
                         class="header-links tw-transition-colors tw-duration-[0.3s]"
                     >
@@ -90,7 +90,7 @@
                     <a
                         href="https://www.instagram.com/"
                         target="_blank"
-                        rel="no-referrer"
+                        rel="noreferrer noopener"
                         area-label="twitter"
                         class="header-links tw-transition-colors tw-duration-[0.3s]"
                     >
@@ -109,52 +109,45 @@
         </header>
 
         <section
-            class="tw-relative tw-flex tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-h-[100dvh]"
+            class="tw-relative tw-flex  tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-h-[100dvh]"
             id="hero-section"
         >
            
-            <div class="tw-flex tw-gap-2 tw-w-full tw-h-full">
+            <div class="tw-flex max-lg:tw-flex-col tw-gap-2 tw-p-2 tw-w-full tw-h-full">
                 <div
-                    class="tw-flex tw-w-full tw-max-w-[50vw] tw-h-full tw-flex-col tw-place-content-center 
-                     tw-gap-4 tw-p-2 tw-text-white"
-                >
-                    <h1
-                        class="khula-font tw-text-7xl tw-font-semibold max-md:tw-text-center max-md:tw-text-5xl"
-                    >
-                        Eat Healthy with
-                        <br>
-                        Nutrio Restaurant
-                    </h1>
-                    <p class="tw-max-w-[350px]">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta error eveniet, fugit numquam iste dolorum.
-                    </p>
-                    <div
-                        class="tw-mt-3 tw-flex tw-w-full tw-place-content-center tw-gap-[2%] max-md:tw-gap-[4%]"
-                    >
+                    class="tw-flex tw-w-full lg:tw-max-w-[50vw] tw-h-full tw-flex-col tw-place-content-center 
+                            tw-gap-4 tw-p-2 tw-text-white"
+                >   
+                    <div class="tw-flex tw-flex-col tw-w-full max-lg:tw-place-items-center tw-gap-4">
+                        <h1
+                            class="tw-text-7xl max-lg:tw-leading-relaxed tw-font-semibold max-md:tw-text-center max-md:tw-text-5xl"
+                        >
+                            Eat Healthy with
+                            <br>
+                            Nutrio Restaurant
+                        </h1>
+                        <p class="tw-max-w-[400px] max-lg:tw-text-center">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta error eveniet, fugit numquam iste dolorum.
+                        </p>
                         <a
                             href="https://"
                             target="_blank"
                             rel="noreferrer noopener"
-                            class="tw-flex tw-rounded-full tw-bg-white tw-p-3 tw-px-[20px] tw-text-black tw-transition-colors tw-duration-[0.3s] hover:tw-bg-primary hover:tw-text-white"
+                            class="tw-flex tw-rounded-sm tw-bg-secondary tw-text-medium tw-p-3 
+                                    tw-px-[20px] tw-w-fit tw-text-white tw-transition-colors tw-duration-[0.3s] 
+                                    hover:tw-bg-primary hover:tw-text-black"
                         >
                             Order online
-                        </a>
-                        <a
-                            href="https://maps.app.goo.gl/"
-                            target="_blank"
-                            rel="noreferrer"
-                            class="tw-flex tw-gap-2 tw-rounded-full tw-bg-white tw-p-3 tw-px-[20px] tw-text-black tw-transition-colors tw-duration-[0.3s] hover:tw-bg-primary hover:tw-text-white"
-                        >
-                            <span>View on map</span>
-                            <i class="bi bi-geo-alt"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="tw-flex tw-place-content-center tw-place-items-center tw-w-full tw-max-w-[50vw]">
-                    <img src="./assets/images/homepage/hero.png" 
-                            alt="food" 
-                            class="tw-object-contain">
+                <div class="tw-flex tw-place-content-center tw-place-items-center tw-w-full lg:tw-max-w-[50vw]">
+                    <div class="tw-max-w-[560px] tw-w-full">
+                        <img src="./assets/images/homepage/pizza.png" 
+                                alt="food" 
+                                class="tw-object-contain tw-w-full tw-h-full">
+                    </div>
                 </div>
             </div>
 
@@ -163,13 +156,13 @@
         </section>
 
         <section
-            class="tw-flex tw-min-h-[60vh] tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-md:tw-flex-col max-md:tw-gap-[4%] max-md:tw-px-[5%]"
+            class="tw-flex tw-min-h-[80vh] tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%]  tw-p-4 tw-px-[20%] max-md:tw-flex-col max-md:tw-gap-[4%] max-md:tw-px-[5%]"
         >
             <div
                 class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[300px] max-md:tw-w-[300px]"
             >
                 <img
-                    src="./assets/images/homepage/coffee.jpg"
+                    src="./assets/images/homepage/hero.png"
                     alt="coffee"
                     class="tw-w-full tw-object-cover"
                 />
@@ -178,22 +171,17 @@
                 class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-md:tw-mt-2 max-md:tw-gap-[3%] max-md:tw-text-center"
             >
                 <h2
-                    class="primary-text-color tw-text-3xl tw-font-medium max-md:tw-text-2xl"
+                    class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"
                 >
-                    Bistro Restaurant
+                    <span class="tw-text-5xl tw-text-primary tw-font-medium">10%</span> 
+                    off every wednesday
                 </h2>
-                <h3 class="tw-text-5xl max-md:tw-text-3xl">Welcomes you</h3>
                 <div class="tw-mt-6 tw-max-w-[350px] tw-text-justify">
-                    Discover the charm of Bistro, an authentic English
-                    restaurant offering a taste of Ireland in every bite.
-                    Indulge in traditional English cuisine crafted with care,
-                    complemented by warm hospitality and a cozy ambiance. From
-                    hearty stews to savory pies, experience the flavors of
-                    English at Bistro
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime quis placeat assumenda, eligendi incidunt?
                 </div>
                 <a
                     href="https://maps.app.goo.gl/"
-                    class="btn tw-mt-5 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2 max-md:tw-mx-auto"
+                    class="btn tw-mt-5 tw-gap-1 tw-font-medium tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2 max-md:tw-mx-auto"
                 >
                     <span>View on map</span>
                     <i class="bi bi-arrow-right"></i>
@@ -203,11 +191,107 @@
         </section>
 
         <section
-            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-bg-[#fff] tw-p-[5%] max-md:tw-px-[5%]"
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center  tw-p-[5%] max-md:tw-px-[5%]"
         >
             <h2 class="tw-text-xl tw-italic">
                 Discover Authentic English Flavours
             </h2>
+            <h3 class="primary-text-color tw-text-4xl tw-font-semibold">
+                Diners Favorite
+            </h3>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-5 max-md:tw-flex-wrap"
+            >
+                <div
+                    class="tw-flex tw-max-w-[650px] tw-flex-col tw-gap-8 "
+                >
+                    <div class="tw-flex tw-gap-10 max-md:tw-flex-col">
+                        <div class="tw-w-[180px] tw-h-[180px] tw-overflow-hidden tw-rounded-md">
+                            <img
+                                src="./assets/images/homepage/coffee.jpg"
+                                alt="authentic wine"
+                                class="tw-h-full tw-w-full tw-object-cover tw-transition-[scale] tw-duration-[0.4s]"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-max-w-[300px]">
+                            <h3 class="tw-text-2xl tw-font-semibold">Special chinese coffee</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, adipisci.
+                            </p>
+                            <div class="tw-mt-2 tw-text-primary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <a href="http://" class="btn tw-mt-auto">
+                                Order now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-gap-10 max-md:tw-flex-col">
+                        <div class="tw-w-[180px] tw-h-[180px] tw-overflow-hidden tw-rounded-md">
+                            <img
+                                src="./assets/images/homepage/breakfast.jpg"
+                                alt="authentic wine"
+                                class="tw-h-full tw-w-full tw-object-cover tw-transition-[scale] tw-duration-[0.4s]"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-max-w-[300px]">
+                            <h3 class="tw-text-2xl tw-font-semibold">Bacon and Eggs</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, adipisci.
+                            </p>
+                            <div class="tw-mt-2 tw-text-primary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <a href="http://" class="btn tw-mt-auto">
+                                Order now
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tw-flex tw-gap-10 max-md:tw-flex-col">
+                        <div class="tw-w-[180px] tw-h-[180px] tw-overflow-hidden tw-rounded-md">
+                            <img
+                                src="./assets/images/homepage/dessert.jpg"
+                                alt="authentic wine"
+                                class="tw-h-full tw-w-full tw-object-cover tw-transition-[scale] tw-duration-[0.4s]"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-max-w-[300px]">
+                            <h3 class="tw-text-2xl tw-font-semibold">Red pastry</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, adipisci.
+                            </p>
+                            <div class="tw-mt-2 tw-text-primary">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <a href="http://" class="btn tw-mt-auto">
+                                Order now
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center  tw-p-[5%] max-md:tw-px-[5%]"
+        >
+            
             <h3 class="primary-text-color tw-text-4xl tw-font-semibold">
                 Explore our menu
             </h3>
@@ -292,8 +376,9 @@
             </div>
         </section>
 
+
         <section
-            class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 tw-px-[10%] max-md:tw-flex-col"
+            class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#28282859] tw-p-4 tw-px-[10%] max-md:tw-flex-col"
             id="reservation"
         >
             <div
@@ -321,7 +406,7 @@
                 >
                     <div class="tw-flex tw-flex-col tw-gap-4">
                         <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-text-gray-500">Name</div>
+                            <div class="tw-text-gray-300">Name</div>
                             <input
                                 type="text"
                                 class="input"
@@ -331,7 +416,7 @@
                             />
                         </div>
                         <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-text-gray-500">Phone</div>
+                            <div class="tw-text-gray-300">Phone</div>
                             <input
                                 type="text"
                                 class="input"
@@ -340,7 +425,7 @@
                             />
                         </div>
                         <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-text-gray-500">Email</div>
+                            <div class="tw-text-gray-300">Email</div>
                             <input
                                 type="email"
                                 class="input"
@@ -353,7 +438,7 @@
 
                     <div class="tw-flex tw-gap-4">
                         <div class="tw-flex tw-w-full tw-flex-col tw-gap-1">
-                            <div class="tw-text-gray-500">Time</div>
+                            <div class="tw-text-gray-300">Time</div>
                             <select
                                 name="timings"
                                 id="timings"
@@ -361,7 +446,7 @@
                             ></select>
                         </div>
                         <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-text-gray-500">Date</div>
+                            <div class="tw-text-gray-300">Date</div>
                             <input
                                 type="date"
                                 class="input"
@@ -374,7 +459,7 @@
 
                     <div class="tw-flex tw-w-full tw-gap-4 max-md:tw-flex-col">
                         <div class="tw-flex tw-w-full tw-flex-col tw-gap-1">
-                            <div class="tw-text-gray-500">People</div>
+                            <div class="tw-text-gray-300">People</div>
                             <input
                                 type="number"
                                 value="2"
@@ -409,7 +494,7 @@
             class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[5%]"
         >
             <h3
-                class="primary-text-color tw-text-3xl tw-font-medium max-md:tw-text-2xl"
+                class="tw-text-primary tw-text-4xl tw-font-medium max-md:tw-text-2xl"
             >
                 What some of our diners say
             </h3>
@@ -422,13 +507,13 @@
                         <div
                             class="slides fade tw-text-justify tw-text-lg max-md:tw-text-base"
                         >
-                            <q class="tw-italic tw-text-gray-600">
+                            <q class="tw-italic tw-text-gray-300">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Quaerat veritatis assumenda
                                 dolor delectus laborum odio consequatur
                                 accusantium quam? Ad, odit.
                             </q>
-                            <div class="tw-mt-2 tw-text-yellow-400">
+                            <div class="tw-mt-2 tw-text-primary">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -441,11 +526,11 @@
                         <div
                             class="slides fade tw-text-justify tw-text-lg max-md:tw-text-base"
                         >
-                            <q class="tw-italic tw-text-gray-600">
+                            <q class="tw-italic tw-text-gray-300">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Totam, sint.
                             </q>
-                            <div class="tw-mt-2 tw-text-yellow-400">
+                            <div class="tw-mt-2 tw-text-primary">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -458,12 +543,12 @@
                         <div
                             class="slides fade tw-text-justify tw-text-lg max-md:tw-text-base"
                         >
-                            <q class="tw-italic tw-text-gray-600">
+                            <q class="tw-italic tw-text-gray-300">
                                 Lorem ipsum dolor, sit amet consectetur
                                 adipisicing elit. Dolore sapiente possimus
                                 quibusdam nesciunt, architecto distinctio.
                             </q>
-                            <div class="tw-mt-2 tw-text-yellow-400">
+                            <div class="tw-mt-2 tw-text-primary">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -496,122 +581,20 @@
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
-            <div
-                class="tw-mt-[5%] tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-5"
-            >
-                <h2 class="primary-text-color tw-text-3xl">Award</h2>
-
-                <div
-                    class="tw-flex tw-w-full tw-place-content-center tw-gap-[5%] max-md:tw-flex-wrap"
-                >
-                    <img
-                        src="./assets/images/homepage/tripadvisor-travellers choice.png"
-                        alt="Tripadvisor travelers choice award"
-                        class="tw-h-[250px] tw-w-[250px] max-md:tw-h-[150px] max-md:tw-w-[150px]"
-                    />
-                </div>
-            </div>
+           
         </section>
 
-        <section
-            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#EFEFEF] tw-p-[5%] tw-px-[10%]"
-        >
-            <div
-                class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
-            >
-                <h2 class="primary-text-color tw-text-3xl max-md:tw-text-xl">
-                    Special Newsletter signup
-                </h2>
-                <h2 class="tw-text-xl max-md:tw-text-lg">
-                    Get offers and updates
-                </h2>
-
-                <div
-                    class="input tw-flex tw-h-[50px] tw-place-items-center tw-overflow-hidden !tw-rounded-full tw-bg-white tw-p-2"
-                >
-                    <input
-                        type="email"
-                        class="tw-h-full tw-w-full tw-px-3 tw-outline-none"
-                        placeholder="email"
-                    />
-                    <button
-                        class="btn tw-h-[35px] tw-bg-primary tw-transition-colors tw-duration-[0.3s]"
-                    >
-                        Signup
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="tw-mt-[5%] tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-3"
-            >
-                <h2 class="primary-text-color tw-text-3xl max-md:tw-text-xl">
-                    Like us?
-                </h2>
-                <h2 class="tw-text-xl max-md:tw-text-lg">Tell us more</h2>
-
-                <div class="tw-flex">
-                    <div class="stars" data-rating="0">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div
-            class="tw-fixed tw-left-[50%] tw-top-[50%] tw-z-40 tw-flex tw-hidden tw-max-h-[450px] tw-w-[450px] tw-translate-x-[-50%] tw-translate-y-[-50%] tw-flex-col tw-rounded-md tw-bg-white tw-p-3 tw-shadow-2xl max-md:tw-w-[350px]"
-            id="modal"
-        >
-            <div class="tw-relative tw-h-[40px] tw-w-full">
-                <button
-                    class="bi bi-x tw-absolute tw-right-2 tw-text-4xl"
-                    id="modal-close"
-                ></button>
-            </div>
-            <h2
-                class="tw-mt-[5%] tw-text-center tw-text-2xl"
-                id="modal-title"
-            ></h2>
-
-            <div
-                class="tw-mt-2 tw-text-base tw-font-normal"
-                id="modal-description"
-            ></div>
-
-            <textarea
-                id="modal-input"
-                placeholder="write..."
-                maxlength="2000"
-                class="input tw-mt-2 tw-hidden tw-max-h-[150px] tw-min-h-[50px] tw-w-full tw-resize-y tw-text-base tw-font-normal"
-            ></textarea>
-
-            <div class="tw-mt-3 tw-flex tw-w-full tw-place-content-center">
-                <a
-                    href="#"
-                    class="btn tw-cursor-pointer tw-text-sm"
-                    id="modal-action-btn"
-                >
-                    Open
-                </a>
-            </div>
-        </div>
+       
 
         <footer
-            class="tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-bg-primary tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+            class="tw-flex tw-w-full tw-place-content-around tw-gap-3  tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
         >
             <div
                 class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
             >
-                <img
-                    src="./assets/bistro-white.png"
-                    alt="logo"
-                    srcset=""
-                    class="tw-max-w-[200px]"
-                />
+                <h3 class="tw-text-primary tw-text-4xl tw-font-semibold">
+                    Nutrio
+                </h3>
                 <div>
                     2 Lord Edward St,
                     <br />
@@ -622,7 +605,7 @@
                     US
                 </div>
                 <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
-                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                <div class="tw-flex tw-gap-4 tw-text-xl">
                     <a href="" aria-label="Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
@@ -638,8 +621,8 @@
                         aria-label="Tripadvisor"
                     >
                         <svg
-                            width="25"
-                            height="25"
+                            width="20"
+                            height="20"
                             viewBox="0 0 13.229166 13.229167"
                             version="1.1"
                             id="svg1"
