@@ -203,6 +203,8 @@ Here's the list of website templates
 ![restaurant landing page](src/restaurant/screenshots/bistro.png)
 
 1. **[Bistro](src/restaurant/bistro)** - [[`Live preview`](https://bistro-rest.netlify.app/)]
+  
+2. **[Nutrio](src/restaurant/nutrio)** - [[`Live preview`](https://nutrio-rest.netlify.app/)]
 
 
 ### Real estate landing page

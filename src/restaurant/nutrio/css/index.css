@@ -47,26 +47,32 @@ header > .collapsible-header{
 
 .header-links {
     display: flex;
+    position: relative;
     align-items: center;
     min-width: fit-content;
     border-radius: 25px;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.4s, color 0.4s;
 }
 
-.header-links:hover {
-    background-color: #ffffff;
-    color: #240606;
+.header-links:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--primary-text-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-.header-white-bg{
-    color: #000;
+.header-links:hover:after {
+    width: 100%;
+    left: 0;
 }
 
-.header-white-bg:hover{
-    background-color: #f3c776 !important;
-    color: #fff !important;
-}
 
 .primary-text-color{
     color: var(--primary-text-color);
