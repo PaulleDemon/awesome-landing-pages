@@ -13,6 +13,12 @@ New templates will be uploaded every Friday. Feel free to star this repository ð
   
 - If you are looking for a custom one, contact [here](https://tally.so/r/woO0Kx)
 
+### Consider supporting open-source.
+
+when you support my open-source, I get funds to keep writing more free and open-source projects.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L612WN7K)
+
 ## Table of content
 
 
