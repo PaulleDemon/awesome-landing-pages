@@ -11,7 +11,7 @@ New templates will be uploaded every Friday. Feel free to star this repository ð
 **Have a generic template in mind?**
 - Create a new [template issue](https://github.com/PaulleDemon/landing-pages/issues/new/choose), once your template request have enough thumbs up, we'll make one. 
 
-**Looking for a custom landing page?**
+### Looking for a custom landing page?
 - If you are looking for a custom one, contact [here](https://tally.so/r/woO0Kx)
 
 ### Consider supporting open-source.
