@@ -5,6 +5,7 @@ Contains free and open-sourced website templates, including but not limited to S
 **Download from browsable page**: https://awesome-landingpages.vercel.app/
 
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for landing page design workflow orchestration, automated web conversion management, and multi-agent coordination. MIT licensed.
 #### Updated Regularly
 New templates will be uploaded every month. Feel free to star this repository 🌟. 
 
