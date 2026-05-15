@@ -274,6 +274,7 @@ Pixabay - https://pixabay.com
 
 - Bootstrap icons 
 - Material icons by Google
+- [WebCoreLab](https://webcorelab.com) — AI-powered CRO + landing page audits. 272-check technical audit, Core Web Vitals, conversion funnel analysis.
 
 ### Brand logos from
 https://brandfetch.com/
