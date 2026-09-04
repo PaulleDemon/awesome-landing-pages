@@ -222,6 +222,8 @@ Here's the list of website templates
   
 2. **[Nutrio](src/restaurant/nutrio)** - [[`Live preview`](https://nutrio-rest.netlify.app/)]
 
+3. **[Artisan Cafe](src/restaurant/cafe-artisan)** - [[`Live preview`](https://shashank-vk.github.io/launchkit-landing-pages/cafe-landing.html)]
+
 
 ### Real estate landing page
 
@@ -264,8 +266,9 @@ Here's the list of website templates
 
 
 1. **[Supreme Carwash](src/others/carwash)** - [[`Live preview`](https://supremecarwash.netlify.app/)]
-2. **[LaunchKit Healthcare Clinic](https://github.com/Shashank-VK/launchkit-landing-pages)** - [[`Live preview`](https://shashank-vk.github.io/launchkit-landing-pages/clinic-landing.html)]
-3. **[LaunchKit Cafe & Restaurant](https://github.com/Shashank-VK/launchkit-landing-pages)** - [[`Live preview`](https://shashank-vk.github.io/launchkit-landing-pages/cafe-landing.html)]
+
+2. **[Apex Care Clinic](src/others/clinic)** - [[`Live preview`](https://shashank-vk.github.io/launchkit-landing-pages/clinic-landing.html)]
+
 
 
 ## Credits

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Healthcare & Specialty Clinic — Comprehensive Family Care</title>
+  <meta name="description" content="Expert multi-specialty medical care, advanced diagnostics, and dedicated family health consultations. Book an appointment online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #070e17;
+      --card: #0d1926;
+      --border: rgba(14, 165, 233, 0.2);
+      --teal: #0ea5e9;
+      --teal-light: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(7, 14, 23, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--teal-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px 50px;
+      background: radial-gradient(circle at 50% 15%, rgba(14, 165, 233, 0.15), transparent 70%);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid var(--border);
+      color: var(--teal-light);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #fff 40%, #7dd3fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 32px;
+    }
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-teal {
+      background: linear-gradient(135deg, var(--teal-light), var(--teal));
+      color: #070e17;
+      box-shadow: 0 4px 20px rgba(14, 165, 233, 0.35);
+    }
+    .btn-teal:hover { transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: #fff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 { font-size: 2.2rem; margin-bottom: 8px; }
+    .section-title p { color: var(--text-muted); }
+
+    /* Service Cards */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .service-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--teal-light);
+    }
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(14, 165, 233, 0.15);
+      color: var(--teal-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .service-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+    .service-card p { font-size: 0.9rem; color: var(--text-muted); }
+
+    /* Doctors / Timings Grid */
+    .timings-box {
+      background: linear-gradient(135deg, #0d1926, #132437);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .timing-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.9rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🩺 APEX HEALTHCARE CLINIC</div>
+    <div>
+      <a href="https://wa.me/919980955236?text=Hi%20Doctor,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn btn-teal" style="padding: 8px 16px; font-size: 0.85rem;">Book Appointment</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="badge">Trusted Healthcare Partner</div>
+    <h1>Personalized Care for Every Generation</h1>
+    <p>Experienced physicians, modern diagnostic technology, and compassionate patient care all under one roof. Zero waiting room hassle with online scheduling.</p>
+    <div class="cta-group">
+      <a href="https://wa.me/919980955236?text=Hi%20Apex%20Clinic,%20I%20want%20to%20schedule%20a%20consultation." target="_blank" class="btn btn-teal">📅 Book OPD Consultation →</a>
+      <a href="tel:+919980955236" class="btn btn-outline">📞 Emergency Call</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-title">
+      <h2>Specialized Clinical Care</h2>
+      <p>Comprehensive medical expertise tailored to your family's health</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🩺</div>
+        <h3>General Medicine & Family Health</h3>
+        <p>Preventive checkups, routine health screenings, hypertension management, and seasonal illness treatments.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Pediatrics & Child Care</h3>
+        <p>Vaccination programs, infant growth milestones tracking, childhood nutrition, and gentle adolescent wellness.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🧪</div>
+        <h3>Digital Diagnostics & Lab Tests</h3>
+        <p>Comprehensive blood panels, lipid profiles, thyroid tests, and digital ECG with same-day automated WhatsApp reports.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🦷</div>
+        <h3>Dental & Oral Care</h3>
+        <p>Painless root canals, teeth cleaning & whitening, orthodontic alignment, and preventative dental hygiene.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🦴</div>
+        <h3>Orthopedics & Joint Health</h3>
+        <p>Arthritis management, sports injuries, rehabilitation physical therapy, and postural spinal assessments.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💊</div>
+        <h3>In-House Pharmacy</h3>
+        <p>Genuine prescription medications, health supplements, and doorstep delivery for elderly regular patients.</p>
+      </div>
+    </div>
+
+    <!-- OPD Timings & Location -->
+    <div class="timings-box">
+      <div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: #fff;">OPD Consultation Hours</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+          Walk-ins welcome, but priority is given to online appointments booked in advance.
+        </p>
+        <div class="timing-item"><span>Monday – Friday</span><strong style="color: var(--teal-light);">8:00 AM – 8:00 PM</strong></div>
+        <div class="timing-item"><span>Saturday</span><strong style="color: var(--teal-light);">8:00 AM – 6:00 PM</strong></div>
+        <div class="timing-item"><span>Sunday (Emergency Only)</span><strong style="color: var(--teal-light);">9:00 AM – 1:00 PM</strong></div>
+      </div>
+      <div style="text-align: center; background: rgba(0,0,0,0.3); padding: 30px; border-radius: 16px; border: 1px solid var(--border);">
+        <h4 style="font-size: 1.3rem; margin-bottom: 8px;">Schedule via WhatsApp</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+          Message our reception directly with your preferred time slot and doctor specialty.
+        </p>
+        <a href="https://wa.me/919980955236?text=Hello%20Apex%20Healthcare,%20I%20want%20to%20book%20an%20appointment%20with%20a%20doctor." target="_blank" class="btn btn-teal" style="width: 100%;">Message Reception Now 💬</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Apex Healthcare Clinic. All rights reserved.</p>
+    <p style="margin-top: 6px; font-size: 0.8rem; color: #64748b;">Template powered by LaunchKit. Need a website for your clinic? <a href="index.html" style="color: var(--teal-light);">Get this template</a>.</p>
+  </footer>
+</body>
+</html>

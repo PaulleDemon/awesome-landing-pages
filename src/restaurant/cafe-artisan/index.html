@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Bistro & Specialty Coffee — Artisan Dining & Brews</title>
+  <meta name="description" content="Experience handcrafted artisanal coffee, authentic wood-fired delights, and a warm ambiance. Order online or reserve your table." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0c0a09;
+      --card: #1c1917;
+      --border: rgba(217, 119, 6, 0.2);
+      --gold: #d97706;
+      --gold-light: #f59e0b;
+      --text: #f5f5f4;
+      --text-muted: #a8a29e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    h1, h2, h3, .serif {
+      font-family: 'Playfair Display', serif;
+    }
+    header {
+      background: rgba(12, 10, 9, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero {
+      text-align: center;
+      padding: 90px 20px 60px;
+      background: radial-gradient(circle at 50% 20%, rgba(217, 119, 6, 0.15), transparent 70%);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(217, 119, 6, 0.15);
+      border: 1px solid var(--border);
+      color: var(--gold-light);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 32px;
+    }
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: #000;
+      box-shadow: 0 4px 20px rgba(217, 119, 6, 0.35);
+    }
+    .btn-gold:hover { transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: #fff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 { font-size: 2.4rem; margin-bottom: 8px; }
+    .section-title p { color: var(--text-muted); }
+
+    /* Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .menu-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .menu-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-light);
+    }
+    .menu-info h3 { font-size: 1.2rem; margin-bottom: 6px; }
+    .menu-info p { font-size: 0.85rem; color: var(--text-muted); }
+    .menu-price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      white-space: nowrap;
+    }
+
+    /* Order / Booking Box */
+    .booking-box {
+      background: linear-gradient(135deg, #1c1917, #292524);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 50px 30px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">☕ AURA BISTRO</div>
+    <div>
+      <a href="https://wa.me/919980955236?text=Hi%20Aura%20Bistro,%20I%20want%20to%20order/reserve." target="_blank" class="btn btn-gold" style="padding: 8px 16px; font-size: 0.85rem;">Reserve Table</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="badge">Artisanal Brews & Gastronomy</div>
+    <h1>Slow Crafted Coffee, Soulful Dining</h1>
+    <p>From single-origin estate roasts to handcrafted sourdough pizzas and artisan pastries. Savor the moment in our tranquil outdoor courtyard.</p>
+    <div class="cta-group">
+      <a href="#menu" class="btn btn-gold">Explore Menu →</a>
+      <a href="https://wa.me/919980955236?text=Hi,%20I%20want%20to%20place%20a%20takeaway%20order." target="_blank" class="btn btn-outline">WhatsApp Quick Order 💬</a>
+    </div>
+  </div>
+
+  <div class="container" id="menu">
+    <div class="section-title">
+      <h2>Chef's Curated Selection</h2>
+      <p>Handmade daily with fresh, locally sourced organic ingredients</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-info">
+          <h3>South Indian Pour-Over</h3>
+          <p>Slow-dripped Chikmagalur Arabica bean extract with steamed A2 velvet milk.</p>
+        </div>
+        <div class="menu-price">₹160</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h3>Spanish Smoked Latte</h3>
+          <p>Double ristretto, condensed milk, cinnamon bark smoke, iced or hot.</p>
+        </div>
+        <div class="menu-price">₹240</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h3>Truffle Mushroom Sourdough</h3>
+          <p>Wild forest mushrooms, roasted garlic herb emulsion, shaved parmesan.</p>
+        </div>
+        <div class="menu-price">₹320</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h3>Artisan Butter Croissant</h3>
+          <p>72-hour laminated French butter pastry, flaky golden crust, warm honeycomb center.</p>
+        </div>
+        <div class="menu-price">₹190</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h3>Burrata Margherita Pizza</h3>
+          <p>San Marzano tomato reduction, artisanal whole burrata ball, fresh basil leaf.</p>
+        </div>
+        <div class="menu-price">₹480</div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-info">
+          <h3>Dark Chocolate Ganache Tart</h3>
+          <p>70% single-estate Belgian chocolate, sea salt flakes, almond meal crust.</p>
+        </div>
+        <div class="menu-price">₹260</div>
+      </div>
+    </div>
+
+    <!-- Booking CTA -->
+    <div class="booking-box">
+      <h2 style="font-size: 2.2rem; margin-bottom: 12px;">Visit Us or Order Direct</h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 24px;">
+        Open daily: <strong>8:00 AM – 11:00 PM</strong> · Yelahanka, Bengaluru<br/>
+        Free doorstep delivery on orders above ₹499.
+      </p>
+      <a href="https://wa.me/919980955236?text=Hi,%20I%20would%20like%20to%20reserve%20a%20table%20for%20today." target="_blank" class="btn btn-gold">Instant Table Booking via WhatsApp →</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Aura Bistro & Specialty Cafe. All rights reserved.</p>
+    <p style="margin-top: 6px; font-size: 0.8rem; color: #78716c;">Template powered by LaunchKit. Need a website for your cafe? <a href="index.html" style="color: var(--gold-light);">Get this template</a>.</p>
+  </footer>
+</body>
+</html>
