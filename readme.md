@@ -264,6 +264,8 @@ Here's the list of website templates
 
 
 1. **[Supreme Carwash](src/others/carwash)** - [[`Live preview`](https://supremecarwash.netlify.app/)]
+2. **[LaunchKit Healthcare Clinic](https://github.com/Shashank-VK/launchkit-landing-pages)** - [[`Live preview`](https://shashank-vk.github.io/launchkit-landing-pages/clinic-landing.html)]
+3. **[LaunchKit Cafe & Restaurant](https://github.com/Shashank-VK/launchkit-landing-pages)** - [[`Live preview`](https://shashank-vk.github.io/launchkit-landing-pages/cafe-landing.html)]
 
 
 ## Credits
