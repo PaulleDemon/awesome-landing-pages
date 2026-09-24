@@ -9,9 +9,11 @@ Contains free and open-sourced website templates, including but not limited to S
 
 **Download from browsable page**: https://awesome-landingpages.vercel.app/
 
+---
+
 ## **Website & Autofill Extension**
 
-![Apply to jobs in seconds with Zapply.](./sponsors/apply-faster-banner.png)
+[![Apply to jobs in seconds with Zapply.](./sponsors/apply-faster-banner.png)](https://app.zapply.jobs/onboarding?ref=github-cta-paulledemon-awesome)
 Explore Zapply’s website and check out:
 - Our Chrome extension, which autofills job applications in seconds.
 
@@ -28,6 +30,7 @@ Experience an advanced career journey with us! 🚀
 </p>
 <p align="right"><sub>Sponsored by Zapply</sub></p>
 
+---
 
 ### Looking for a custom landing page?
 - If you are looking for a custom one, contact [here](https://tally.so/r/jaJjA1)
