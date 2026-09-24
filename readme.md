@@ -11,7 +11,7 @@ Contains free and open-sourced website templates, including but not limited to S
 
 ## **Website & Autofill Extension**
 
-![Apply to jobs in seconds with Zapply.](apply-faster-banner.png)
+![Apply to jobs in seconds with Zapply.](./sponsors/apply-faster-banner.png)
 Explore Zapply’s website and check out:
 - Our Chrome extension, which autofills job applications in seconds.
 
@@ -23,7 +23,7 @@ Experience an advanced career journey with us! 🚀
 <p align="center">
 <a href=" https://app.zapply.jobs/onboarding?ref=github-cta-paulledemon-awesome
 ">
-<img src="get-started-button.png" alt="Visit Zapply" width="700">
+<img src="./sponsors/get-started-button.png" alt="Visit Zapply" width="700">
 </a>
 </p>
 <p align="right"><sub>Sponsored by Zapply</sub></p>
